@@ -34,6 +34,7 @@ body {
   display: table;
   min-height: 100vh;
   min-width: 100%;
+  box-sizing: border-box;
 }
 
 .all {
@@ -71,6 +72,7 @@ ul {
 li {
   font-family: 'ProximaNova';
   font-size: 18px;
+  line-height: 22px;
 }
 
 li:nth-child(2n) {
