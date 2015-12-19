@@ -770,6 +770,12 @@ table {
   font-style: normal;
   src: url("../fonts/Helvetica/helveticaneuecyr-bold-webfont.eot");
   src: url("../fonts/Helvetica/helveticaneuecyr-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica/helveticaneuecyr-bold-webfont.woff") format("woff"), url("../fonts/Helvetica/helveticaneuecyr-bold-webfont.ttf") format("truetype"), url("../fonts/Helvetica/helveticaneuecyr-bold-webfont.svg#f_helvetica") format("svg"); }
+body {
+  color: black; }
+
+p {
+  margin-top: 0; }
+
 .section.start {
   min-height: 100vh;
   min-width: 100%;
@@ -873,12 +879,13 @@ table {
   .section.four_programs .container .center-cont {
     padding-top: 100px;
     padding-bottom: 80px; }
-    .section.four_programs .container .center-cont .block-left {
+    .section.four_programs .container .center-cont .block {
       text-align: left;
-      display: inline-block;
+      display: inline-block; }
+    .section.four_programs .container .center-cont .block.left {
       margin-right: 100px;
       vertical-align: top; }
-      .section.four_programs .container .center-cont .block-left .block-left-1 {
+      .section.four_programs .container .center-cont .block.left .left-1 {
         font-family: "f_opens", "Open Sans", sans-serif;
         font-weight: 600;
         font-size: 136.46px;
@@ -886,33 +893,31 @@ table {
         display: inline-block;
         vertical-align: middle;
         margin-right: 30px; }
-      .section.four_programs .container .center-cont .block-left .block-left-2 {
+      .section.four_programs .container .center-cont .block.left .left-2 {
         display: inline-block;
         font-family: "f_helvetica", "Helvetica", sans-serif;
         font-weight: 300;
         vertical-align: middle; }
-        .section.four_programs .container .center-cont .block-left .block-left-2 .block-left-2-1 {
+        .section.four_programs .container .center-cont .block.left .left-2 .left-2-1 {
           text-transform: uppercase;
           font-size: 35.1px;
           margin-top: 10px;
           opacity: 0.9; }
-        .section.four_programs .container .center-cont .block-left .block-left-2 .block-left-2-2 {
+        .section.four_programs .container .center-cont .block.left .left-2 .left-2-2 {
           font-size: 16px;
           margin-top: 10px;
           opacity: 0.7; }
-    .section.four_programs .container .center-cont .block-right {
-      text-align: left;
-      display: inline-block;
+    .section.four_programs .container .center-cont .block.right {
       width: 600px;
       font-family: "f_helvetica", "Helvetica", sans-serif;
       font-weight: 300;
       opacity: 0.7; }
-      .section.four_programs .container .center-cont .block-right .block-right-1 {
+      .section.four_programs .container .center-cont .block.right .right-1 {
         font-size: 16px;
         line-height: 26px; }
-        .section.four_programs .container .center-cont .block-right .block-right-1 strong {
+        .section.four_programs .container .center-cont .block.right .right-1 strong {
           font-weight: 600; }
-      .section.four_programs .container .center-cont .block-right .block-right-2 {
+      .section.four_programs .container .center-cont .block.right .right-2 {
         background-image: url("../pics/section.four_programs.drop.svg");
         background-repeat: no-repeat;
         background-position: 0 5px;
@@ -930,17 +935,16 @@ table {
     text-align: left;
     height: 100vh; }
     .section.main_car_animation .container .block-program {
-      top: 60px;
+      position: absolute;
+      top: 100px;
       left: 0;
+      width: 300px;
       opacity: 0.7;
-      color: black;
       font-family: "f_helvetica", "Helvetica", sans-serif;
       font-weight: 300;
       font-size: 35.1px;
       line-height: 50.71px;
-      text-transform: uppercase;
-      width: 300px;
-      position: absolute; }
+      text-transform: uppercase; }
     .section.main_car_animation .container .block-top {
       position: absolute;
       top: 100px;
@@ -964,10 +968,10 @@ table {
         background-color: #3aa8b3; }
     .section.main_car_animation .container .content {
       position: relative;
-      width: 630px;
-      height: 300px;
       top: 60%;
       left: 50%;
+      width: 630px;
+      height: 300px;
       -webkit-transform: translateX(-50%) translateY(-50%);
               transform: translateX(-50%) translateY(-50%); }
       .section.main_car_animation .container .content .cleaner {
@@ -1018,6 +1022,53 @@ table {
         line-height: 21px;
         opacity: 0.4; }
 
+.section.pause {
+  background-color: #EEF3 #D; }
+  .section.pause .container {
+    max-width: 1100px; }
+    .section.pause .container .center-cont {
+      padding-top: 100px;
+      padding-bottom: 80px; }
+      .section.pause .container .center-cont .block {
+        display: inline-block;
+        vertical-align: top; }
+      .section.pause .container .center-cont .block.left {
+        text-align: center;
+        width: 300px;
+        font-family: "f_helvetica", "Helvetica", sans-serif;
+        font-weight: 300;
+        margin-right: 150px;
+        opacity: 0.7; }
+        .section.pause .container .center-cont .block.left .left-1 {
+          font-size: 16px;
+          line-height: 26px; }
+        .section.pause .container .center-cont .block.left .left-2 {
+          font-size: 35.1px;
+          text-transform: uppercase; }
+      .section.pause .container .center-cont .block.right {
+        text-align: left;
+        width: 500px;
+        font-family: "f_helvetica", "Helvetica", sans-serif;
+        font-weight: 300; }
+        .section.pause .container .center-cont .block.right .right-1 {
+          font-size: 16px;
+          line-height: 26px;
+          opacity: 0.7; }
+        .section.pause .container .center-cont .block.right .right-2 {
+          margin-top: 40px;
+          font-size: 14px;
+          line-height: 21px;
+          opacity: 0.6;
+          padding-left: 50px;
+          background-image: url("../pics/section.pause.!.svg");
+          background-repeat: no-repeat;
+          background-position: 0 6px; }
+
+.section.pults {
+  background-color: #242d3a;
+  height: 100vh;
+  width: 100%; }
+
 .section.business .container .text-block {
   padding-top: 100px;
   padding-bottom: 100px; }
@@ -1059,12 +1110,13 @@ table {
   .section.four_programs .container .center-cont {
     padding-top: 100px;
     padding-bottom: 80px; }
-    .section.four_programs .container .center-cont .block-left {
+    .section.four_programs .container .center-cont .block {
       text-align: left;
-      display: inline-block;
+      display: inline-block; }
+    .section.four_programs .container .center-cont .block.left {
       margin-right: 100px;
       vertical-align: top; }
-      .section.four_programs .container .center-cont .block-left .block-left-1 {
+      .section.four_programs .container .center-cont .block.left .left-1 {
         font-family: "f_opens", "Open Sans", sans-serif;
         font-weight: 600;
         font-size: 136.46px;
@@ -1072,33 +1124,31 @@ table {
         display: inline-block;
         vertical-align: middle;
         margin-right: 30px; }
-      .section.four_programs .container .center-cont .block-left .block-left-2 {
+      .section.four_programs .container .center-cont .block.left .left-2 {
         display: inline-block;
         font-family: "f_helvetica", "Helvetica", sans-serif;
         font-weight: 300;
         vertical-align: middle; }
-        .section.four_programs .container .center-cont .block-left .block-left-2 .block-left-2-1 {
+        .section.four_programs .container .center-cont .block.left .left-2 .left-2-1 {
           text-transform: uppercase;
           font-size: 35.1px;
           margin-top: 10px;
           opacity: 0.9; }
-        .section.four_programs .container .center-cont .block-left .block-left-2 .block-left-2-2 {
+        .section.four_programs .container .center-cont .block.left .left-2 .left-2-2 {
           font-size: 16px;
           margin-top: 10px;
           opacity: 0.7; }
-    .section.four_programs .container .center-cont .block-right {
-      text-align: left;
-      display: inline-block;
+    .section.four_programs .container .center-cont .block.right {
       width: 600px;
       font-family: "f_helvetica", "Helvetica", sans-serif;
       font-weight: 300;
       opacity: 0.7; }
-      .section.four_programs .container .center-cont .block-right .block-right-1 {
+      .section.four_programs .container .center-cont .block.right .right-1 {
         font-size: 16px;
         line-height: 26px; }
-        .section.four_programs .container .center-cont .block-right .block-right-1 strong {
+        .section.four_programs .container .center-cont .block.right .right-1 strong {
           font-weight: 600; }
-      .section.four_programs .container .center-cont .block-right .block-right-2 {
+      .section.four_programs .container .center-cont .block.right .right-2 {
         background-image: url("../pics/section.four_programs.drop.svg");
         background-repeat: no-repeat;
         background-position: 0 5px;
@@ -1116,17 +1166,16 @@ table {
     text-align: left;
     height: 100vh; }
     .section.main_car_animation .container .block-program {
-      top: 60px;
+      position: absolute;
+      top: 100px;
       left: 0;
+      width: 300px;
       opacity: 0.7;
-      color: black;
       font-family: "f_helvetica", "Helvetica", sans-serif;
       font-weight: 300;
       font-size: 35.1px;
       line-height: 50.71px;
-      text-transform: uppercase;
-      width: 300px;
-      position: absolute; }
+      text-transform: uppercase; }
     .section.main_car_animation .container .block-top {
       position: absolute;
       top: 100px;
@@ -1150,10 +1199,10 @@ table {
         background-color: #3aa8b3; }
     .section.main_car_animation .container .content {
       position: relative;
-      width: 630px;
-      height: 300px;
       top: 60%;
       left: 50%;
+      width: 630px;
+      height: 300px;
       -webkit-transform: translateX(-50%) translateY(-50%);
               transform: translateX(-50%) translateY(-50%); }
       .section.main_car_animation .container .content .cleaner {
@@ -1229,6 +1278,53 @@ table {
       position: absolute;
       bottom: 0px;
       right: -15%; }
+
+.section.pause {
+  background-color: #EEF3 #D; }
+  .section.pause .container {
+    max-width: 1100px; }
+    .section.pause .container .center-cont {
+      padding-top: 100px;
+      padding-bottom: 80px; }
+      .section.pause .container .center-cont .block {
+        display: inline-block;
+        vertical-align: top; }
+      .section.pause .container .center-cont .block.left {
+        text-align: center;
+        width: 300px;
+        font-family: "f_helvetica", "Helvetica", sans-serif;
+        font-weight: 300;
+        margin-right: 150px;
+        opacity: 0.7; }
+        .section.pause .container .center-cont .block.left .left-1 {
+          font-size: 16px;
+          line-height: 26px; }
+        .section.pause .container .center-cont .block.left .left-2 {
+          font-size: 35.1px;
+          text-transform: uppercase; }
+      .section.pause .container .center-cont .block.right {
+        text-align: left;
+        width: 500px;
+        font-family: "f_helvetica", "Helvetica", sans-serif;
+        font-weight: 300; }
+        .section.pause .container .center-cont .block.right .right-1 {
+          font-size: 16px;
+          line-height: 26px;
+          opacity: 0.7; }
+        .section.pause .container .center-cont .block.right .right-2 {
+          margin-top: 40px;
+          font-size: 14px;
+          line-height: 21px;
+          opacity: 0.6;
+          padding-left: 50px;
+          background-image: url("../pics/section.pause.!.svg");
+          background-repeat: no-repeat;
+          background-position: 0 6px; }
+
+.section.pults {
+  background-color: #242d3a;
+  height: 100vh;
+  width: 100%; }
 
 .section.start {
   min-height: 100vh;
