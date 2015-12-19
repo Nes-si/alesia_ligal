@@ -689,7 +689,7 @@ table {
 
 .container {
   width: 100%;
-  max-width: 1024px;
+  max-width: 1280px;
   min-height: 100%;
   margin: 0 auto;
   position: relative;
@@ -735,460 +735,41 @@ table {
       padding: 0 10px; } }
 
 @font-face {
-  font-family: "opens";
+  font-family: "f_opens";
   font-weight: 300;
   font-style: normal;
-  src: url("../fonts/opensans-light-webfont.eot");
-  src: url("../fonts/opensans-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-light-webfont.woff") format("woff"), url("../fonts/opensans-light-webfont.ttf") format("truetype"), url("../fonts/opensans-light-webfont.svg#opens") format("svg"); }
+  src: url("../fonts/OpenSans/opensans-light-webfont.eot");
+  src: url("../fonts/OpenSans/opensans-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/opensans-light-webfont.woff") format("woff"), url("../fonts/OpenSans/opensans-light-webfont.ttf") format("truetype"), url("../fonts/OpenSans/opensans-light-webfont.svg#f_opens") format("svg"); }
 @font-face {
-  font-family: "opens";
+  font-family: "f_opens";
   font-weight: 400;
   font-style: normal;
-  src: url("../fonts/opensans-regular-webfont.eot");
-  src: url("../fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-regular-webfont.woff") format("woff"), url("../fonts/opensans-regular-webfont.ttf") format("truetype"), url("../fonts/opensans-regular-webfont.svg#opens") format("svg"); }
+  src: url("../fonts/OpenSans/opensans-regular-webfont.eot");
+  src: url("../fonts/OpenSans/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/opensans-regular-webfont.woff") format("woff"), url("../fonts/OpenSans/opensans-regular-webfont.ttf") format("truetype"), url("../fonts/OpenSans/opensans-regular-webfont.svg#f_opens") format("svg"); }
 @font-face {
-  font-family: "opens";
+  font-family: "f_opens";
   font-weight: 600;
   font-style: normal;
-  src: url("../fonts/opensans-bold-webfont.eot");
-  src: url("../fonts/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-bold-webfont.woff") format("woff"), url("../fonts/opensans-bold-webfont.ttf") format("truetype"), url("../fonts/opensans-bold-webfont.svg#opens") format("svg"); }
-
-.body-fixed {
-  overflow: hidden; }
-
-.vertically-centred-content {
-  height: 100%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-      flex-flow: column nowrap;
-  -webkit-box-pack: center;
-  box-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center; }
-
-.text-center {
-  text-align: center; }
-
-.text-right {
-  text-align: right; }
-
-.text-left {
-  text-align: left; }
-
-.dev {
-  background: rgba(0, 0, 0, 0.15); }
-
-body.dev * {
-  background-color: rgba(0, 0, 0, 0.05); }
-
-/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
-/* ==========================================================================
-   HTML5 display definitions
-   ========================================================================== */
-/**
- * Correct `block` display not defined in IE 8/9.
- */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-  display: block; }
-
-/**
- * Correct `inline-block` display not defined in IE 8/9.
- */
-audio,
-canvas,
-video {
-  display: inline-block; }
-
-/**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-audio:not([controls]) {
-  display: none;
-  height: 0; }
-
-/**
- * Address styling not present in IE 8/9.
- */
-[hidden] {
-  display: none; }
-
-/* ==========================================================================
-   Base
-   ========================================================================== */
-/**
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
-html {
-  font-family: sans-serif;
-  /* 1 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */ }
-
-/**
- * Remove default margin.
- */
-body {
-  margin: 0; }
-
-/* ==========================================================================
-   Links
-   ========================================================================== */
-/**
- * Address `outline` inconsistency between Chrome and other browsers.
- */
-a:focus {
-  outline: thin dotted; }
-
-/**
- * Improve readability when focused and also mouse hovered in all browsers.
- */
-a:active,
-a:hover {
-  outline: 0; }
-
-/* ==========================================================================
-   Typography
-   ========================================================================== */
-/**
- * Address variable `h1` font-size and margin within `section` and `article`
- * contexts in Firefox 4+, Safari 5, and Chrome.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
-
-/**
- * Address styling not present in IE 8/9, Safari 5, and Chrome.
- */
-abbr[title] {
-  border-bottom: 1px dotted; }
-
-/**
- * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
- */
-b,
-strong {
-  font-weight: bold; }
-
-/**
- * Address styling not present in Safari 5 and Chrome.
- */
-dfn {
-  font-style: italic; }
-
-/**
- * Address differences between Firefox and other browsers.
- */
-hr {
-  box-sizing: content-box;
-  height: 0; }
-
-/**
- * Address styling not present in IE 8/9.
- */
-mark {
-  background: #ff0;
-  color: #000; }
-
-/**
- * Correct font family set oddly in Safari 5 and Chrome.
- */
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, serif;
-  font-size: 1em; }
-
-/**
- * Improve readability of pre-formatted text in all browsers.
- */
-pre {
-  white-space: pre-wrap; }
-
-/**
- * Set consistent quote types.
- */
-q {
-  quotes: "\201C" "\201D" "\2018" "\2019"; }
-
-/**
- * Address inconsistent and variable font size in all browsers.
- */
-small {
-  font-size: 80%; }
-
-/**
- * Prevent `sub` and `sup` affecting `line-height` in all browsers.
- */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
-
-sup {
-  top: -0.5em; }
-
-sub {
-  bottom: -0.25em; }
-
-/* ==========================================================================
-   Embedded content
-   ========================================================================== */
-/**
- * Remove border when inside `a` element in IE 8/9.
- */
-img {
-  border: 0; }
-
-/**
- * Correct overflow displayed oddly in IE 9.
- */
-svg:not(:root) {
-  overflow: hidden; }
-
-/* ==========================================================================
-   Figures
-   ========================================================================== */
-/**
- * Address margin not present in IE 8/9 and Safari 5.
- */
-figure {
-  margin: 0; }
-
-/* ==========================================================================
-   Forms
-   ========================================================================== */
-/**
- * Define consistent border, margin, and padding.
- */
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
-
-/**
- * 1. Correct `color` not being inherited in IE 8/9.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
- */
-legend {
-  border: 0;
-  /* 1 */
-  padding: 0;
-  /* 2 */ }
-
-/**
- * 1. Correct font family not being inherited in all browsers.
- * 2. Correct font size not being inherited in all browsers.
- * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
- */
-button,
-input,
-select,
-textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 2 */
-  margin: 0;
-  /* 3 */ }
-
-/**
- * Address Firefox 4+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet.
- */
-button,
-input {
-  line-height: normal; }
-
-/**
- * Address inconsistent `text-transform` inheritance for `button` and `select`.
- * All other form control elements do not inherit `text-transform` values.
- * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
- * Correct `select` style inheritance in Firefox 4+ and Opera.
- */
-button,
-select {
-  text-transform: none; }
-
-/**
- * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *    and `video` controls.
- * 2. Correct inability to style clickable `input` types in iOS.
- * 3. Improve usability and consistency of cursor style between image-type
- *    `input` and others.
- */
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */
-  cursor: pointer;
-  /* 3 */ }
-
-/**
- * Re-set default cursor for disabled elements.
- */
-button[disabled],
-html input[disabled] {
-  cursor: default; }
-
-/**
- * 1. Address box sizing set to `content-box` in IE 8/9.
- * 2. Remove excess padding in IE 8/9.
- */
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */ }
-
-/**
- * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
- *    (include `-moz` to future-proof).
- */
-input[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  /* 2 */
-  box-sizing: content-box; }
-
-/**
- * Remove inner padding and search cancel button in Safari 5 and Chrome
- * on OS X.
- */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
-
-/**
- * Remove inner padding and border in Firefox 4+.
- */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0; }
-
-/**
- * 1. Remove default vertical scrollbar in IE 8/9.
- * 2. Improve readability and alignment in all browsers.
- */
-textarea {
-  overflow: auto;
-  /* 1 */
-  vertical-align: top;
-  /* 2 */ }
-
-/* ==========================================================================
-   Tables
-   ========================================================================== */
-/**
- * Remove most spacing between table cells.
- */
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-* {
-  box-sizing: border-box; }
-
-.container {
-  width: 100%;
-  max-width: 1024px;
-  min-height: 100%;
-  margin: 0 auto;
-  position: relative;
-  padding-left: 30px;
-  padding-right: 30px;
-  text-align: center; }
-  .container:after {
-    content: "";
-    display: table;
-    clear: both; }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape) {
-    .container {
-      padding: 0 20px; } }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: landscape) {
-    .container {
-      padding: 0 20px; } }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (orientation: landscape) {
-    .container {
-      padding: 0 20px; } }
-  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-device-pixel-ratio: 3) {
-    .container {
-      padding: 0 20px; } }
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-    .container {
-      padding: 0 20px; } }
-  @media screen and (min-width: 631px) and (max-width: 800px) {
-    .container {
-      padding: 0 20px; } }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (orientation: portrait) {
-    .container {
-      padding: 0 10px; } }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: portrait) {
-    .container {
-      padding: 0 10px; } }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (orientation: portrait) {
-    .container {
-      padding: 0 10px; } }
-  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
-    .container {
-      padding: 0 10px; } }
-  @media screen and (max-width: 630px) {
-    .container {
-      padding: 0 10px; } }
-
+  src: url("../fonts/OpenSans/opensans-bold-webfont.eot");
+  src: url("../fonts/OpenSans/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/opensans-bold-webfont.woff") format("woff"), url("../fonts/OpenSans/opensans-bold-webfont.ttf") format("truetype"), url("../fonts/OpenSans/opensans-bold-webfont.svg#f_opens") format("svg"); }
 @font-face {
-  font-family: "opens";
+  font-family: "f_helvetica";
   font-weight: 300;
   font-style: normal;
-  src: url("../fonts/opensans-light-webfont.eot");
-  src: url("../fonts/opensans-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-light-webfont.woff") format("woff"), url("../fonts/opensans-light-webfont.ttf") format("truetype"), url("../fonts/opensans-light-webfont.svg#opens") format("svg"); }
+  src: url("../fonts/Helvetica/helveticaneuecyr-light-webfont.eot");
+  src: url("../fonts/Helvetica/helveticaneuecyr-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica/helveticaneuecyr-light-webfont.woff") format("woff"), url("../fonts/Helvetica/helveticaneuecyr-light-webfont.ttf") format("truetype"), url("../fonts/Helvetica/helveticaneuecyr-light-webfont.svg#f_helvetica") format("svg"); }
 @font-face {
-  font-family: "opens";
+  font-family: "f_helvetica";
   font-weight: 400;
   font-style: normal;
-  src: url("../fonts/opensans-regular-webfont.eot");
-  src: url("../fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-regular-webfont.woff") format("woff"), url("../fonts/opensans-regular-webfont.ttf") format("truetype"), url("../fonts/opensans-regular-webfont.svg#opens") format("svg"); }
+  src: url("../fonts/Helvetica/helveticaneuecyr-medium-webfont.eot");
+  src: url("../fonts/Helvetica/helveticaneuecyr-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica/helveticaneuecyr-medium-webfont.woff") format("woff"), url("../fonts/Helvetica/helveticaneuecyr-medium-webfont.ttf") format("truetype"), url("../fonts/Helvetica/helveticaneuecyr-medium-webfont.svg#f_helvetica") format("svg"); }
 @font-face {
-  font-family: "opens";
+  font-family: "f_helvetica";
   font-weight: 600;
   font-style: normal;
-  src: url("../fonts/opensans-bold-webfont.eot");
-  src: url("../fonts/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-bold-webfont.woff") format("woff"), url("../fonts/opensans-bold-webfont.ttf") format("truetype"), url("../fonts/opensans-bold-webfont.svg#opens") format("svg"); }
+  src: url("../fonts/Helvetica/helveticaneuecyr-bold-webfont.eot");
+  src: url("../fonts/Helvetica/helveticaneuecyr-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica/helveticaneuecyr-bold-webfont.woff") format("woff"), url("../fonts/Helvetica/helveticaneuecyr-bold-webfont.ttf") format("truetype"), url("../fonts/Helvetica/helveticaneuecyr-bold-webfont.svg#f_helvetica") format("svg"); }
 .section.start {
   min-height: 100vh;
   min-width: 100%;
@@ -1200,80 +781,81 @@ table {
     text-align: center;
     vertical-align: middle; }
     .section.start .container .text {
-      color: white; }
+      color: white;
+      display: inline-block; }
       .section.start .container .text .first-line {
-        font-family: "opens";
+        font-family: "f_opens", "Open Sans", sans-serif;
         font-weight: 300;
         font-size: 26px; }
       .section.start .container .text .second-line {
-        font-family: "opens";
+        font-family: "f_opens", "Open Sans", sans-serif;
         font-weight: 600;
         font-size: 56px;
         text-transform: uppercase; }
       .section.start .container .text .third-line {
-        font-family: "opens";
+        font-family: "f_opens", "Open Sans", sans-serif;
         font-weight: 300;
         font-size: 18px;
         margin-top: 10px; }
+    .section.start .container a.arrow {
+      position: absolute;
+      left: 50%;
+      bottom: 3%; }
 
-.section.business {
-  text-align: center;
-  vertical-align: top;
-  height: 542px; }
-  .section.business .container .second-left, .section.business .container .second-right {
+.section.business .container .text-block {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .section.business .container .text-block .second-left, .section.business .container .text-block .second-right {
     display: inline-block;
     text-align: left;
     vertical-align: top; }
-  .section.business .container .second-left {
+  .section.business .container .text-block .second-left {
     width: 400px;
-    margin-left: -200px;
-    margin-top: 100px; }
-    .section.business .container .second-left .first-block {
-      font-family: Open Sans;
-      font-weight: lighter;
+    margin-left: -200px; }
+    .section.business .container .text-block .second-left .first-block {
+      font-family: "f_opens", "Open Sans", sans-serif;
+      font-weight: 300;
       font-size: 16px;
       margin-left: 5px; }
-    .section.business .container .second-left .second-block {
+    .section.business .container .text-block .second-left .second-block {
       margin-top: 10px;
-      font-family: Open Sans;
-      font-weight: lighter;
+      font-family: "f_opens", "Open Sans", sans-serif;
+      font-weight: 300;
       font-size: 63.46px;
       text-transform: uppercase; }
-    .section.business .container .second-left .dash {
+    .section.business .container .text-block .second-left .dash {
       display: inline-block;
       height: 3px;
       width: 130px;
       background-color: red; }
-  .section.business .container .second-right {
+  .section.business .container .text-block .second-right {
     width: 380px;
-    margin-top: 150px; }
-    .section.business .container .second-right p {
-      font-family: Open Sans;
-      font-weight: lighter;
+    margin-top: 50px; }
+    .section.business .container .text-block .second-right p {
+      font-family: "f_opens", "Open Sans", sans-serif;
+      font-weight: 300;
       font-size: 16px;
       margin-bottom: 10px;
       line-height: 26px; }
 
 .section.new_level {
-  height: 373px;
   background-color: #EEF3ED; }
   .section.new_level .container {
-    text-align: left;
-    display: table; }
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: left; }
     .section.new_level .container .text-block {
-      display: table-cell;
-      vertical-align: middle;
+      display: inline-block;
       width: 690px;
-      margin-left: 20%;
       opacity: 0.7; }
       .section.new_level .container .text-block .block-1 {
-        font-family: Helvetica;
+        font-family: "f_helvetica", "Helvetica", sans-serif;
         font-weight: 300;
         font-size: 35.1px;
         line-height: 50.71px;
         margin-bottom: 20px; }
       .section.new_level .container .text-block .block-2 {
-        font-family: Helvetica;
+        font-family: "f_helvetica", "Helvetica", sans-serif;
         font-weight: 300;
         font-size: 16px;
         line-height: 26px;
@@ -1283,146 +865,164 @@ table {
       bottom: 0px;
       right: -100px; }
 
-.section.four_programs {
-  height: 597px; }
-  .section.four_programs .container {
-    vertical-align: top;
-    display: table; }
-    .section.four_programs .container .center-cont {
+.section.four_programs .container .center-cont {
+  padding-top: 100px;
+  padding-bottom: 80px; }
+  .section.four_programs .container .center-cont .block-left {
+    text-align: left;
+    display: inline-block;
+    margin-right: 100px;
+    vertical-align: top; }
+    .section.four_programs .container .center-cont .block-left .block-left-1 {
+      font-family: "f_opens", "Open Sans", sans-serif;
+      font-weight: 600;
+      font-size: 136.46px;
+      color: #e40000;
+      display: inline-block;
       vertical-align: middle;
-      border: 1px dotted red;
-      display: table-cell; }
-      .section.four_programs .container .center-cont .block-left {
-        text-align: left;
-        display: inline-block;
-        margin-right: 100px;
-        border: 1px dotted blue;
-        vertical-align: top; }
-        .section.four_programs .container .center-cont .block-left .block-left-1 {
-          font-family: Open Sans;
-          font-weight: 600;
-          font-size: 136.46px;
-          color: #e40000;
-          display: inline-block;
-          vertical-align: middle;
-          margin-right: 30px; }
-        .section.four_programs .container .center-cont .block-left .block-left-2 {
-          display: inline-block;
-          font-family: Helvetica;
-          font-weight: 300;
-          vertical-align: middle; }
-          .section.four_programs .container .center-cont .block-left .block-left-2 .block-left-2-1 {
-            text-transform: uppercase;
-            font-size: 35.1px;
-            margin-top: 10px; }
-          .section.four_programs .container .center-cont .block-left .block-left-2 .block-left-2-2 {
-            font-size: 16px;
-            margin-top: 10px; }
-      .section.four_programs .container .center-cont .block-right {
-        text-align: left;
-        display: inline-block;
-        width: 400px;
+      margin-right: 30px; }
+    .section.four_programs .container .center-cont .block-left .block-left-2 {
+      display: inline-block;
+      font-family: "f_helvetica", "Helvetica", sans-serif;
+      font-weight: 300;
+      vertical-align: middle; }
+      .section.four_programs .container .center-cont .block-left .block-left-2 .block-left-2-1 {
+        text-transform: uppercase;
+        font-size: 35.1px;
+        margin-top: 10px;
+        opacity: 0.9; }
+      .section.four_programs .container .center-cont .block-left .block-left-2 .block-left-2-2 {
+        font-size: 16px;
+        margin-top: 10px;
         opacity: 0.7; }
+  .section.four_programs .container .center-cont .block-right {
+    text-align: left;
+    display: inline-block;
+    width: 600px;
+    font-family: "f_helvetica", "Helvetica", sans-serif;
+    font-weight: 300;
+    opacity: 0.7; }
+    .section.four_programs .container .center-cont .block-right .block-right-1 {
+      font-size: 16px;
+      line-height: 26px; }
+      .section.four_programs .container .center-cont .block-right .block-right-1 strong {
+        font-weight: 600; }
+    .section.four_programs .container .center-cont .block-right .block-right-2 {
+      background-image: url("../pics/section.four_programs.drop.svg");
+      background-repeat: no-repeat;
+      background-position: 0 5px;
+      margin-top: 50px;
+      width: 360px;
+      padding-left: 60px;
+      font-size: 14px;
+      line-height: 21px; }
 
-.section.business {
-  text-align: center;
-  vertical-align: top;
-  height: 542px; }
-  .section.business .container .second-left, .section.business .container .second-right {
+.section.business .container .text-block {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .section.business .container .text-block .second-left, .section.business .container .text-block .second-right {
     display: inline-block;
     text-align: left;
     vertical-align: top; }
-  .section.business .container .second-left {
+  .section.business .container .text-block .second-left {
     width: 400px;
-    margin-left: -200px;
-    margin-top: 100px; }
-    .section.business .container .second-left .first-block {
-      font-family: Open Sans;
-      font-weight: lighter;
+    margin-left: -200px; }
+    .section.business .container .text-block .second-left .first-block {
+      font-family: "f_opens", "Open Sans", sans-serif;
+      font-weight: 300;
       font-size: 16px;
       margin-left: 5px; }
-    .section.business .container .second-left .second-block {
+    .section.business .container .text-block .second-left .second-block {
       margin-top: 10px;
-      font-family: Open Sans;
-      font-weight: lighter;
+      font-family: "f_opens", "Open Sans", sans-serif;
+      font-weight: 300;
       font-size: 63.46px;
       text-transform: uppercase; }
-    .section.business .container .second-left .dash {
+    .section.business .container .text-block .second-left .dash {
       display: inline-block;
       height: 3px;
       width: 130px;
       background-color: red; }
-  .section.business .container .second-right {
+  .section.business .container .text-block .second-right {
     width: 380px;
-    margin-top: 150px; }
-    .section.business .container .second-right p {
-      font-family: Open Sans;
-      font-weight: lighter;
+    margin-top: 50px; }
+    .section.business .container .text-block .second-right p {
+      font-family: "f_opens", "Open Sans", sans-serif;
+      font-weight: 300;
       font-size: 16px;
       margin-bottom: 10px;
       line-height: 26px; }
 
-.section.four_programs {
-  height: 597px; }
-  .section.four_programs .container {
-    vertical-align: top;
-    display: table; }
-    .section.four_programs .container .center-cont {
+.section.four_programs .container .center-cont {
+  padding-top: 100px;
+  padding-bottom: 80px; }
+  .section.four_programs .container .center-cont .block-left {
+    text-align: left;
+    display: inline-block;
+    margin-right: 100px;
+    vertical-align: top; }
+    .section.four_programs .container .center-cont .block-left .block-left-1 {
+      font-family: "f_opens", "Open Sans", sans-serif;
+      font-weight: 600;
+      font-size: 136.46px;
+      color: #e40000;
+      display: inline-block;
       vertical-align: middle;
-      border: 1px dotted red;
-      display: table-cell; }
-      .section.four_programs .container .center-cont .block-left {
-        text-align: left;
-        display: inline-block;
-        margin-right: 100px;
-        border: 1px dotted blue;
-        vertical-align: top; }
-        .section.four_programs .container .center-cont .block-left .block-left-1 {
-          font-family: Open Sans;
-          font-weight: 600;
-          font-size: 136.46px;
-          color: #e40000;
-          display: inline-block;
-          vertical-align: middle;
-          margin-right: 30px; }
-        .section.four_programs .container .center-cont .block-left .block-left-2 {
-          display: inline-block;
-          font-family: Helvetica;
-          font-weight: 300;
-          vertical-align: middle; }
-          .section.four_programs .container .center-cont .block-left .block-left-2 .block-left-2-1 {
-            text-transform: uppercase;
-            font-size: 35.1px;
-            margin-top: 10px; }
-          .section.four_programs .container .center-cont .block-left .block-left-2 .block-left-2-2 {
-            font-size: 16px;
-            margin-top: 10px; }
-      .section.four_programs .container .center-cont .block-right {
-        text-align: left;
-        display: inline-block;
-        width: 400px;
+      margin-right: 30px; }
+    .section.four_programs .container .center-cont .block-left .block-left-2 {
+      display: inline-block;
+      font-family: "f_helvetica", "Helvetica", sans-serif;
+      font-weight: 300;
+      vertical-align: middle; }
+      .section.four_programs .container .center-cont .block-left .block-left-2 .block-left-2-1 {
+        text-transform: uppercase;
+        font-size: 35.1px;
+        margin-top: 10px;
+        opacity: 0.9; }
+      .section.four_programs .container .center-cont .block-left .block-left-2 .block-left-2-2 {
+        font-size: 16px;
+        margin-top: 10px;
         opacity: 0.7; }
+  .section.four_programs .container .center-cont .block-right {
+    text-align: left;
+    display: inline-block;
+    width: 600px;
+    font-family: "f_helvetica", "Helvetica", sans-serif;
+    font-weight: 300;
+    opacity: 0.7; }
+    .section.four_programs .container .center-cont .block-right .block-right-1 {
+      font-size: 16px;
+      line-height: 26px; }
+      .section.four_programs .container .center-cont .block-right .block-right-1 strong {
+        font-weight: 600; }
+    .section.four_programs .container .center-cont .block-right .block-right-2 {
+      background-image: url("../pics/section.four_programs.drop.svg");
+      background-repeat: no-repeat;
+      background-position: 0 5px;
+      margin-top: 50px;
+      width: 360px;
+      padding-left: 60px;
+      font-size: 14px;
+      line-height: 21px; }
 
 .section.new_level {
-  height: 373px;
   background-color: #EEF3ED; }
   .section.new_level .container {
-    text-align: left;
-    display: table; }
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: left; }
     .section.new_level .container .text-block {
-      display: table-cell;
-      vertical-align: middle;
+      display: inline-block;
       width: 690px;
-      margin-left: 20%;
       opacity: 0.7; }
       .section.new_level .container .text-block .block-1 {
-        font-family: Helvetica;
+        font-family: "f_helvetica", "Helvetica", sans-serif;
         font-weight: 300;
         font-size: 35.1px;
         line-height: 50.71px;
         margin-bottom: 20px; }
       .section.new_level .container .text-block .block-2 {
-        font-family: Helvetica;
+        font-family: "f_helvetica", "Helvetica", sans-serif;
         font-weight: 300;
         font-size: 16px;
         line-height: 26px;
@@ -1443,21 +1043,26 @@ table {
     text-align: center;
     vertical-align: middle; }
     .section.start .container .text {
-      color: white; }
+      color: white;
+      display: inline-block; }
       .section.start .container .text .first-line {
-        font-family: "opens";
+        font-family: "f_opens", "Open Sans", sans-serif;
         font-weight: 300;
         font-size: 26px; }
       .section.start .container .text .second-line {
-        font-family: "opens";
+        font-family: "f_opens", "Open Sans", sans-serif;
         font-weight: 600;
         font-size: 56px;
         text-transform: uppercase; }
       .section.start .container .text .third-line {
-        font-family: "opens";
+        font-family: "f_opens", "Open Sans", sans-serif;
         font-weight: 300;
         font-size: 18px;
         margin-top: 10px; }
+    .section.start .container a.arrow {
+      position: absolute;
+      left: 50%;
+      bottom: 3%; }
 
 
 /*# sourceMappingURL=app.css.map*/
