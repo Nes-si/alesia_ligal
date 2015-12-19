@@ -689,7 +689,7 @@ table {
 
 .container {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1024px;
   min-height: 100%;
   margin: 0 auto;
   position: relative;
@@ -841,11 +841,10 @@ table {
 .section.new_level {
   background-color: #EEF3ED; }
   .section.new_level .container {
-    padding-top: 100px;
-    padding-bottom: 100px;
     text-align: left; }
     .section.new_level .container .text-block {
-      display: inline-block;
+      padding-top: 100px;
+      padding-bottom: 100px;
       width: 690px;
       opacity: 0.7; }
       .section.new_level .container .text-block .block-1 {
@@ -863,59 +862,78 @@ table {
     .section.new_level .container .cleaner-pic {
       position: absolute;
       bottom: 0px;
-      right: -100px; }
+      right: -15%; }
 
-.section.four_programs .container .center-cont {
-  padding-top: 100px;
-  padding-bottom: 80px; }
-  .section.four_programs .container .center-cont .block-left {
-    text-align: left;
-    display: inline-block;
-    margin-right: 100px;
-    vertical-align: top; }
-    .section.four_programs .container .center-cont .block-left .block-left-1 {
-      font-family: "f_opens", "Open Sans", sans-serif;
-      font-weight: 600;
-      font-size: 136.46px;
-      color: #e40000;
+.section.four_programs .container {
+  max-width: 1100px; }
+  .section.four_programs .container .center-cont {
+    padding-top: 100px;
+    padding-bottom: 80px; }
+    .section.four_programs .container .center-cont .block-left {
+      text-align: left;
       display: inline-block;
-      vertical-align: middle;
-      margin-right: 30px; }
-    .section.four_programs .container .center-cont .block-left .block-left-2 {
+      margin-right: 100px;
+      vertical-align: top; }
+      .section.four_programs .container .center-cont .block-left .block-left-1 {
+        font-family: "f_opens", "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 136.46px;
+        color: #e40000;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 30px; }
+      .section.four_programs .container .center-cont .block-left .block-left-2 {
+        display: inline-block;
+        font-family: "f_helvetica", "Helvetica", sans-serif;
+        font-weight: 300;
+        vertical-align: middle; }
+        .section.four_programs .container .center-cont .block-left .block-left-2 .block-left-2-1 {
+          text-transform: uppercase;
+          font-size: 35.1px;
+          margin-top: 10px;
+          opacity: 0.9; }
+        .section.four_programs .container .center-cont .block-left .block-left-2 .block-left-2-2 {
+          font-size: 16px;
+          margin-top: 10px;
+          opacity: 0.7; }
+    .section.four_programs .container .center-cont .block-right {
+      text-align: left;
       display: inline-block;
+      width: 600px;
       font-family: "f_helvetica", "Helvetica", sans-serif;
       font-weight: 300;
-      vertical-align: middle; }
-      .section.four_programs .container .center-cont .block-left .block-left-2 .block-left-2-1 {
-        text-transform: uppercase;
-        font-size: 35.1px;
-        margin-top: 10px;
-        opacity: 0.9; }
-      .section.four_programs .container .center-cont .block-left .block-left-2 .block-left-2-2 {
+      opacity: 0.7; }
+      .section.four_programs .container .center-cont .block-right .block-right-1 {
         font-size: 16px;
-        margin-top: 10px;
-        opacity: 0.7; }
-  .section.four_programs .container .center-cont .block-right {
-    text-align: left;
-    display: inline-block;
-    width: 600px;
-    font-family: "f_helvetica", "Helvetica", sans-serif;
-    font-weight: 300;
-    opacity: 0.7; }
-    .section.four_programs .container .center-cont .block-right .block-right-1 {
-      font-size: 16px;
-      line-height: 26px; }
-      .section.four_programs .container .center-cont .block-right .block-right-1 strong {
-        font-weight: 600; }
-    .section.four_programs .container .center-cont .block-right .block-right-2 {
-      background-image: url("../pics/section.four_programs.drop.svg");
-      background-repeat: no-repeat;
-      background-position: 0 5px;
-      margin-top: 50px;
-      width: 360px;
-      padding-left: 60px;
-      font-size: 14px;
-      line-height: 21px; }
+        line-height: 26px; }
+        .section.four_programs .container .center-cont .block-right .block-right-1 strong {
+          font-weight: 600; }
+      .section.four_programs .container .center-cont .block-right .block-right-2 {
+        background-image: url("../pics/section.four_programs.drop.svg");
+        background-repeat: no-repeat;
+        background-position: 0 5px;
+        margin-top: 50px;
+        width: 360px;
+        padding-left: 60px;
+        font-size: 14px;
+        line-height: 21px; }
+
+.section.main_car_animation {
+  background-color: #96E5EA;
+  min-height: 100vh;
+  min-width: 100%; }
+  .section.main_car_animation .container {
+    text-align: left; }
+    .section.main_car_animation .container .text-block-program {
+      padding-top: 60px;
+      opacity: 0.7;
+      color: black;
+      font-family: "f_helvetica", "Helvetica", sans-serif;
+      font-weight: 300;
+      font-size: 35.1px;
+      line-height: 50.71px;
+      text-transform: uppercase;
+      width: 300px; }
 
 .section.business .container .text-block {
   padding-top: 100px;
@@ -953,66 +971,84 @@ table {
       margin-bottom: 10px;
       line-height: 26px; }
 
-.section.four_programs .container .center-cont {
-  padding-top: 100px;
-  padding-bottom: 80px; }
-  .section.four_programs .container .center-cont .block-left {
-    text-align: left;
-    display: inline-block;
-    margin-right: 100px;
-    vertical-align: top; }
-    .section.four_programs .container .center-cont .block-left .block-left-1 {
-      font-family: "f_opens", "Open Sans", sans-serif;
-      font-weight: 600;
-      font-size: 136.46px;
-      color: #e40000;
+.section.four_programs .container {
+  max-width: 1100px; }
+  .section.four_programs .container .center-cont {
+    padding-top: 100px;
+    padding-bottom: 80px; }
+    .section.four_programs .container .center-cont .block-left {
+      text-align: left;
       display: inline-block;
-      vertical-align: middle;
-      margin-right: 30px; }
-    .section.four_programs .container .center-cont .block-left .block-left-2 {
+      margin-right: 100px;
+      vertical-align: top; }
+      .section.four_programs .container .center-cont .block-left .block-left-1 {
+        font-family: "f_opens", "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 136.46px;
+        color: #e40000;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 30px; }
+      .section.four_programs .container .center-cont .block-left .block-left-2 {
+        display: inline-block;
+        font-family: "f_helvetica", "Helvetica", sans-serif;
+        font-weight: 300;
+        vertical-align: middle; }
+        .section.four_programs .container .center-cont .block-left .block-left-2 .block-left-2-1 {
+          text-transform: uppercase;
+          font-size: 35.1px;
+          margin-top: 10px;
+          opacity: 0.9; }
+        .section.four_programs .container .center-cont .block-left .block-left-2 .block-left-2-2 {
+          font-size: 16px;
+          margin-top: 10px;
+          opacity: 0.7; }
+    .section.four_programs .container .center-cont .block-right {
+      text-align: left;
       display: inline-block;
+      width: 600px;
       font-family: "f_helvetica", "Helvetica", sans-serif;
       font-weight: 300;
-      vertical-align: middle; }
-      .section.four_programs .container .center-cont .block-left .block-left-2 .block-left-2-1 {
-        text-transform: uppercase;
-        font-size: 35.1px;
-        margin-top: 10px;
-        opacity: 0.9; }
-      .section.four_programs .container .center-cont .block-left .block-left-2 .block-left-2-2 {
+      opacity: 0.7; }
+      .section.four_programs .container .center-cont .block-right .block-right-1 {
         font-size: 16px;
-        margin-top: 10px;
-        opacity: 0.7; }
-  .section.four_programs .container .center-cont .block-right {
-    text-align: left;
-    display: inline-block;
-    width: 600px;
-    font-family: "f_helvetica", "Helvetica", sans-serif;
-    font-weight: 300;
-    opacity: 0.7; }
-    .section.four_programs .container .center-cont .block-right .block-right-1 {
-      font-size: 16px;
-      line-height: 26px; }
-      .section.four_programs .container .center-cont .block-right .block-right-1 strong {
-        font-weight: 600; }
-    .section.four_programs .container .center-cont .block-right .block-right-2 {
-      background-image: url("../pics/section.four_programs.drop.svg");
-      background-repeat: no-repeat;
-      background-position: 0 5px;
-      margin-top: 50px;
-      width: 360px;
-      padding-left: 60px;
-      font-size: 14px;
-      line-height: 21px; }
+        line-height: 26px; }
+        .section.four_programs .container .center-cont .block-right .block-right-1 strong {
+          font-weight: 600; }
+      .section.four_programs .container .center-cont .block-right .block-right-2 {
+        background-image: url("../pics/section.four_programs.drop.svg");
+        background-repeat: no-repeat;
+        background-position: 0 5px;
+        margin-top: 50px;
+        width: 360px;
+        padding-left: 60px;
+        font-size: 14px;
+        line-height: 21px; }
+
+.section.main_car_animation {
+  background-color: #96E5EA;
+  min-height: 100vh;
+  min-width: 100%; }
+  .section.main_car_animation .container {
+    text-align: left; }
+    .section.main_car_animation .container .text-block-program {
+      padding-top: 60px;
+      opacity: 0.7;
+      color: black;
+      font-family: "f_helvetica", "Helvetica", sans-serif;
+      font-weight: 300;
+      font-size: 35.1px;
+      line-height: 50.71px;
+      text-transform: uppercase;
+      width: 300px; }
 
 .section.new_level {
   background-color: #EEF3ED; }
   .section.new_level .container {
-    padding-top: 100px;
-    padding-bottom: 100px;
     text-align: left; }
     .section.new_level .container .text-block {
-      display: inline-block;
+      padding-top: 100px;
+      padding-bottom: 100px;
       width: 690px;
       opacity: 0.7; }
       .section.new_level .container .text-block .block-1 {
@@ -1030,7 +1066,7 @@ table {
     .section.new_level .container .cleaner-pic {
       position: absolute;
       bottom: 0px;
-      right: -100px; }
+      right: -15%; }
 
 .section.start {
   min-height: 100vh;
