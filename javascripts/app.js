@@ -110,7 +110,7 @@
   globals.require = require;
 })();
 require.register("initialize", function(exports, require, module) {
-
+$('.tech-pics').slick();
 });
 
 ;

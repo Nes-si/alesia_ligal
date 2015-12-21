@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"public/javascripts/app.js","sourcesContent":[]}
+{"version":3,"sources":["app/initialize.coffee"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA,EAAE,YAAF,CAAe,CAAC,KAAhB","file":"public/javascripts/app.js","sourcesContent":["$('.tech-pics').slick()"]}
