@@ -881,6 +881,7 @@ p {
       line-height: 26px; }
 
 .section.new_level {
+  position: relative;
   background-color: #EEF3ED; }
   .section.new_level .container {
     text-align: left; }
@@ -899,10 +900,10 @@ p {
         font-size: 16px;
         line-height: 26px;
         text-align: justify; }
-    .section.new_level .container .cleaner-pic {
-      position: absolute;
-      bottom: 0;
-      right: -5%; }
+  .section.new_level .cleaner-pic {
+    position: absolute;
+    bottom: 0;
+    right: 5%; }
 
 .section.four_programs .container {
   padding-right: -100px;
@@ -960,14 +961,14 @@ p {
       background-position: 0 5px; }
 
 .section.main_car_animation {
-  background-color: #97e5ec;
   height: 100vh;
-  min-width: 100%; }
+  min-width: 100%;
+  background-color: #97e5ec; }
   .section.main_car_animation .container {
-    text-align: left;
     height: 100vh;
     min-height: 400px;
-    padding-top: 5%; }
+    padding-top: 5%;
+    text-align: left; }
     .section.main_car_animation .container .block-program {
       display: inline-block;
       width: 300px;
@@ -1134,7 +1135,7 @@ p {
           margin-top: 20px; }
       .section.pults .container .blocks .block.parts {
         margin-left: 5%;
-        margin-top: 4%;
+        margin-top: 5%;
         font-family: "f_helvetica", "Helvetica", sans-serif;
         font-size: 16px;
         line-height: 30px; }
@@ -1506,14 +1507,14 @@ p {
       background-position: 0 5px; }
 
 .section.main_car_animation {
-  background-color: #97e5ec;
   height: 100vh;
-  min-width: 100%; }
+  min-width: 100%;
+  background-color: #97e5ec; }
   .section.main_car_animation .container {
-    text-align: left;
     height: 100vh;
     min-height: 400px;
-    padding-top: 5%; }
+    padding-top: 5%;
+    text-align: left; }
     .section.main_car_animation .container .block-program {
       display: inline-block;
       width: 300px;
@@ -1601,6 +1602,7 @@ p {
         opacity: 0.4; }
 
 .section.new_level {
+  position: relative;
   background-color: #EEF3ED; }
   .section.new_level .container {
     text-align: left; }
@@ -1619,10 +1621,10 @@ p {
         font-size: 16px;
         line-height: 26px;
         text-align: justify; }
-    .section.new_level .container .cleaner-pic {
-      position: absolute;
-      bottom: 0;
-      right: -5%; }
+  .section.new_level .cleaner-pic {
+    position: absolute;
+    bottom: 0;
+    right: 5%; }
 
 .section.pause {
   background-color: #EEF3 #D; }
@@ -1704,7 +1706,7 @@ p {
           margin-top: 20px; }
       .section.pults .container .blocks .block.parts {
         margin-left: 5%;
-        margin-top: 4%;
+        margin-top: 5%;
         font-family: "f_helvetica", "Helvetica", sans-serif;
         font-size: 16px;
         line-height: 30px; }
