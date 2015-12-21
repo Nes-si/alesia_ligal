@@ -1106,9 +1106,10 @@ p {
           background-position: 0 6px; }
 
 .section.pults {
-  background-color: #242d3a;
+  position: relative;
   min-height: 100vh;
-  width: 100%; }
+  width: 100%;
+  background-color: #242d3a; }
   .section.pults .container {
     display: table;
     height: 100vh; }
@@ -1148,12 +1149,12 @@ p {
             opacity: 0.6;
             color: #b9d3f5;
             font-weight: 300; }
-    .section.pults .container .block.cleaner {
-      position: absolute;
-      right: 15%;
-      bottom: 50%;
-      -webkit-transform: translateY(50%) translateX(50%);
-              transform: translateY(50%) translateX(50%); }
+  .section.pults .block.cleaner {
+    position: absolute;
+    right: 17%;
+    bottom: 50%;
+    -webkit-transform: translateY(50%) translateX(50%);
+            transform: translateY(50%) translateX(50%); }
 
 .section.slideshow {
   background-color: white;
@@ -1677,9 +1678,10 @@ p {
           background-position: 0 6px; }
 
 .section.pults {
-  background-color: #242d3a;
+  position: relative;
   min-height: 100vh;
-  width: 100%; }
+  width: 100%;
+  background-color: #242d3a; }
   .section.pults .container {
     display: table;
     height: 100vh; }
@@ -1719,12 +1721,12 @@ p {
             opacity: 0.6;
             color: #b9d3f5;
             font-weight: 300; }
-    .section.pults .container .block.cleaner {
-      position: absolute;
-      right: 15%;
-      bottom: 50%;
-      -webkit-transform: translateY(50%) translateX(50%);
-              transform: translateY(50%) translateX(50%); }
+  .section.pults .block.cleaner {
+    position: absolute;
+    right: 17%;
+    bottom: 50%;
+    -webkit-transform: translateY(50%) translateX(50%);
+            transform: translateY(50%) translateX(50%); }
 
 .section.request .container {
   padding-top: 100px;
