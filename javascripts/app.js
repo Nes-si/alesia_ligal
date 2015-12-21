@@ -110,7 +110,21 @@
   globals.require = require;
 })();
 require.register("initialize", function(exports, require, module) {
-$('.tech-pics').slick();
+$(function() {
+  $('.slider').slick({
+    dots: false,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true
+  });
+  $('.prev .btn').click(function() {
+    return $('.slider').slick('slickPrev');
+  });
+  return $('.next .btn').click(function() {
+    return $('.slider').slick('slickNext');
+  });
+});
 });
 
 ;
