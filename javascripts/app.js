@@ -128,14 +128,13 @@ $(function() {
   controller = new ScrollMagic.Controller;
   scene = new ScrollMagic.Scene({
     triggerElement: '#trigger2'
-  }).setTween('#slideshow_block', 0.5, {
-    backgroundColor: "green",
-    scale: 2.5
-  });
+  }).addTo(controller);
   return scene = new ScrollMagic.Scene({
     triggerElement: '#slideshow',
     triggerHook: 'onLeave'
-  }).setPin('#slideshow_all').setPin('#slideshow');
+  }).setPin('#slideshow', {
+    pushFollowers: false
+  }).addTo(controller);
 });
 });
 
