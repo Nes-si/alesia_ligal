@@ -837,13 +837,13 @@ p {
       .section.start .container .text .third-line {
         font-size: 18px;
         margin-top: 10px; }
-    .section.start .container a.arrow {
+    .section.start .container .arrow {
       position: absolute;
       left: 50%;
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%);
       bottom: 3%; }
-    .section.start .container a.arrow:hover {
+    .section.start .container .arrow:hover {
       opacity: 0.5; }
 
 .section.business .container .block {
@@ -1939,13 +1939,13 @@ p {
       .section.start .container .text .third-line {
         font-size: 18px;
         margin-top: 10px; }
-    .section.start .container a.arrow {
+    .section.start .container .arrow {
       position: absolute;
       left: 50%;
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%);
       bottom: 3%; }
-    .section.start .container a.arrow:hover {
+    .section.start .container .arrow:hover {
       opacity: 0.5; }
 
 .section.video {
