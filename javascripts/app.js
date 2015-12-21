@@ -111,6 +111,7 @@
 })();
 require.register("initialize", function(exports, require, module) {
 $(function() {
+  var controller, scene;
   $('.slider').slick({
     dots: false,
     arrows: false,
@@ -118,12 +119,23 @@ $(function() {
     slidesToScroll: 1,
     infinite: true
   });
-  $('.prev .btn').click(function() {
+  $('.prev.btn').click(function() {
     return $('.slider').slick('slickPrev');
   });
-  return $('.next .btn').click(function() {
+  $('.next.btn').click(function() {
     return $('.slider').slick('slickNext');
   });
+  controller = new ScrollMagic.Controller;
+  scene = new ScrollMagic.Scene({
+    triggerElement: '#trigger2'
+  }).setTween('#slideshow_block', 0.5, {
+    backgroundColor: "green",
+    scale: 2.5
+  });
+  return scene = new ScrollMagic.Scene({
+    triggerElement: '#slideshow',
+    triggerHook: 'onLeave'
+  }).setPin('#slideshow_all').setPin('#slideshow');
 });
 });
 
