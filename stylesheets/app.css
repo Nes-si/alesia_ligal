@@ -967,7 +967,7 @@ p {
     text-align: left;
     height: 100vh;
     min-height: 400px;
-    padding-top: 100px; }
+    padding-top: 5%; }
     .section.main_car_animation .container .block-program {
       display: inline-block;
       width: 300px;
@@ -1059,7 +1059,7 @@ p {
   .section.pause .container {
     max-width: 1100px; }
     .section.pause .container .center-cont {
-      padding-top: 100px;
+      padding-top: 80px;
       padding-bottom: 80px; }
       .section.pause .container .center-cont .block {
         display: inline-block;
@@ -1115,7 +1115,7 @@ p {
     color: white;
     text-align: left; }
     .section.pults .container .block.main {
-      width: 600px;
+      width: 690px;
       font-family: "f_helvetica", "Helvetica", sans-serif;
       font-weight: 300; }
       .section.pults .container .block.main .main-1 {
@@ -1510,7 +1510,7 @@ p {
     text-align: left;
     height: 100vh;
     min-height: 400px;
-    padding-top: 100px; }
+    padding-top: 5%; }
     .section.main_car_animation .container .block-program {
       display: inline-block;
       width: 300px;
@@ -1626,7 +1626,7 @@ p {
   .section.pause .container {
     max-width: 1100px; }
     .section.pause .container .center-cont {
-      padding-top: 100px;
+      padding-top: 80px;
       padding-bottom: 80px; }
       .section.pause .container .center-cont .block {
         display: inline-block;
@@ -1682,7 +1682,7 @@ p {
     color: white;
     text-align: left; }
     .section.pults .container .block.main {
-      width: 600px;
+      width: 690px;
       font-family: "f_helvetica", "Helvetica", sans-serif;
       font-weight: 300; }
       .section.pults .container .block.main .main-1 {
