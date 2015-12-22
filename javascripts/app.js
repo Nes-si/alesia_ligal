@@ -111,7 +111,7 @@
 })();
 require.register("initialize", function(exports, require, module) {
 $(function() {
-  var caption1, controller, scene;
+  var back_color, caption, caption1_w, caption1_width, caption2_w, caption2_width, caption3_w, caption3_width, caption4_w, caption4_width, car_anim, controller, scene;
   $('.slider').slick({
     dots: false,
     arrows: false,
@@ -129,60 +129,202 @@ $(function() {
   scene = new ScrollMagic.Scene({
     triggerElement: '#car-screen',
     triggerHook: 'onLeave',
-    duration: document.documentElement.clientHeight,
+    duration: '401%',
     tweenChanges: true
   }).setPin('#car-screen').addTo(controller);
-  caption1 = new TimelineMax().add(TweenMax.to($('.section.main_car_animation .caption'), 1, {
-    'left': '50%'
-  }));
+  caption1_width = document.getElementById('car_caption1').offsetWidth;
+  caption1_width = caption1_width / document.documentElement.clientWidth * 100 + 100;
+  caption1_w = caption1_width + '%';
+  caption2_width = document.getElementById('car_caption2').offsetWidth;
+  caption2_width = caption2_width / document.documentElement.clientWidth * 100 + 100;
+  caption2_w = caption2_width + '%';
+  caption3_width = document.getElementById('car_caption3').offsetWidth;
+  caption3_width = caption3_width / document.documentElement.clientWidth * 100 + 100;
+  caption3_w = caption3_width + '%';
+  caption4_width = document.getElementById('car_caption4').offsetWidth;
+  caption4_width = caption4_width / document.documentElement.clientWidth * 100 + 100;
+  caption4_w = caption4_width + '%';
+  caption = new TimelineMax().to($('.section.main_car_animation .caption1'), 1, {
+    'left': caption1_w,
+    ease: Power0.easeNone
+  }).to($('.section.main_car_animation .caption2'), 1, {
+    'left': caption2_w,
+    ease: Power0.easeNone
+  }).to($('.section.main_car_animation .caption3'), 1, {
+    'left': caption3_w,
+    ease: Power0.easeNone
+  }).to($('.section.main_car_animation .caption4'), 1, {
+    'left': caption4_w,
+    ease: Power0.easeNone
+  }).to($('.section.main_car_animation .caption1'), 0, {
+    'left': '0%',
+    ease: Power0.easeNone
+  }).to($('.section.main_car_animation .caption2'), 0, {
+    'left': '0%',
+    ease: Power0.easeNone
+  }).to($('.section.main_car_animation .caption3'), 0, {
+    'left': '0%',
+    ease: Power0.easeNone
+  }).to($('.section.main_car_animation .caption4'), 0, {
+    'left': '0%',
+    ease: Power0.easeNone
+  });
   scene = new ScrollMagic.Scene({
     triggerElement: "#car-screen",
-    duration: '200%'
-  }).triggerHook(1).setTween(caption1).addTo(controller);
-  return scene = new ScrollMagic.Scene({
+    duration: '400%',
+    triggerHook: 0
+  }).setTween(caption).addTo(controller);
+  back_color = new TimelineMax().to($('.section.main_car_animation'), 1, {
+    backgroundColor: "#97e5ec",
+    ease: Power0.easeNone
+  }).to($('.section.main_car_animation'), 1, {
+    backgroundColor: "#97d9ec",
+    ease: Power0.easeNone
+  }).to($('.section.main_car_animation'), 1, {
+    backgroundColor: "#97c1ec",
+    ease: Power0.easeNone
+  }).to($('.section.main_car_animation'), 1, {
+    backgroundColor: "#82bcf8",
+    ease: Power0.easeNone
+  });
+  scene = new ScrollMagic.Scene({
+    triggerElement: "#car-screen",
+    duration: '400%',
+    triggerHook: 0
+  }).setTween(back_color).addTo(controller);
+  scene = new ScrollMagic.Scene({
+    triggerElement: "#car-screen",
+    duration: '100%',
+    triggerHook: 0
+  }).on("start end", function() {
+    $('.program1').css("display", "block");
+    $('.program2').css("display", "none");
+    $('.block-top-1').css("display", "block");
+    $('.block-top-2').css("display", "none");
+    $('.block-bottom-1').css("display", "block");
+    return $('.block-bottom-2').css("display", "none");
+  }).addTo(controller);
+  scene = new ScrollMagic.Scene({
+    triggerElement: "#car-screen",
+    duration: '100%',
+    offset: document.documentElement.clientHeight,
+    triggerHook: 0
+  }).on("start end", function() {
+    $('.program1').css("display", "none");
+    $('.program2').css("display", "block");
+    $('.program3').css("display", "none");
+    $('.block-top-1').css("display", "none");
+    $('.block-top-2').css("display", "block");
+    $('.block-top-3').css("display", "none");
+    $('.block-bottom-1').css("display", "none");
+    $('.block-bottom-2').css("display", "block");
+    return $('.block-bottom-3').css("display", "none");
+  }).addTo(controller);
+  scene = new ScrollMagic.Scene({
+    triggerElement: "#car-screen",
+    duration: '100%',
+    offset: document.documentElement.clientHeight * 2,
+    triggerHook: 0
+  }).on("start end", function() {
+    $('.program2').css("display", "none");
+    $('.program3').css("display", "block");
+    $('.program4').css("display", "none");
+    $('.block-top-2').css("display", "none");
+    $('.block-top-3').css("display", "block");
+    $('.block-top-4').css("display", "none");
+    $('.block-bottom-2').css("display", "none");
+    $('.block-bottom-3').css("display", "block");
+    $('.block-bottom-4').css("display", "none");
+    return $('.block-bottom-left').css("display", "none");
+  }).addTo(controller);
+  scene = new ScrollMagic.Scene({
+    triggerElement: "#car-screen",
+    duration: '100%',
+    offset: document.documentElement.clientHeight * 3,
+    triggerHook: 0
+  }).on("start end", function() {
+    $('.program3').css("display", "none");
+    $('.program4').css("display", "block");
+    $('.block-top-3').css("display", "none");
+    $('.block-top-4').css("display", "block");
+    $('.block-bottom-3').css("display", "none");
+    $('.block-bottom-4').css("display", "block");
+    return $('.block-bottom-left').css("display", "block");
+  }).addTo(controller);
+  car_anim = new TimelineMax().to($('.section.main_car_animation .car-1'), 1, {
+    opacity: 0
+  });
+  scene = new ScrollMagic.Scene({
+    triggerElement: "#car-screen",
+    duration: '20%',
+    offset: document.documentElement.clientHeight * 0.8,
+    triggerHook: 0
+  }).setTween(car_anim).addTo(controller);
+  car_anim = new TimelineMax().to($('.section.main_car_animation .car-2'), 1, {
+    opacity: 1
+  });
+  scene = new ScrollMagic.Scene({
+    triggerElement: "#car-screen",
+    duration: '20%',
+    offset: document.documentElement.clientHeight * 0.8,
+    triggerHook: 0
+  }).setTween(car_anim).addTo(controller);
+  car_anim = new TimelineMax().to($('.section.main_car_animation .car-2'), 1, {
+    opacity: 0
+  });
+  scene = new ScrollMagic.Scene({
+    triggerElement: "#car-screen",
+    duration: '20%',
+    offset: document.documentElement.clientHeight * 1.8,
+    triggerHook: 0
+  }).setTween(car_anim).addTo(controller);
+  car_anim = new TimelineMax().to($('.section.main_car_animation .car-3'), 1, {
+    opacity: 1
+  });
+  scene = new ScrollMagic.Scene({
+    triggerElement: "#car-screen",
+    duration: '20%',
+    offset: document.documentElement.clientHeight * 1.8,
+    triggerHook: 0
+  }).setTween(car_anim).addTo(controller);
+  car_anim = new TimelineMax().to($('.section.main_car_animation .car-3'), 1, {
+    opacity: 0
+  });
+  scene = new ScrollMagic.Scene({
+    triggerElement: "#car-screen",
+    duration: '20%',
+    offset: document.documentElement.clientHeight * 2.8,
+    triggerHook: 0
+  }).setTween(car_anim).addTo(controller);
+  scene = new ScrollMagic.Scene({
     triggerElement: '#slideshow',
     triggerHook: 'onLeave',
     duration: document.documentElement.clientHeight / 2
-  }).setPin('#show-text').addTo(controller);
+  }).setPin('#slideshow .block.pinned').addTo(controller);
+  scene = new ScrollMagic.Scene({
+    triggerElement: '#slideshow',
+    triggerHook: 'onLeave',
+    duration: document.documentElement.clientHeight / 2
+  }).setPin('#slideshow img.pinned').on("end", function() {
+    return $('#slideshow .lens').css('display', 'block');
+  }).addTo(controller);
+  scene = new ScrollMagic.Scene({
+    triggerElement: '#after-show',
+    triggerHook: 1,
+    duration: document.documentElement.clientHeight / 2
+  }).on("start", function() {
+    return $('#slideshow .lens').css('display', 'none');
+  }).addTo(controller);
+  $('.block-top-1 .btn1').click(function() {
+    $('.block-top-1 .btn1').addClass('.button-active');
+    return $('.block-top-1 .btn2').removeClass('.button-active');
+  });
+  return $('.block-top-1 .btn2').click(function() {
+    $('.block-top-1 .btn1').removeClass('.button-active');
+    return $('.block-top-1 .btn2').addClass('.button-active');
+  });
 });
 });
 
-;require.register("smoothscroll", function(exports, require, module) {
-/**
- * SmoothScroll
- * This helper script created by DWUser.com.  Copyright 2012 DWUser.com.  
- * Dual-licensed under the GPL and MIT licenses.  
- * All individual scripts remain property of their copyrighters.
- * Date: 10-Sep-2012
- * Version: 1.0.1
- */
-if (!window['jQuery']) alert('The jQuery library must be included before the smoothscroll.js file.  The plugin will not work propery.');
-
-/**
- * jQuery.ScrollTo - Easy element scrolling using jQuery.
- * Copyright (c) 2007-2012 Ariel Flesler - aflesler(at)gmail(dot)com | http://flesler.blogspot.com
- * Dual licensed under MIT and GPL.
- * @author Ariel Flesler
- * @version 1.4.3.1
- */
-;(function($){var h=$.scrollTo=function(a,b,c){$(window).scrollTo(a,b,c)};h.defaults={axis:'xy',duration:parseFloat($.fn.jquery)>=1.3?0:1,limit:true};h.window=function(a){return $(window)._scrollable()};$.fn._scrollable=function(){return this.map(function(){var a=this,isWin=!a.nodeName||$.inArray(a.nodeName.toLowerCase(),['iframe','#document','html','body'])!=-1;if(!isWin)return a;var b=(a.contentWindow||a).document||a.ownerDocument||a;return/webkit/i.test(navigator.userAgent)||b.compatMode=='BackCompat'?b.body:b.documentElement})};$.fn.scrollTo=function(e,f,g){if(typeof f=='object'){g=f;f=0}if(typeof g=='function')g={onAfter:g};if(e=='max')e=9e9;g=$.extend({},h.defaults,g);f=f||g.duration;g.queue=g.queue&&g.axis.length>1;if(g.queue)f/=2;g.offset=both(g.offset);g.over=both(g.over);return this._scrollable().each(function(){if(e==null)return;var d=this,$elem=$(d),targ=e,toff,attr={},win=$elem.is('html,body');switch(typeof targ){case'number':case'string':if(/^([+-]=)?\d+(\.\d+)?(px|%)?$/.test(targ)){targ=both(targ);break}targ=$(targ,this);if(!targ.length)return;case'object':if(targ.is||targ.style)toff=(targ=$(targ)).offset()}$.each(g.axis.split(''),function(i,a){var b=a=='x'?'Left':'Top',pos=b.toLowerCase(),key='scroll'+b,old=d[key],max=h.max(d,a);if(toff){attr[key]=toff[pos]+(win?0:old-$elem.offset()[pos]);if(g.margin){attr[key]-=parseInt(targ.css('margin'+b))||0;attr[key]-=parseInt(targ.css('border'+b+'Width'))||0}attr[key]+=g.offset[pos]||0;if(g.over[pos])attr[key]+=targ[a=='x'?'width':'height']()*g.over[pos]}else{var c=targ[pos];attr[key]=c.slice&&c.slice(-1)=='%'?parseFloat(c)/100*max:c}if(g.limit&&/^\d+$/.test(attr[key]))attr[key]=attr[key]<=0?0:Math.min(attr[key],max);if(!i&&g.queue){if(old!=attr[key])animate(g.onAfterFirst);delete attr[key]}});animate(g.onAfter);function animate(a){$elem.animate(attr,f,g.easing,a&&function(){a.call(this,e,g)})}}).end()};h.max=function(a,b){var c=b=='x'?'Width':'Height',scroll='scroll'+c;if(!$(a).is('html,body'))return a[scroll]-$(a)[c.toLowerCase()]();var d='client'+c,html=a.ownerDocument.documentElement,body=a.ownerDocument.body;return Math.max(html[scroll],body[scroll])-Math.min(html[d],body[d])};function both(a){return typeof a=='object'?a:{top:a,left:a}}})(jQuery);
-
-/**
- * jQuery.LocalScroll
- * Copyright (c) 2007-2010 Ariel Flesler - aflesler(at)gmail(dot)com | http://flesler.blogspot.com
- * Dual licensed under MIT and GPL.
- * Date: 05/31/2010
- * @author Ariel Flesler
- * @version 1.2.8b
- **/
-;(function(b){function g(a,e,d){var h=e.hash.slice(1),f=document.getElementById(h)||document.getElementsByName(h)[0];if(f){a&&a.preventDefault();var c=b(d.target);if(!(d.lock&&c.is(":animated")||d.onBefore&&!1===d.onBefore(a,f,c))){d.stop&&c._scrollable().stop(!0);if(d.hash){var a=f.id==h?"id":"name",g=b("<a> </a>").attr(a,h).css({position:"absolute",top:b(window).scrollTop(),left:b(window).scrollLeft()});f[a]="";b("body").prepend(g);location=e.hash;g.remove();f[a]=h}c.scrollTo(f,d).trigger("notify.serialScroll",
-[f])}}}var i=location.href.replace(/#.*/,""),c=b.localScroll=function(a){b("body").localScroll(a)};c.defaults={duration:1E3,axis:"y",event:"click",stop:!0,target:window,reset:!0};c.hash=function(a){if(location.hash){a=b.extend({},c.defaults,a);a.hash=!1;if(a.reset){var e=a.duration;delete a.duration;b(a.target).scrollTo(0,a);a.duration=e}g(0,location,a)}};b.fn.localScroll=function(a){function e(){return!!this.href&&!!this.hash&&this.href.replace(this.hash,"")==i&&(!a.filter||b(this).is(a.filter))}
-a=b.extend({},c.defaults,a);return a.lazy?this.bind(a.event,function(d){var c=b([d.target,d.target.parentNode]).filter(e)[0];c&&g(d,c,a)}):this.find("a,area").filter(e).bind(a.event,function(b){g(b,this,a)}).end().end()}})(jQuery);
-
-// Initialize all .smoothScroll links
-jQuery(function($){ $.localScroll({filter:'.smoothScroll'}); });
-
-});
-
-
+;
 //# sourceMappingURL=app.js.map
