@@ -1152,6 +1152,10 @@ strong {
     .section.main_car_animation .container .block-bottom-1 {
       background-image: url("../pics/section.main_car_animation.bottom.1.svg");
       display: block; }
+      .section.main_car_animation .container .block-bottom-1 .block-bottom-var1 {
+        display: block; }
+      .section.main_car_animation .container .block-bottom-1 .block-bottom-var2 {
+        display: none; }
       .section.main_car_animation .container .block-bottom-1 .text {
         opacity: 0.4;
         font-size: 14px;
@@ -1385,14 +1389,24 @@ strong {
 .section.video {
   min-height: 100vh;
   min-width: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
   background-color: #242d3a;
   display: table; }
   .section.video .container {
     display: table-cell;
     text-align: center;
-    vertical-align: middle; }
+    vertical-align: middle;
+    padding: 0;
+    margin: 0; }
     .section.video .container .video {
-      display: inline-block; }
+      display: inline-block;
+      padding: 0;
+      margin: 0; }
+      .section.video .container .video iframe {
+        width: 917px;
+        height: 516px; }
 
 .section.request .container {
   padding-top: 100px;
@@ -1405,7 +1419,7 @@ strong {
     font-size: 0; }
   .section.request .container .block.main {
     width: 50%; }
-    .section.request .container .block.main h1 {
+    .section.request .container .block.main h2 {
       opacity: 0.9;
       font-weight: 300;
       font-size: 35.1px; }
@@ -1841,6 +1855,10 @@ strong {
     .section.main_car_animation .container .block-bottom-1 {
       background-image: url("../pics/section.main_car_animation.bottom.1.svg");
       display: block; }
+      .section.main_car_animation .container .block-bottom-1 .block-bottom-var1 {
+        display: block; }
+      .section.main_car_animation .container .block-bottom-1 .block-bottom-var2 {
+        display: none; }
       .section.main_car_animation .container .block-bottom-1 .text {
         opacity: 0.4;
         font-size: 14px;
@@ -2024,7 +2042,7 @@ strong {
     font-size: 0; }
   .section.request .container .block.main {
     width: 50%; }
-    .section.request .container .block.main h1 {
+    .section.request .container .block.main h2 {
       opacity: 0.9;
       font-weight: 300;
       font-size: 35.1px; }
@@ -2239,14 +2257,24 @@ strong {
 .section.video {
   min-height: 100vh;
   min-width: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
   background-color: #242d3a;
   display: table; }
   .section.video .container {
     display: table-cell;
     text-align: center;
-    vertical-align: middle; }
+    vertical-align: middle;
+    padding: 0;
+    margin: 0; }
     .section.video .container .video {
-      display: inline-block; }
+      display: inline-block;
+      padding: 0;
+      margin: 0; }
+      .section.video .container .video iframe {
+        width: 917px;
+        height: 516px; }
 
 
 /*# sourceMappingURL=app.css.map*/
