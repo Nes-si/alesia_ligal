@@ -202,7 +202,9 @@ $(function() {
     $('.block-top-1').css("display", "block");
     $('.block-top-2').css("display", "none");
     $('.block-bottom-1').css("display", "block");
-    return $('.block-bottom-2').css("display", "none");
+    $('.block-bottom-2').css("display", "none");
+    $('.round-1').css("display", "block");
+    return $('.round-2').css("display", "none");
   }).addTo(controller);
   scene = new ScrollMagic.Scene({
     triggerElement: "#car-screen",
@@ -218,7 +220,10 @@ $(function() {
     $('.block-top-3').css("display", "none");
     $('.block-bottom-1').css("display", "none");
     $('.block-bottom-2').css("display", "block");
-    return $('.block-bottom-3').css("display", "none");
+    $('.block-bottom-3').css("display", "none");
+    $('.round-1').css("display", "none");
+    $('.round-2').css("display", "block");
+    return $('.round-3').css("display", "none");
   }).addTo(controller);
   scene = new ScrollMagic.Scene({
     triggerElement: "#car-screen",
@@ -235,7 +240,9 @@ $(function() {
     $('.block-bottom-2').css("display", "none");
     $('.block-bottom-3').css("display", "block");
     $('.block-bottom-4').css("display", "none");
-    return $('.block-bottom-left').css("display", "none");
+    $('.block-bottom-left').css("display", "none");
+    $('.round-2').css("display", "none");
+    return $('.round-3').css("display", "block");
   }).addTo(controller);
   scene = new ScrollMagic.Scene({
     triggerElement: "#car-screen",
@@ -249,7 +256,9 @@ $(function() {
     $('.block-top-4').css("display", "block");
     $('.block-bottom-3').css("display", "none");
     $('.block-bottom-4').css("display", "block");
-    return $('.block-bottom-left').css("display", "block");
+    $('.block-bottom-left').css("display", "block");
+    $('.round-3').css("display", "none");
+    return $('.round-2').css("display", "block");
   }).addTo(controller);
   car_anim = new TimelineMax().to($('.section.main_car_animation .car-1'), 1, {
     opacity: 0
