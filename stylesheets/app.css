@@ -793,44 +793,6 @@ strong {
     color: white;
     font-family: "f_opens", "Open Sans", sans-serif;
     font-weight: 300; }
-    .section.start .container a {
-      color: white;
-      text-decoration: none;
-      border: 0 solid black; }
-    .section.start .container a:hover {
-      opacity: 0.5; }
-    .section.start .container .logo {
-      position: absolute;
-      top: 3%;
-      left: 4%; }
-    .section.start .container .lang {
-      position: absolute;
-      top: 3%;
-      right: 4%;
-      font-size: 14px; }
-    .section.start .container .menu {
-      position: absolute;
-      top: 30px;
-      left: 50%;
-      width: 100%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%);
-      font-size: 0; }
-      .section.start .container .menu ul {
-        display: inline-block;
-        list-style: none;
-        margin: 0;
-        margin-right: 80px;
-        padding: 0; }
-        .section.start .container .menu ul li {
-          display: inline-block;
-          margin-right: 25px;
-          font-size: 14px;
-          white-space: nowrap; }
-        .section.start .container .menu ul li:last-child {
-          margin-right: 0; }
-      .section.start .container .menu ul:last-child {
-        margin-right: 0; }
     .section.start .container .text {
       display: inline-block; }
       .section.start .container .text .first-line {
@@ -1038,8 +1000,10 @@ strong {
         line-height: 50.71px;
         text-transform: uppercase;
         opacity: 0;
-        -webkit-transition-duration: 1s;
-                transition-duration: 1s; }
+        -webkit-transition-delay: 0ms;
+                transition-delay: 0ms;
+        -webkit-transition-duration: 500ms;
+                transition-duration: 500ms; }
     .section.main_car_animation .container .info-cont {
       display: inline-block;
       width: 45%;
@@ -1053,8 +1017,10 @@ strong {
         color: black;
         width: 45%;
         opacity: 0;
-        -webkit-transition-duration: 1s;
-                transition-duration: 1s; }
+        -webkit-transition-delay: 0ms;
+                transition-delay: 0ms;
+        -webkit-transition-duration: 500ms;
+                transition-duration: 500ms; }
       .section.main_car_animation .container .info-cont .info-1 {
         width: 400px; }
         .section.main_car_animation .container .info-cont .info-1 .button {
@@ -1103,8 +1069,10 @@ strong {
         border: 3px solid #ff1300;
         border-radius: 100px;
         opacity: 0;
-        -webkit-transition-duration: 1s;
-                transition-duration: 1s; }
+        -webkit-transition-delay: 0ms;
+                transition-delay: 0ms;
+        -webkit-transition-duration: 500ms;
+                transition-duration: 500ms; }
       .section.main_car_animation .container .content-container .round-1 {
         right: 145px;
         bottom: 250px; }
@@ -1167,8 +1135,10 @@ strong {
         vertical-align: top;
         width: 50%;
         opacity: 0;
-        -webkit-transition-duration: 1s;
-                transition-duration: 1s; }
+        -webkit-transition-delay: 0ms;
+                transition-delay: 0ms;
+        -webkit-transition-duration: 500ms;
+                transition-duration: 500ms; }
         .section.main_car_animation .container .info-bottom-cont .bottom-left .text {
           font-family: "f_helvetica", "Helvetica", sans-serif;
           font-weight: 300;
@@ -1184,8 +1154,10 @@ strong {
           position: absolute;
           font-family: "f_helvetica", "Helvetica", sans-serif;
           opacity: 0;
-          -webkit-transition-duration: 1s;
-                  transition-duration: 1s; }
+          -webkit-transition-delay: 0ms;
+                  transition-delay: 0ms;
+          -webkit-transition-duration: 500ms;
+                  transition-duration: 500ms; }
           .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right img {
             position: absolute;
             left: 0;
@@ -1207,7 +1179,9 @@ strong {
           line-height: 21px; }
 
 .car-active {
-  opacity: 1 !important; }
+  opacity: 1 !important;
+  -webkit-transition-delay: 500ms !important;
+          transition-delay: 500ms !important; }
 
 .button-active {
   color: white !important;
@@ -1776,8 +1750,10 @@ strong {
         line-height: 50.71px;
         text-transform: uppercase;
         opacity: 0;
-        -webkit-transition-duration: 1s;
-                transition-duration: 1s; }
+        -webkit-transition-delay: 0ms;
+                transition-delay: 0ms;
+        -webkit-transition-duration: 500ms;
+                transition-duration: 500ms; }
     .section.main_car_animation .container .info-cont {
       display: inline-block;
       width: 45%;
@@ -1791,8 +1767,10 @@ strong {
         color: black;
         width: 45%;
         opacity: 0;
-        -webkit-transition-duration: 1s;
-                transition-duration: 1s; }
+        -webkit-transition-delay: 0ms;
+                transition-delay: 0ms;
+        -webkit-transition-duration: 500ms;
+                transition-duration: 500ms; }
       .section.main_car_animation .container .info-cont .info-1 {
         width: 400px; }
         .section.main_car_animation .container .info-cont .info-1 .button {
@@ -1841,8 +1819,10 @@ strong {
         border: 3px solid #ff1300;
         border-radius: 100px;
         opacity: 0;
-        -webkit-transition-duration: 1s;
-                transition-duration: 1s; }
+        -webkit-transition-delay: 0ms;
+                transition-delay: 0ms;
+        -webkit-transition-duration: 500ms;
+                transition-duration: 500ms; }
       .section.main_car_animation .container .content-container .round-1 {
         right: 145px;
         bottom: 250px; }
@@ -1905,8 +1885,10 @@ strong {
         vertical-align: top;
         width: 50%;
         opacity: 0;
-        -webkit-transition-duration: 1s;
-                transition-duration: 1s; }
+        -webkit-transition-delay: 0ms;
+                transition-delay: 0ms;
+        -webkit-transition-duration: 500ms;
+                transition-duration: 500ms; }
         .section.main_car_animation .container .info-bottom-cont .bottom-left .text {
           font-family: "f_helvetica", "Helvetica", sans-serif;
           font-weight: 300;
@@ -1922,8 +1904,10 @@ strong {
           position: absolute;
           font-family: "f_helvetica", "Helvetica", sans-serif;
           opacity: 0;
-          -webkit-transition-duration: 1s;
-                  transition-duration: 1s; }
+          -webkit-transition-delay: 0ms;
+                  transition-delay: 0ms;
+          -webkit-transition-duration: 500ms;
+                  transition-duration: 500ms; }
           .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right img {
             position: absolute;
             left: 0;
@@ -1945,7 +1929,9 @@ strong {
           line-height: 21px; }
 
 .car-active {
-  opacity: 1 !important; }
+  opacity: 1 !important;
+  -webkit-transition-delay: 500ms !important;
+          transition-delay: 500ms !important; }
 
 .button-active {
   color: white !important;
@@ -2266,44 +2252,6 @@ strong {
     color: white;
     font-family: "f_opens", "Open Sans", sans-serif;
     font-weight: 300; }
-    .section.start .container a {
-      color: white;
-      text-decoration: none;
-      border: 0 solid black; }
-    .section.start .container a:hover {
-      opacity: 0.5; }
-    .section.start .container .logo {
-      position: absolute;
-      top: 3%;
-      left: 4%; }
-    .section.start .container .lang {
-      position: absolute;
-      top: 3%;
-      right: 4%;
-      font-size: 14px; }
-    .section.start .container .menu {
-      position: absolute;
-      top: 30px;
-      left: 50%;
-      width: 100%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%);
-      font-size: 0; }
-      .section.start .container .menu ul {
-        display: inline-block;
-        list-style: none;
-        margin: 0;
-        margin-right: 80px;
-        padding: 0; }
-        .section.start .container .menu ul li {
-          display: inline-block;
-          margin-right: 25px;
-          font-size: 14px;
-          white-space: nowrap; }
-        .section.start .container .menu ul li:last-child {
-          margin-right: 0; }
-      .section.start .container .menu ul:last-child {
-        margin-right: 0; }
     .section.start .container .text {
       display: inline-block; }
       .section.start .container .text .first-line {
