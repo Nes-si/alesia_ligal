@@ -152,7 +152,7 @@ window.screen_w = 0;
 window.screen_h = 0;
 
 $(function() {
-  var back_color, caption, car_anim, controller, scene_car_1_hide, scene_car_1_to_2, scene_car_2_hide, scene_car_2_show, scene_car_2_to_3, scene_car_3_hide, scene_car_3_show, scene_car_3_to_4, scene_car_4_to_null, scene_car_back_color, scene_car_caption_move, scene_car_pin, scene_slides_lens_hide, scene_slides_lens_show, scene_slides_pin;
+  var back_color, caption, car_anim, car_btn_active, controller, lens_opacity, scene_car_1_hide, scene_car_1_to_2, scene_car_2_hide, scene_car_2_show, scene_car_2_to_3, scene_car_3_hide, scene_car_3_show, scene_car_3_to_4, scene_car_4_to_null, scene_car_back_color, scene_car_caption_move, scene_car_pin, scene_slides_lens_hide, scene_slides_lens_show, scene_slides_pin, slider_opacity;
   onResize();
   $('.slider').slick({
     dots: false,
@@ -167,25 +167,20 @@ $(function() {
   $('.next.btn').click(function() {
     return $('.slider').slick('slickNext');
   });
+  car_btn_active = 1;
   $('.section.main_car_animation .btn1').click(function() {
     $('.section.main_car_animation .btn1').addClass('button-active');
     $('.section.main_car_animation .btn2').removeClass('button-active');
-    $('.section.main_car_animation .block-bottom-var1').css({
-      'display': 'block'
-    });
-    return $('.section.main_car_animation .block-bottom-var2').css({
-      'display': 'none'
-    });
+    $('.section.main_car_animation .bottom-right-1-1').addClass('car-active');
+    $('.section.main_car_animation .bottom-right-1-2').removeClass('car-active');
+    return car_btn_active = 1;
   });
   $('.section.main_car_animation .btn2').click(function() {
     $('.section.main_car_animation .btn1').removeClass('button-active');
     $('.section.main_car_animation .btn2').addClass('button-active');
-    $('.section.main_car_animation .block-bottom-var1').css({
-      'display': 'none'
-    });
-    return $('.section.main_car_animation .block-bottom-var2').css({
-      'display': 'block'
-    });
+    $('.section.main_car_animation .bottom-right-1-1').removeClass('car-active');
+    $('.section.main_car_animation .bottom-right-1-2').addClass('car-active');
+    return car_btn_active = 2;
   });
   controller = new ScrollMagic.Controller;
   scene_car_pin = new ScrollMagic.Scene({
@@ -194,19 +189,19 @@ $(function() {
     duration: '401%',
     tweenChanges: true
   }).setPin('#car-screen').addTo(controller);
-  caption = new TimelineMax().to($('#car-screen .caption1'), 1, {
+  caption = new TimelineMax().to($('.section.main_car_animation .caption1'), 1, {
     'left': '100%',
     'transform': 'translateX(100%)',
     ease: Power0.easeNone
-  }).to($('#car-screen .caption2'), 1, {
+  }).to($('.section.main_car_animation .caption2'), 1, {
     'left': '100%',
     'transform': 'translateX(100%)',
     ease: Power0.easeNone
-  }).to($('#car-screen .caption3'), 1, {
+  }).to($('.section.main_car_animation .caption3'), 1, {
     'left': '100%',
     'transform': 'translateX(100%)',
     ease: Power0.easeNone
-  }).to($('#car-screen .caption4'), 1, {
+  }).to($('.section.main_car_animation .caption4'), 1, {
     'left': '100%',
     'transform': 'translateX(100%)',
     ease: Power0.easeNone
@@ -239,68 +234,68 @@ $(function() {
     duration: '100%',
     triggerHook: 0
   }).on("start end", function() {
-    $('.program1').css("display", "block");
-    $('.program2').css("display", "none");
-    $('.block-top-1').css("display", "block");
-    $('.block-top-2').css("display", "none");
-    $('.block-bottom-1').css("display", "block");
-    $('.block-bottom-2').css("display", "none");
-    $('.round-1').css("display", "block");
-    return $('.round-2').css("display", "none");
+    $('.section.main_car_animation .program1').addClass("car-active");
+    $('.section.main_car_animation .program2').removeClass("car-active");
+    $('.section.main_car_animation .info-1').addClass("car-active");
+    $('.section.main_car_animation .info-2').removeClass("car-active");
+    $('.section.main_car_animation .bottom-right-1-' + car_btn_active).addClass("car-active");
+    $('.section.main_car_animation .bottom-right-2').removeClass("car-active");
+    $('.section.main_car_animation .round-1').addClass("car-active");
+    return $('.section.main_car_animation .round-2').removeClass("car-active");
   }).addTo(controller);
   scene_car_2_to_3 = new ScrollMagic.Scene({
     triggerElement: "#car-screen",
     duration: '100%',
-    offset: document.documentElement.clientHeight,
+    offset: window.screen_h,
     triggerHook: 0
   }).on("start end", function() {
-    $('.program1').css("display", "none");
-    $('.program2').css("display", "block");
-    $('.program3').css("display", "none");
-    $('.block-top-1').css("display", "none");
-    $('.block-top-2').css("display", "block");
-    $('.block-top-3').css("display", "none");
-    $('.block-bottom-1').css("display", "none");
-    $('.block-bottom-2').css("display", "block");
-    $('.block-bottom-3').css("display", "none");
-    $('.round-1').css("display", "none");
-    $('.round-2').css("display", "block");
-    return $('.round-3').css("display", "none");
+    $('.section.main_car_animation .program1').removeClass("car-active");
+    $('.section.main_car_animation .program2').addClass("car-active");
+    $('.section.main_car_animation .program3').removeClass("car-active");
+    $('.section.main_car_animation .info-1').removeClass("car-active");
+    $('.section.main_car_animation .info-2').addClass("car-active");
+    $('.section.main_car_animation .info-3').removeClass("car-active");
+    $('.section.main_car_animation .bottom-right-1-' + car_btn_active).removeClass("car-active");
+    $('.section.main_car_animation .bottom-right-2').addClass("car-active");
+    $('.section.main_car_animation .bottom-right-3').removeClass("car-active");
+    $('.section.main_car_animation .round-1').removeClass("car-active");
+    $('.section.main_car_animation .round-2').addClass("car-active");
+    return $('.section.main_car_animation .round-3').removeClass("car-active");
   }).addTo(controller);
   scene_car_3_to_4 = new ScrollMagic.Scene({
     triggerElement: "#car-screen",
     duration: '100%',
-    offset: document.documentElement.clientHeight * 2,
+    offset: window.screen_h * 2,
     triggerHook: 0
   }).on("start end", function() {
-    $('.program2').css("display", "none");
-    $('.program3').css("display", "block");
-    $('.program4').css("display", "none");
-    $('.block-top-2').css("display", "none");
-    $('.block-top-3').css("display", "block");
-    $('.block-top-4').css("display", "none");
-    $('.block-bottom-2').css("display", "none");
-    $('.block-bottom-3').css("display", "block");
-    $('.block-bottom-4').css("display", "none");
-    $('.block-bottom-left').css("display", "none");
-    $('.round-2').css("display", "none");
-    return $('.round-3').css("display", "block");
+    $('.section.main_car_animation .program2').removeClass("car-active");
+    $('.section.main_car_animation .program3').addClass("car-active");
+    $('.section.main_car_animation .program4').removeClass("car-active");
+    $('.section.main_car_animation .info-2').removeClass("car-active");
+    $('.section.main_car_animation .info-3').addClass("car-active");
+    $('.section.main_car_animation .info-4').removeClass("car-active");
+    $('.section.main_car_animation .bottom-right-2').removeClass("car-active");
+    $('.section.main_car_animation .bottom-right-3').addClass("car-active");
+    $('.section.main_car_animation .bottom-right-4').removeClass("car-active");
+    $('.section.main_car_animation .bottom-left').removeClass("car-active");
+    $('.section.main_car_animation .round-2').removeClass("car-active");
+    return $('.section.main_car_animation .round-3').addClass("car-active");
   }).addTo(controller);
   scene_car_4_to_null = new ScrollMagic.Scene({
     triggerElement: "#car-screen",
     duration: '100%',
-    offset: document.documentElement.clientHeight * 3,
+    offset: window.screen_h * 3,
     triggerHook: 0
   }).on("start end", function() {
-    $('.program3').css("display", "none");
-    $('.program4').css("display", "block");
-    $('.block-top-3').css("display", "none");
-    $('.block-top-4').css("display", "block");
-    $('.block-bottom-3').css("display", "none");
-    $('.block-bottom-4').css("display", "block");
-    $('.block-bottom-left').css("display", "block");
-    $('.round-3').css("display", "none");
-    return $('.round-2').css("display", "block");
+    $('.section.main_car_animation .program3').removeClass("car-active");
+    $('.section.main_car_animation .program4').addClass("car-active");
+    $('.section.main_car_animation .info-3').removeClass("car-active");
+    $('.section.main_car_animation .info-4').addClass("car-active");
+    $('.section.main_car_animation .bottom-right-3').removeClass("car-active");
+    $('.section.main_car_animation .bottom-right-4').addClass("car-active");
+    $('.section.main_car_animation .bottom-left').addClass("car-active");
+    $('.section.main_car_animation .round-3').removeClass("car-active");
+    return $('.section.main_car_animation .round-2').addClass("car-active");
   }).addTo(controller).addIndicators();
   car_anim = new TimelineMax().to($('.section.main_car_animation .car-1'), 1, {
     opacity: 0
@@ -308,7 +303,7 @@ $(function() {
   scene_car_1_hide = new ScrollMagic.Scene({
     triggerElement: "#car-screen",
     duration: '20%',
-    offset: document.documentElement.clientHeight * 0.8,
+    offset: window.screen_h * 0.8,
     triggerHook: 0
   }).setTween(car_anim).addTo(controller);
   car_anim = new TimelineMax().to($('.section.main_car_animation .car-2'), 1, {
@@ -317,7 +312,7 @@ $(function() {
   scene_car_2_show = new ScrollMagic.Scene({
     triggerElement: "#car-screen",
     duration: '20%',
-    offset: document.documentElement.clientHeight * 0.8,
+    offset: window.screen_h * 0.8,
     triggerHook: 0
   }).setTween(car_anim).addTo(controller);
   car_anim = new TimelineMax().to($('.section.main_car_animation .car-2'), 1, {
@@ -326,7 +321,7 @@ $(function() {
   scene_car_2_hide = new ScrollMagic.Scene({
     triggerElement: "#car-screen",
     duration: '20%',
-    offset: document.documentElement.clientHeight * 1.8,
+    offset: window.screen_h * 1.8,
     triggerHook: 0
   }).setTween(car_anim).addTo(controller);
   car_anim = new TimelineMax().to($('.section.main_car_animation .car-3'), 1, {
@@ -335,7 +330,7 @@ $(function() {
   scene_car_3_show = new ScrollMagic.Scene({
     triggerElement: "#car-screen",
     duration: '20%',
-    offset: document.documentElement.clientHeight * 1.8,
+    offset: window.screen_h * 1.8,
     triggerHook: 0
   }).setTween(car_anim).addTo(controller);
   car_anim = new TimelineMax().to($('.section.main_car_animation .car-3'), 1, {
@@ -344,36 +339,48 @@ $(function() {
   scene_car_3_hide = new ScrollMagic.Scene({
     triggerElement: "#car-screen",
     duration: '20%',
-    offset: document.documentElement.clientHeight * 2.8,
+    offset: window.screen_h * 2.8,
     triggerHook: 0
   }).setTween(car_anim).addTo(controller);
   scene_slides_pin = new ScrollMagic.Scene({
     triggerElement: '#slideshow',
     triggerHook: 'onLeave',
-    duration: document.documentElement.clientHeight / 2
-  }).setPin('#slideshow .block.pinned').addTo(controller);
+    duration: window.screen_h / 2
+  }).setPin('.section.slideshow .block.pinned').addTo(controller);
   scene_slides_lens_show = new ScrollMagic.Scene({
     triggerElement: '#slideshow',
     triggerHook: 'onLeave',
-    duration: document.documentElement.clientHeight / 2
+    duration: window.screen_h / 2
   }).setPin('#slideshow img.pinned').on("end", function() {
-    return $('#slideshow .lens').css('display', 'block');
+    return $('.section.slideshow .lens').css('display', 'block');
   }).addTo(controller);
   scene_slides_lens_hide = new ScrollMagic.Scene({
     triggerElement: '#after-show',
     triggerHook: 1,
-    duration: document.documentElement.clientHeight / 2
+    duration: window.screen_h / 2
   }).on("start", function() {
-    return $('#slideshow .lens').css('display', 'none');
+    return $('.section.slideshow .lens').css('display', 'none');
   }).addTo(controller);
-  $('.block-top-1 .btn1').click(function() {
-    $('.block-top-1 .btn1').addClass('.button-active');
-    return $('.block-top-1 .btn2').removeClass('.button-active');
+  lens_opacity = new TimelineMax().to($('.section.slideshow .lens'), 1, {
+    opacity: 0,
+    ease: Power0.easeNone
   });
-  return $('.block-top-1 .btn2').click(function() {
-    $('.block-top-1 .btn1').removeClass('.button-active');
-    return $('.block-top-1 .btn2').addClass('.button-active');
+  scene_slides_lens_show = new ScrollMagic.Scene({
+    triggerElement: '#slideshow',
+    triggerHook: 'onLeave',
+    duration: window.screen_h / 4,
+    offset: window.screen_h / 4
+  }).setTween(lens_opacity).addTo(controller);
+  slider_opacity = new TimelineMax().to($('.section.slideshow .slider .pic'), 1, {
+    opacity: 1,
+    ease: Power0.easeNone
   });
+  return scene_slides_lens_show = new ScrollMagic.Scene({
+    triggerElement: '#slideshow',
+    triggerHook: 'onLeave',
+    duration: window.screen_h / 4,
+    offset: window.screen_h / 4
+  }).setTween(slider_opacity).addTo(controller);
 });
 
 $(window).resize(function() {

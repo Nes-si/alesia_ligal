@@ -882,7 +882,7 @@ strong {
         background-color: red; }
     .section.business .container .block .right {
       margin-top: 60px;
-      padding-right: 15%;
+      padding-right: 5%;
       width: 50%; }
       .section.business .container .block .right p {
         font-family: "f_opens", "Open Sans", sans-serif;
@@ -896,8 +896,8 @@ strong {
   background-color: #EEF3ED; }
   .section.new_level .container {
     text-align: left;
-    padding-top: 90px;
-    padding-bottom: 90px; }
+    padding-top: 100px;
+    padding-bottom: 100px; }
     .section.new_level .container .block-text {
       width: 69%;
       opacity: 0.7; }
@@ -1022,56 +1022,62 @@ strong {
     height: 100vh;
     min-height: 400px;
     padding-top: 6vh;
-    text-align: left; }
-    .section.main_car_animation .container .program {
-      float: left;
-      width: 300px;
+    text-align: left;
+    font-size: 0; }
+    .section.main_car_animation .container .program-cont {
+      display: inline-block;
+      width: 50%;
       vertical-align: top;
-      opacity: 0.7;
-      font-family: "f_helvetica", "Helvetica", sans-serif;
-      font-weight: 300;
-      font-size: 35.1px;
-      line-height: 50.71px;
-      text-transform: uppercase;
-      display: none; }
-    .section.main_car_animation .container .program1 {
-      display: block; }
-    .section.main_car_animation .container .block-top {
-      position: absolute;
-      left: 50%;
+      opacity: 0.7; }
+      .section.main_car_animation .container .program-cont .program {
+        position: absolute;
+        width: 300px;
+        font-family: "f_helvetica", "Helvetica", sans-serif;
+        font-weight: 300;
+        font-size: 35.1px;
+        line-height: 50.71px;
+        text-transform: uppercase;
+        opacity: 0;
+        -webkit-transition-duration: 1s;
+                transition-duration: 1s; }
+    .section.main_car_animation .container .info-cont {
+      display: inline-block;
       width: 45%;
-      font-family: "f_helvetica", "Helvetica", sans-serif;
-      font-weight: 300;
-      font-size: 16px;
-      line-height: 26px;
-      color: black;
-      opacity: 0.7;
-      display: none; }
-    .section.main_car_animation .container .block-top-1 {
-      width: 400px;
-      display: block; }
-      .section.main_car_animation .container .block-top-1 .button {
-        display: inline-block;
-        margin-right: 10px;
-        padding: 15px 30px;
-        border: 2px solid #3aa8b3;
-        border-radius: 100px;
-        cursor: pointer;
-        opacity: 1; }
-      .section.main_car_animation .container .block-top-1 .button:last-child {
-        margin-right: 0; }
-      .section.main_car_animation .container .block-top-1 .button:hover {
-        color: white;
-        background-color: #3aa8b3; }
-    .section.main_car_animation .container .block-top-2 img {
-      opacity: 1;
-      margin-bottom: 10px; }
-    .section.main_car_animation .container .block-top-2 p {
-      margin: 0; }
-    .section.main_car_animation .container .block-top-2 p:last-of-type {
-      font-weight: 600; }
-    .section.main_car_animation .container .block-top-4 p:first-child {
-      margin-bottom: 20px; }
+      opacity: 0.7; }
+      .section.main_car_animation .container .info-cont .info {
+        position: absolute;
+        font-family: "f_helvetica", "Helvetica", sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 26px;
+        color: black;
+        width: 45%;
+        opacity: 0;
+        -webkit-transition-duration: 1s;
+                transition-duration: 1s; }
+      .section.main_car_animation .container .info-cont .info-1 {
+        width: 400px; }
+        .section.main_car_animation .container .info-cont .info-1 .button {
+          display: inline-block;
+          margin-right: 10px;
+          padding: 15px 30px;
+          border: 2px solid #3aa8b3;
+          border-radius: 100px;
+          cursor: pointer; }
+        .section.main_car_animation .container .info-cont .info-1 .button:last-child {
+          margin-right: 0; }
+        .section.main_car_animation .container .info-cont .info-1 .button:hover {
+          color: white;
+          background-color: #3aa8b3; }
+      .section.main_car_animation .container .info-cont .info-2 img {
+        opacity: 1;
+        margin-bottom: 10px; }
+      .section.main_car_animation .container .info-cont .info-2 p {
+        margin: 0; }
+      .section.main_car_animation .container .info-cont .info-2 p:last-of-type {
+        font-weight: 600; }
+      .section.main_car_animation .container .info-cont .info-4 p:first-child {
+        margin-bottom: 20px; }
     .section.main_car_animation .container .content-container {
       position: absolute;
       top: 60%;
@@ -1096,11 +1102,12 @@ strong {
         background-color: white;
         border: 3px solid #ff1300;
         border-radius: 100px;
-        display: none; }
+        opacity: 0;
+        -webkit-transition-duration: 1s;
+                transition-duration: 1s; }
       .section.main_car_animation .container .content-container .round-1 {
         right: 145px;
-        bottom: 250px;
-        display: block; }
+        bottom: 250px; }
       .section.main_car_animation .container .content-container .round-2 {
         right: 145px;
         bottom: 240px; }
@@ -1128,54 +1135,79 @@ strong {
       .section.main_car_animation .container .content-container .car-4 {
         opacity: 1;
         background-image: url("../pics/section.main_car_animation.car4.png"); }
-    .section.main_car_animation .container .block-bottom {
+    .section.main_car_animation .container .info-bottom-cont {
       position: absolute;
-      bottom: 5vh;
-      left: 50%;
-      width: 45%;
-      font-family: "f_helvetica", "Helvetica", sans-serif;
-      padding-top: 70px;
-      background-repeat: no-repeat;
-      background-position: 2px 0;
-      display: none; }
-      .section.main_car_animation .container .block-bottom .title {
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 22px;
-        opacity: 0.7;
-        margin-bottom: 10px; }
-      .section.main_car_animation .container .block-bottom .text {
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 26px;
-        opacity: 0.7; }
-    .section.main_car_animation .container .block-bottom-1 {
-      background-image: url("../pics/section.main_car_animation.bottom.1.svg");
-      display: block; }
-      .section.main_car_animation .container .block-bottom-1 .block-bottom-var1 {
-        display: block; }
-      .section.main_car_animation .container .block-bottom-1 .block-bottom-var2 {
-        display: none; }
-      .section.main_car_animation .container .block-bottom-1 .text {
-        opacity: 0.4;
-        font-size: 14px;
-        line-height: 21px; }
-    .section.main_car_animation .container .block-bottom-2 {
-      background-image: url("../pics/section.main_car_animation.temp.png"); }
-    .section.main_car_animation .container .block-bottom-3 {
-      background-image: url("../pics/section.main_car_animation.sparks.png"); }
-    .section.main_car_animation .container .block-bottom-4 {
-      background-image: url("../pics/section.main_car_animation.fan.png"); }
-    .section.main_car_animation .container .block-bottom-left {
-      width: 550px;
-      font-family: "f_helvetica", "Helvetica", sans-serif;
-      margin-top: 79vh;
-      vertical-align: bottom;
-      display: none;
-      font-weight: 300;
-      font-size: 16px;
-      line-height: 26px;
-      opacity: 0.7; }
+      width: 100%;
+      left: 0;
+      padding: 0 30px;
+      height: 10vh;
+      bottom: 7vh;
+      font-size: 0;
+      text-align: left; }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape) {
+        .section.main_car_animation .container .info-bottom-cont {
+          padding: 0 20px; } }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: landscape) {
+        .section.main_car_animation .container .info-bottom-cont {
+          padding: 0 20px; } }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (orientation: landscape) {
+        .section.main_car_animation .container .info-bottom-cont {
+          padding: 0 20px; } }
+      @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-device-pixel-ratio: 3) {
+        .section.main_car_animation .container .info-bottom-cont {
+          padding: 0 20px; } }
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+        .section.main_car_animation .container .info-bottom-cont {
+          padding: 0 20px; } }
+      @media screen and (min-width: 631px) and (max-width: 800px) {
+        .section.main_car_animation .container .info-bottom-cont {
+          padding: 0 20px; } }
+      .section.main_car_animation .container .info-bottom-cont .bottom-left {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+        opacity: 0;
+        -webkit-transition-duration: 1s;
+                transition-duration: 1s; }
+        .section.main_car_animation .container .info-bottom-cont .bottom-left .text {
+          font-family: "f_helvetica", "Helvetica", sans-serif;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 26px;
+          opacity: 0.7; }
+      .section.main_car_animation .container .info-bottom-cont .bottom-right-cont {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+        position: relative; }
+        .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right {
+          position: absolute;
+          font-family: "f_helvetica", "Helvetica", sans-serif;
+          opacity: 0;
+          -webkit-transition-duration: 1s;
+                  transition-duration: 1s; }
+          .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right img {
+            position: absolute;
+            left: 0;
+            top: -70px; }
+          .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right .title {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            opacity: 0.7;
+            margin-bottom: 10px; }
+          .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right .text {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 26px;
+            opacity: 0.7; }
+        .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right-1-1 .text, .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right-1-2 .text {
+          opacity: 0.4;
+          font-size: 14px;
+          line-height: 21px; }
+
+.car-active {
+  opacity: 1 !important; }
 
 .button-active {
   color: white !important;
@@ -1349,6 +1381,7 @@ strong {
         border: 3px #707b8b solid;
         z-index: 3; }
         .section.slideshow .block.show .circle-ext .circle-int img.lens {
+          position: absolute;
           width: 100%;
           z-index: 2; }
         .section.slideshow .block.show .circle-ext .circle-int .slider {
@@ -1359,7 +1392,8 @@ strong {
             width: 55vh;
             background-size: cover;
             background-repeat: no-repeat;
-            background-position: 50% 50%; }
+            background-position: 50% 50%;
+            opacity: 0; }
           .section.slideshow .block.show .circle-ext .circle-int .slider .pic-1 {
             background-image: url("http://cs10628.vk.me/u168648930/-7/x_2e2ed933.jpg"); }
           .section.slideshow .block.show .circle-ext .circle-int .slider .pic-2 {
@@ -1432,6 +1466,7 @@ strong {
     .section.request .container .block.main .button {
       display: inline-block;
       margin-right: 10px;
+      margin-bottom: 10px;
       padding: 20px 50px;
       border: 2px solid #f20504;
       border-radius: 100px;
@@ -1445,10 +1480,10 @@ strong {
       color: white;
       background-color: #f20504; }
   .section.request .container .block.menu {
-    margin-top: 150px; }
+    margin-top: 12%; }
     .section.request .container .block.menu .menu.item {
       display: inline-block;
-      margin-right: 200px;
+      margin-right: 19%;
       font-size: 16px; }
       .section.request .container .block.menu .menu.item img {
         margin-bottom: 15px; }
@@ -1585,7 +1620,7 @@ strong {
         background-color: red; }
     .section.business .container .block .right {
       margin-top: 60px;
-      padding-right: 15%;
+      padding-right: 5%;
       width: 50%; }
       .section.business .container .block .right p {
         font-family: "f_opens", "Open Sans", sans-serif;
@@ -1725,56 +1760,62 @@ strong {
     height: 100vh;
     min-height: 400px;
     padding-top: 6vh;
-    text-align: left; }
-    .section.main_car_animation .container .program {
-      float: left;
-      width: 300px;
+    text-align: left;
+    font-size: 0; }
+    .section.main_car_animation .container .program-cont {
+      display: inline-block;
+      width: 50%;
       vertical-align: top;
-      opacity: 0.7;
-      font-family: "f_helvetica", "Helvetica", sans-serif;
-      font-weight: 300;
-      font-size: 35.1px;
-      line-height: 50.71px;
-      text-transform: uppercase;
-      display: none; }
-    .section.main_car_animation .container .program1 {
-      display: block; }
-    .section.main_car_animation .container .block-top {
-      position: absolute;
-      left: 50%;
+      opacity: 0.7; }
+      .section.main_car_animation .container .program-cont .program {
+        position: absolute;
+        width: 300px;
+        font-family: "f_helvetica", "Helvetica", sans-serif;
+        font-weight: 300;
+        font-size: 35.1px;
+        line-height: 50.71px;
+        text-transform: uppercase;
+        opacity: 0;
+        -webkit-transition-duration: 1s;
+                transition-duration: 1s; }
+    .section.main_car_animation .container .info-cont {
+      display: inline-block;
       width: 45%;
-      font-family: "f_helvetica", "Helvetica", sans-serif;
-      font-weight: 300;
-      font-size: 16px;
-      line-height: 26px;
-      color: black;
-      opacity: 0.7;
-      display: none; }
-    .section.main_car_animation .container .block-top-1 {
-      width: 400px;
-      display: block; }
-      .section.main_car_animation .container .block-top-1 .button {
-        display: inline-block;
-        margin-right: 10px;
-        padding: 15px 30px;
-        border: 2px solid #3aa8b3;
-        border-radius: 100px;
-        cursor: pointer;
-        opacity: 1; }
-      .section.main_car_animation .container .block-top-1 .button:last-child {
-        margin-right: 0; }
-      .section.main_car_animation .container .block-top-1 .button:hover {
-        color: white;
-        background-color: #3aa8b3; }
-    .section.main_car_animation .container .block-top-2 img {
-      opacity: 1;
-      margin-bottom: 10px; }
-    .section.main_car_animation .container .block-top-2 p {
-      margin: 0; }
-    .section.main_car_animation .container .block-top-2 p:last-of-type {
-      font-weight: 600; }
-    .section.main_car_animation .container .block-top-4 p:first-child {
-      margin-bottom: 20px; }
+      opacity: 0.7; }
+      .section.main_car_animation .container .info-cont .info {
+        position: absolute;
+        font-family: "f_helvetica", "Helvetica", sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 26px;
+        color: black;
+        width: 45%;
+        opacity: 0;
+        -webkit-transition-duration: 1s;
+                transition-duration: 1s; }
+      .section.main_car_animation .container .info-cont .info-1 {
+        width: 400px; }
+        .section.main_car_animation .container .info-cont .info-1 .button {
+          display: inline-block;
+          margin-right: 10px;
+          padding: 15px 30px;
+          border: 2px solid #3aa8b3;
+          border-radius: 100px;
+          cursor: pointer; }
+        .section.main_car_animation .container .info-cont .info-1 .button:last-child {
+          margin-right: 0; }
+        .section.main_car_animation .container .info-cont .info-1 .button:hover {
+          color: white;
+          background-color: #3aa8b3; }
+      .section.main_car_animation .container .info-cont .info-2 img {
+        opacity: 1;
+        margin-bottom: 10px; }
+      .section.main_car_animation .container .info-cont .info-2 p {
+        margin: 0; }
+      .section.main_car_animation .container .info-cont .info-2 p:last-of-type {
+        font-weight: 600; }
+      .section.main_car_animation .container .info-cont .info-4 p:first-child {
+        margin-bottom: 20px; }
     .section.main_car_animation .container .content-container {
       position: absolute;
       top: 60%;
@@ -1799,11 +1840,12 @@ strong {
         background-color: white;
         border: 3px solid #ff1300;
         border-radius: 100px;
-        display: none; }
+        opacity: 0;
+        -webkit-transition-duration: 1s;
+                transition-duration: 1s; }
       .section.main_car_animation .container .content-container .round-1 {
         right: 145px;
-        bottom: 250px;
-        display: block; }
+        bottom: 250px; }
       .section.main_car_animation .container .content-container .round-2 {
         right: 145px;
         bottom: 240px; }
@@ -1831,54 +1873,79 @@ strong {
       .section.main_car_animation .container .content-container .car-4 {
         opacity: 1;
         background-image: url("../pics/section.main_car_animation.car4.png"); }
-    .section.main_car_animation .container .block-bottom {
+    .section.main_car_animation .container .info-bottom-cont {
       position: absolute;
-      bottom: 5vh;
-      left: 50%;
-      width: 45%;
-      font-family: "f_helvetica", "Helvetica", sans-serif;
-      padding-top: 70px;
-      background-repeat: no-repeat;
-      background-position: 2px 0;
-      display: none; }
-      .section.main_car_animation .container .block-bottom .title {
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 22px;
-        opacity: 0.7;
-        margin-bottom: 10px; }
-      .section.main_car_animation .container .block-bottom .text {
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 26px;
-        opacity: 0.7; }
-    .section.main_car_animation .container .block-bottom-1 {
-      background-image: url("../pics/section.main_car_animation.bottom.1.svg");
-      display: block; }
-      .section.main_car_animation .container .block-bottom-1 .block-bottom-var1 {
-        display: block; }
-      .section.main_car_animation .container .block-bottom-1 .block-bottom-var2 {
-        display: none; }
-      .section.main_car_animation .container .block-bottom-1 .text {
-        opacity: 0.4;
-        font-size: 14px;
-        line-height: 21px; }
-    .section.main_car_animation .container .block-bottom-2 {
-      background-image: url("../pics/section.main_car_animation.temp.png"); }
-    .section.main_car_animation .container .block-bottom-3 {
-      background-image: url("../pics/section.main_car_animation.sparks.png"); }
-    .section.main_car_animation .container .block-bottom-4 {
-      background-image: url("../pics/section.main_car_animation.fan.png"); }
-    .section.main_car_animation .container .block-bottom-left {
-      width: 550px;
-      font-family: "f_helvetica", "Helvetica", sans-serif;
-      margin-top: 79vh;
-      vertical-align: bottom;
-      display: none;
-      font-weight: 300;
-      font-size: 16px;
-      line-height: 26px;
-      opacity: 0.7; }
+      width: 100%;
+      left: 0;
+      padding: 0 30px;
+      height: 10vh;
+      bottom: 7vh;
+      font-size: 0;
+      text-align: left; }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape) {
+        .section.main_car_animation .container .info-bottom-cont {
+          padding: 0 20px; } }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: landscape) {
+        .section.main_car_animation .container .info-bottom-cont {
+          padding: 0 20px; } }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (orientation: landscape) {
+        .section.main_car_animation .container .info-bottom-cont {
+          padding: 0 20px; } }
+      @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-device-pixel-ratio: 3) {
+        .section.main_car_animation .container .info-bottom-cont {
+          padding: 0 20px; } }
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+        .section.main_car_animation .container .info-bottom-cont {
+          padding: 0 20px; } }
+      @media screen and (min-width: 631px) and (max-width: 800px) {
+        .section.main_car_animation .container .info-bottom-cont {
+          padding: 0 20px; } }
+      .section.main_car_animation .container .info-bottom-cont .bottom-left {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+        opacity: 0;
+        -webkit-transition-duration: 1s;
+                transition-duration: 1s; }
+        .section.main_car_animation .container .info-bottom-cont .bottom-left .text {
+          font-family: "f_helvetica", "Helvetica", sans-serif;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 26px;
+          opacity: 0.7; }
+      .section.main_car_animation .container .info-bottom-cont .bottom-right-cont {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+        position: relative; }
+        .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right {
+          position: absolute;
+          font-family: "f_helvetica", "Helvetica", sans-serif;
+          opacity: 0;
+          -webkit-transition-duration: 1s;
+                  transition-duration: 1s; }
+          .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right img {
+            position: absolute;
+            left: 0;
+            top: -70px; }
+          .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right .title {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            opacity: 0.7;
+            margin-bottom: 10px; }
+          .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right .text {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 26px;
+            opacity: 0.7; }
+        .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right-1-1 .text, .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right-1-2 .text {
+          opacity: 0.4;
+          font-size: 14px;
+          line-height: 21px; }
+
+.car-active {
+  opacity: 1 !important; }
 
 .button-active {
   color: white !important;
@@ -1889,8 +1956,8 @@ strong {
   background-color: #EEF3ED; }
   .section.new_level .container {
     text-align: left;
-    padding-top: 90px;
-    padding-bottom: 90px; }
+    padding-top: 100px;
+    padding-bottom: 100px; }
     .section.new_level .container .block-text {
       width: 69%;
       opacity: 0.7; }
@@ -2055,6 +2122,7 @@ strong {
     .section.request .container .block.main .button {
       display: inline-block;
       margin-right: 10px;
+      margin-bottom: 10px;
       padding: 20px 50px;
       border: 2px solid #f20504;
       border-radius: 100px;
@@ -2068,10 +2136,10 @@ strong {
       color: white;
       background-color: #f20504; }
   .section.request .container .block.menu {
-    margin-top: 150px; }
+    margin-top: 12%; }
     .section.request .container .block.menu .menu.item {
       display: inline-block;
-      margin-right: 200px;
+      margin-right: 19%;
       font-size: 16px; }
       .section.request .container .block.menu .menu.item img {
         margin-bottom: 15px; }
@@ -2146,6 +2214,7 @@ strong {
         border: 3px #707b8b solid;
         z-index: 3; }
         .section.slideshow .block.show .circle-ext .circle-int img.lens {
+          position: absolute;
           width: 100%;
           z-index: 2; }
         .section.slideshow .block.show .circle-ext .circle-int .slider {
@@ -2156,7 +2225,8 @@ strong {
             width: 55vh;
             background-size: cover;
             background-repeat: no-repeat;
-            background-position: 50% 50%; }
+            background-position: 50% 50%;
+            opacity: 0; }
           .section.slideshow .block.show .circle-ext .circle-int .slider .pic-1 {
             background-image: url("http://cs10628.vk.me/u168648930/-7/x_2e2ed933.jpg"); }
           .section.slideshow .block.show .circle-ext .circle-int .slider .pic-2 {
