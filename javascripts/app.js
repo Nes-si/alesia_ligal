@@ -296,7 +296,7 @@ $(function() {
     $('.section.main_car_animation .bottom-left').addClass("car-active");
     $('.section.main_car_animation .round-3').removeClass("car-active");
     return $('.section.main_car_animation .round-2').addClass("car-active");
-  }).addTo(controller).addIndicators();
+  }).addTo(controller);
   car_anim = new TimelineMax().to($('.section.main_car_animation .car-1'), 1, {
     opacity: 0
   });
