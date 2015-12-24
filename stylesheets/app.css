@@ -780,6 +780,9 @@ p {
 strong {
   font-weight: 600; }
 
+html * {
+  max-height: 99990px; }
+
 .section.start {
   min-height: 100vh;
   min-width: 100%;
@@ -877,25 +880,9 @@ strong {
   .section.new_level .cleaner-pic {
     position: absolute;
     bottom: 0;
-    right: 3.5%; }
-    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape) {
-      .section.new_level .cleaner-pic {
-        display: none; } }
-    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: landscape) {
-      .section.new_level .cleaner-pic {
-        display: none; } }
-    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (orientation: landscape) {
-      .section.new_level .cleaner-pic {
-        display: none; } }
-    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-device-pixel-ratio: 3) {
-      .section.new_level .cleaner-pic {
-        display: none; } }
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-      .section.new_level .cleaner-pic {
-        display: none; } }
-    @media screen and (min-width: 631px) and (max-width: 800px) {
-      .section.new_level .cleaner-pic {
-        display: none; } }
+    right: 3.5%;
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%; }
 
 .section.four_programs .container {
   padding-top: 100px;
@@ -1985,25 +1972,9 @@ strong {
   .section.new_level .cleaner-pic {
     position: absolute;
     bottom: 0;
-    right: 3.5%; }
-    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape) {
-      .section.new_level .cleaner-pic {
-        display: none; } }
-    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: landscape) {
-      .section.new_level .cleaner-pic {
-        display: none; } }
-    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (orientation: landscape) {
-      .section.new_level .cleaner-pic {
-        display: none; } }
-    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-device-pixel-ratio: 3) {
-      .section.new_level .cleaner-pic {
-        display: none; } }
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-      .section.new_level .cleaner-pic {
-        display: none; } }
-    @media screen and (min-width: 631px) and (max-width: 800px) {
-      .section.new_level .cleaner-pic {
-        display: none; } }
+    right: 3.5%;
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%; }
 
 .section.pause {
   background-color: #EEF3 #D; }

@@ -318,15 +318,11 @@ scrollMagicUpdate = function() {
   window.scene_car_4_to_null.offset(window.screen_h * 3);
   window.scene_slides_pin.duration(window.screen_h / 2);
   window.scene_slides_lens_show.duration(window.screen_h / 2);
-  window.scene_slides_lens_hide.duration(window.screen_h / 2);
-  window.scene_slides_lens_opacity.duration(window.screen_h / 4);
-  window.scene_slides_lens_opacity.offset(window.screen_h / 4);
-  window.scene_slides_slider_opacity.duration(window.screen_h / 4);
-  return window.scene_slides_slider_opacity.offset(window.screen_h / 4);
+  return window.scene_slides_lens_hide.duration(window.screen_h / 2);
 };
 
 onResize = function() {
-  var screen_min, slide_size;
+  var btnScale, cleanerRight, cleanerScale, commonScale, containerPadding, screen_min, slide_size, textWidth;
   window.screen_w = document.documentElement.clientWidth;
   window.screen_h = document.documentElement.clientHeight;
   videoResize();
@@ -336,6 +332,35 @@ onResize = function() {
   $('.section.slideshow .circle-int').width(slide_size);
   $('.section.slideshow .slider .pic').height(slide_size);
   $('.section.slideshow .slider .pic').width(slide_size);
+  if (window.screen_w < 1140) {
+    commonScale = window.screen_w / 1140;
+    cleanerScale = commonScale / 3 + 0.66;
+    cleanerRight = commonScale * 2 * 3.5 - 3.5;
+    containerPadding = commonScale * 100;
+    textWidth = commonScale * 65 / 2 + 32.5;
+    $('.section.new_level .cleaner-pic').css('transform', 'scale(' + cleanerScale + ')');
+    $('.section.new_level .cleaner-pic').css('right', cleanerRight + '%');
+    $('.section.new_level .container').css('padding-top', containerPadding + 'px');
+    $('.section.new_level .container').css('padding-bottom', containerPadding + 'px');
+    $('.section.new_level .block-text').css('width', textWidth + '%');
+  } else {
+    $('.section.new_level .cleaner-pic').css('transform', 'scale(1)');
+    $('.section.new_level .cleaner-pic').css('right', '3.5%');
+    $('.section.new_level .container').css('padding-top', '100px');
+    $('.section.new_level .container').css('padding-bottom', '100px');
+    $('.section.new_level .block-text').css('width', '65%');
+  }
+  if (window.screen_w < 810) {
+    btnScale = window.screen_w / 810 / 1.5 + 0.25;
+    $('.section.main_car_animation .button').each(function(i, elem) {
+      return $(elem).css('transform', 'scale(' + btnScale + ')');
+    });
+  } else {
+    $('.section.main_car_animation .button').each(function(i, elem) {
+      return $(elem).css('transform', 'scale(1)');
+    });
+  }
+  $('.section.main_car_animation .info-bottom-cont').height($('.section.main_car_animation .bottom-right').height());
   if (window.sm_inited) {
     return scrollMagicUpdate();
   }
