@@ -983,7 +983,7 @@ strong {
   .section.main_car_animation .container {
     height: 100vh;
     min-height: 400px;
-    padding-top: 6vh;
+    padding-top: 5vh;
     text-align: left;
     font-size: 0; }
     .section.main_car_animation .container .program-cont {
@@ -1103,7 +1103,7 @@ strong {
       width: 100%;
       left: 0;
       padding: 0 30px;
-      height: 10vh;
+      height: 100px;
       bottom: 3vh;
       font-size: 0;
       text-align: left; }
@@ -1150,6 +1150,9 @@ strong {
             position: absolute;
             left: 0;
             top: -70px; }
+            @media screen and (max-height: 750px) {
+              .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right img {
+                display: none; } }
           .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right .title {
             font-weight: 600;
             font-size: 16px;
@@ -1745,7 +1748,7 @@ strong {
   .section.main_car_animation .container {
     height: 100vh;
     min-height: 400px;
-    padding-top: 6vh;
+    padding-top: 5vh;
     text-align: left;
     font-size: 0; }
     .section.main_car_animation .container .program-cont {
@@ -1865,7 +1868,7 @@ strong {
       width: 100%;
       left: 0;
       padding: 0 30px;
-      height: 10vh;
+      height: 100px;
       bottom: 3vh;
       font-size: 0;
       text-align: left; }
@@ -1912,6 +1915,9 @@ strong {
             position: absolute;
             left: 0;
             top: -70px; }
+            @media screen and (max-height: 750px) {
+              .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right img {
+                display: none; } }
           .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right .title {
             font-weight: 600;
             font-size: 16px;
