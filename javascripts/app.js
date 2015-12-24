@@ -110,7 +110,7 @@
   globals.require = require;
 })();
 require.register("initialize", function(exports, require, module) {
-var onResize, scrollMagicInit, scrollMagicUpdate, videoResize;
+var iPadScrollInit, onResize, scrollMagicInit, scrollMagicUpdate, videoResize;
 
 videoResize = function() {
   var video_height, video_width;
@@ -321,8 +321,108 @@ scrollMagicUpdate = function() {
   return window.scene_slides_lens_hide.duration(window.screen_h / 2);
 };
 
+iPadScrollInit = function() {
+  var ipadPageChange;
+  $('.section.main_car_animation .ipad-scroll').css('display', 'block');
+  $('.section.main_car_animation .caption').each(function(i, elem) {
+    $(elem).addClass('caption-iPad');
+    $(elem).addClass('car-element-passive');
+    if (i === 0) {
+      return $(elem).addClass('car-element-active');
+    }
+  });
+  ipadPageChange = function(pageFrom, pageTo) {
+    $('.section.main_car_animation .program' + pageTo).addClass("car-element-active");
+    $('.section.main_car_animation .program' + pageFrom).removeClass("car-element-active");
+    $('.section.main_car_animation .info-' + pageTo).addClass("car-element-active");
+    $('.section.main_car_animation .info-' + pageFrom).removeClass("car-element-active");
+    if (pageTo === 1) {
+      $('.section.main_car_animation .bottom-right-' + pageTo + '-' + window.car_btn_active).addClass("car-element-active");
+    } else {
+      $('.section.main_car_animation .bottom-right-' + pageTo).addClass("car-element-active");
+    }
+    if (pageFrom === 1) {
+      $('.section.main_car_animation .bottom-right-' + pageFrom + '-' + window.car_btn_active).removeClass("car-element-active");
+    } else {
+      $('.section.main_car_animation .bottom-right-' + pageFrom).removeClass("car-element-active");
+    }
+    $('.section.main_car_animation .caption' + pageTo).addClass("car-element-active");
+    $('.section.main_car_animation .caption' + pageFrom).removeClass("car-element-active");
+    $('.section.main_car_animation .car-' + pageTo).addClass("car-active");
+    if (pageFrom !== 4) {
+      $('.section.main_car_animation .car-' + pageFrom).removeClass("car-active");
+    }
+    $('.section.main_car_animation .round-' + pageTo).addClass("car-active");
+    return $('.section.main_car_animation .round-' + pageFrom).removeClass("car-active");
+  };
+  $('.section.main_car_animation .next.scroll-btn').click(function() {
+    switch (window.iPadPage) {
+      case 1:
+        ipadPageChange(1, 2);
+        TweenMax.to($('.section.main_car_animation'), 0.5, {
+          backgroundColor: "#97d9ec",
+          ease: Power0.easeNone
+        });
+        $('.section.main_car_animation .prev.scroll-btn').removeClass('scroll-btn-inactive');
+        break;
+      case 2:
+        ipadPageChange(2, 3);
+        TweenMax.to($('.section.main_car_animation'), 0.5, {
+          backgroundColor: "#97c1ec",
+          ease: Power0.easeNone
+        });
+        break;
+      case 3:
+        ipadPageChange(3, 4);
+        TweenMax.to($('.section.main_car_animation'), 0.5, {
+          backgroundColor: "#82bcf8",
+          ease: Power0.easeNone
+        });
+        break;
+      default:
+        window.iPadPage--;
+    }
+    window.iPadPage++;
+    if (window.iPadPage > 3) {
+      return $('.section.main_car_animation .next.scroll-btn').addClass('scroll-btn-inactive');
+    }
+  });
+  return $('.section.main_car_animation .prev.scroll-btn').click(function() {
+    switch (window.iPadPage) {
+      case 2:
+        ipadPageChange(2, 1);
+        TweenMax.to($('.section.main_car_animation'), 0.5, {
+          backgroundColor: "#97e5ec",
+          ease: Power0.easeNone
+        });
+        break;
+      case 3:
+        ipadPageChange(3, 2);
+        TweenMax.to($('.section.main_car_animation'), 0.5, {
+          backgroundColor: "#97d9ec",
+          ease: Power0.easeNone
+        });
+        break;
+      case 4:
+        ipadPageChange(4, 3);
+        TweenMax.to($('.section.main_car_animation'), 0.5, {
+          backgroundColor: "#82bcf8",
+          ease: Power0.easeNone
+        });
+        $('.section.main_car_animation .next.scroll-btn').removeClass('scroll-btn-inactive');
+        break;
+      default:
+        window.iPadPage++;
+    }
+    window.iPadPage--;
+    if (window.iPadPage < 2) {
+      return $('.section.main_car_animation .prev.scroll-btn').addClass('scroll-btn-inactive');
+    }
+  });
+};
+
 onResize = function() {
-  var btnScale, cleanerRight, cleanerScale, commonScale, containerPadding, screen_min, slide_size, textWidth;
+  var btnScale, captSize, cleanerRight, cleanerScale, commonScale, containerPadding, screen_min, slide_size, textWidth;
   window.screen_w = document.documentElement.clientWidth;
   window.screen_h = document.documentElement.clientHeight;
   videoResize();
@@ -360,6 +460,18 @@ onResize = function() {
       return $(elem).css('transform', 'scale(1)');
     });
   }
+  if (window.screen_w < 1250 && window.isiPad) {
+    console.log('yes');
+    captSize = window.screen_w / 1250 * 120;
+    $('.section.main_car_animation .caption').each(function(i, elem) {
+      return $(elem).css('font-size', captSize + 'px');
+    });
+  } else {
+    console.log('no');
+    $('.section.main_car_animation .caption').each(function(i, elem) {
+      return $(elem).css('font-size', '120px');
+    });
+  }
   $('.section.main_car_animation .info-bottom-cont').height($('.section.main_car_animation .bottom-right').height());
   if (window.sm_inited) {
     return scrollMagicUpdate();
@@ -374,7 +486,12 @@ window.sm_inited = 0;
 
 window.pult_elem = 0;
 
+window.isiPad = false;
+
+window.iPadPage = 1;
+
 $(function() {
+  window.isiPad = navigator.userAgent.match(/iPad/i) !== null;
   onResize();
   $('.slider').slick({
     dots: false,
@@ -384,10 +501,10 @@ $(function() {
     fade: true,
     cssEase: 'linear'
   });
-  $('.prev.btn').click(function() {
+  $('.section.slideshow .prev.btn').click(function() {
     return $('.slider').slick('slickPrev');
   });
-  $('.next.btn').click(function() {
+  $('.section.slideshow .next.btn').click(function() {
     return $('.slider').slick('slickNext');
   });
   $('.section.pults td').each(function(i, elem) {
@@ -405,18 +522,22 @@ $(function() {
   $('.section.main_car_animation .btn1').click(function() {
     $('.section.main_car_animation .btn1').addClass('button-active');
     $('.section.main_car_animation .btn2').removeClass('button-active');
-    $('.section.main_car_animation .bottom-right-1-1').addClass('car-active');
-    $('.section.main_car_animation .bottom-right-1-2').removeClass('car-active');
+    $('.section.main_car_animation .bottom-right-1-1').addClass('car-element-active');
+    $('.section.main_car_animation .bottom-right-1-2').removeClass('car-element-active');
     return window.car_btn_active = 1;
   });
   $('.section.main_car_animation .btn2').click(function() {
     $('.section.main_car_animation .btn1').removeClass('button-active');
     $('.section.main_car_animation .btn2').addClass('button-active');
-    $('.section.main_car_animation .bottom-right-1-1').removeClass('car-active');
-    $('.section.main_car_animation .bottom-right-1-2').addClass('car-active');
+    $('.section.main_car_animation .bottom-right-1-1').removeClass('car-element-active');
+    $('.section.main_car_animation .bottom-right-1-2').addClass('car-element-active');
     return window.car_btn_active = 2;
   });
-  return scrollMagicInit();
+  if (window.isiPad) {
+    return iPadScrollInit();
+  } else {
+    return scrollMagicInit();
+  }
 });
 
 $(window).on('resize', debounce(onResize, 150, false));

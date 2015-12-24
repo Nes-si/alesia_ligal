@@ -948,10 +948,44 @@ html * {
   height: 100vh;
   background-color: #97e5ec;
   overflow: hidden; }
+  .section.main_car_animation .ipad-scroll {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    left: 0;
+    padding: 0 30px;
+    display: none; }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape) {
+      .section.main_car_animation .ipad-scroll {
+        padding: 0 20px; } }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: landscape) {
+      .section.main_car_animation .ipad-scroll {
+        padding: 0 20px; } }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (orientation: landscape) {
+      .section.main_car_animation .ipad-scroll {
+        padding: 0 20px; } }
+    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-device-pixel-ratio: 3) {
+      .section.main_car_animation .ipad-scroll {
+        padding: 0 20px; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+      .section.main_car_animation .ipad-scroll {
+        padding: 0 20px; } }
+    @media screen and (min-width: 631px) and (max-width: 800px) {
+      .section.main_car_animation .ipad-scroll {
+        padding: 0 20px; } }
+    .section.main_car_animation .ipad-scroll .prev.scroll-btn {
+      float: left;
+      -webkit-transform: scale(-1, 1);
+              transform: scale(-1, 1); }
+    .section.main_car_animation .ipad-scroll .next.scroll-btn {
+      float: right; }
+    .section.main_car_animation .ipad-scroll .scroll-btn:hover {
+      opacity: 0.6;
+      cursor: pointer; }
   .section.main_car_animation .caption {
     position: absolute;
     top: 45%;
-    left: 0%;
+    left: -2%;
     color: white;
     font-family: "f_helvetica", "Helvetica", sans-serif;
     font-weight: 600;
@@ -1182,6 +1216,37 @@ html * {
 .button-active {
   color: white !important;
   background-color: #3aa8b3 !important; }
+
+.scroll-btn-inactive {
+  opacity: 0.3; }
+
+.scroll-btn-inactive:hover {
+  opacity: 0.3 !important;
+  cursor: default; }
+
+.caption-iPad {
+  top: 22% !important;
+  left: 30px !important;
+  -webkit-transform: translateX(0%) !important;
+          transform: translateX(0%) !important; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape) {
+    .caption-iPad {
+      left: 20px !important; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: landscape) {
+    .caption-iPad {
+      left: 20px !important; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (orientation: landscape) {
+    .caption-iPad {
+      left: 20px !important; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-device-pixel-ratio: 3) {
+    .caption-iPad {
+      left: 20px !important; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .caption-iPad {
+      left: 20px !important; } }
+  @media screen and (min-width: 631px) and (max-width: 800px) {
+    .caption-iPad {
+      left: 20px !important; } }
 
 .section.pause {
   background-color: #EEF3 #D; }
@@ -1713,10 +1778,44 @@ html * {
   height: 100vh;
   background-color: #97e5ec;
   overflow: hidden; }
+  .section.main_car_animation .ipad-scroll {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    left: 0;
+    padding: 0 30px;
+    display: none; }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape) {
+      .section.main_car_animation .ipad-scroll {
+        padding: 0 20px; } }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: landscape) {
+      .section.main_car_animation .ipad-scroll {
+        padding: 0 20px; } }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (orientation: landscape) {
+      .section.main_car_animation .ipad-scroll {
+        padding: 0 20px; } }
+    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-device-pixel-ratio: 3) {
+      .section.main_car_animation .ipad-scroll {
+        padding: 0 20px; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+      .section.main_car_animation .ipad-scroll {
+        padding: 0 20px; } }
+    @media screen and (min-width: 631px) and (max-width: 800px) {
+      .section.main_car_animation .ipad-scroll {
+        padding: 0 20px; } }
+    .section.main_car_animation .ipad-scroll .prev.scroll-btn {
+      float: left;
+      -webkit-transform: scale(-1, 1);
+              transform: scale(-1, 1); }
+    .section.main_car_animation .ipad-scroll .next.scroll-btn {
+      float: right; }
+    .section.main_car_animation .ipad-scroll .scroll-btn:hover {
+      opacity: 0.6;
+      cursor: pointer; }
   .section.main_car_animation .caption {
     position: absolute;
     top: 45%;
-    left: 0%;
+    left: -2%;
     color: white;
     font-family: "f_helvetica", "Helvetica", sans-serif;
     font-weight: 600;
@@ -1947,6 +2046,37 @@ html * {
 .button-active {
   color: white !important;
   background-color: #3aa8b3 !important; }
+
+.scroll-btn-inactive {
+  opacity: 0.3; }
+
+.scroll-btn-inactive:hover {
+  opacity: 0.3 !important;
+  cursor: default; }
+
+.caption-iPad {
+  top: 22% !important;
+  left: 30px !important;
+  -webkit-transform: translateX(0%) !important;
+          transform: translateX(0%) !important; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape) {
+    .caption-iPad {
+      left: 20px !important; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: landscape) {
+    .caption-iPad {
+      left: 20px !important; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (orientation: landscape) {
+    .caption-iPad {
+      left: 20px !important; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-device-pixel-ratio: 3) {
+    .caption-iPad {
+      left: 20px !important; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .caption-iPad {
+      left: 20px !important; } }
+  @media screen and (min-width: 631px) and (max-width: 800px) {
+    .caption-iPad {
+      left: 20px !important; } }
 
 .section.new_level {
   position: relative;
