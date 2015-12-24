@@ -987,6 +987,7 @@ strong {
     text-align: left;
     font-size: 0; }
     .section.main_car_animation .container .program-cont {
+      position: relative;
       display: inline-block;
       width: 50%;
       vertical-align: top;
@@ -1005,6 +1006,7 @@ strong {
         -webkit-transition-duration: 500ms;
                 transition-duration: 500ms; }
     .section.main_car_animation .container .info-cont {
+      position: relative;
       display: inline-block;
       width: 45%;
       opacity: 0.7; }
@@ -1015,7 +1017,6 @@ strong {
         font-size: 16px;
         line-height: 26px;
         color: black;
-        width: 45%;
         opacity: 0;
         -webkit-transition-delay: 0ms;
                 transition-delay: 0ms;
@@ -1062,7 +1063,6 @@ strong {
         height: 300px;
         background-image: url("../pics/section.main_car_animation.cleaner.png"); }
       .section.main_car_animation .container .content-container .round {
-        position: absolute;
         height: 10px;
         width: 10px;
         background-color: white;
@@ -1082,6 +1082,9 @@ strong {
       .section.main_car_animation .container .content-container .round-3 {
         right: 145px;
         bottom: 230px; }
+      .section.main_car_animation .container .content-container .round-4 {
+        right: 145px;
+        bottom: 220px; }
       .section.main_car_animation .container .content-container .car-shadow {
         bottom: 0;
         left: 45px;
@@ -1092,16 +1095,18 @@ strong {
         bottom: 17px;
         width: 630px;
         height: 193px;
-        opacity: 0; }
+        opacity: 0;
+        -webkit-transition-delay: 0ms;
+                transition-delay: 0ms;
+        -webkit-transition-duration: 500ms;
+                transition-duration: 500ms; }
       .section.main_car_animation .container .content-container .car-1 {
-        opacity: 1;
         background-image: url("../pics/section.main_car_animation.car1.png"); }
       .section.main_car_animation .container .content-container .car-2 {
         background-image: url("../pics/section.main_car_animation.car2.png"); }
       .section.main_car_animation .container .content-container .car-3 {
         background-image: url("../pics/section.main_car_animation.car3.png"); }
       .section.main_car_animation .container .content-container .car-4 {
-        opacity: 1;
         background-image: url("../pics/section.main_car_animation.car4.png"); }
     .section.main_car_animation .container .info-bottom-cont {
       position: absolute;
@@ -1109,7 +1114,7 @@ strong {
       left: 0;
       padding: 0 30px;
       height: 10vh;
-      bottom: 7vh;
+      bottom: 3vh;
       font-size: 0;
       text-align: left; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape) {
@@ -1130,21 +1135,24 @@ strong {
       @media screen and (min-width: 631px) and (max-width: 800px) {
         .section.main_car_animation .container .info-bottom-cont {
           padding: 0 20px; } }
-      .section.main_car_animation .container .info-bottom-cont .bottom-left {
+      .section.main_car_animation .container .info-bottom-cont .bottom-left-cont {
         display: inline-block;
+        position: relative;
         vertical-align: top;
-        width: 50%;
-        opacity: 0;
-        -webkit-transition-delay: 0ms;
-                transition-delay: 0ms;
-        -webkit-transition-duration: 500ms;
-                transition-duration: 500ms; }
-        .section.main_car_animation .container .info-bottom-cont .bottom-left .text {
-          font-family: "f_helvetica", "Helvetica", sans-serif;
-          font-weight: 300;
-          font-size: 16px;
-          line-height: 26px;
-          opacity: 0.7; }
+        width: 50%; }
+        .section.main_car_animation .container .info-bottom-cont .bottom-left-cont .bottom-left {
+          position: absolute;
+          opacity: 0;
+          -webkit-transition-delay: 0ms;
+                  transition-delay: 0ms;
+          -webkit-transition-duration: 500ms;
+                  transition-duration: 500ms; }
+          .section.main_car_animation .container .info-bottom-cont .bottom-left-cont .bottom-left .text {
+            font-family: "f_helvetica", "Helvetica", sans-serif;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 26px;
+            opacity: 0.7; }
       .section.main_car_animation .container .info-bottom-cont .bottom-right-cont {
         display: inline-block;
         vertical-align: top;
@@ -1273,7 +1281,8 @@ strong {
       margin-top: 5%;
       font-family: "f_helvetica", "Helvetica", sans-serif;
       font-size: 16px;
-      line-height: 30px; }
+      line-height: 30px;
+      cursor: pointer; }
       .section.pults .container .blocks .block.parts td {
         padding: 1% 2%; }
         .section.pults .container .blocks .block.parts td .caption {
@@ -1289,6 +1298,9 @@ strong {
     bottom: 50%;
     -webkit-transform: translateY(50%) translateX(50%);
             transform: translateY(50%) translateX(50%); }
+
+.pult-td-active {
+  color: white !important; }
 
 .section.slideshow {
   background-color: white;
@@ -1355,6 +1367,7 @@ strong {
         border: 3px #707b8b solid;
         z-index: 3; }
         .section.slideshow .block.show .circle-ext .circle-int img.lens {
+          background-color: white;
           position: absolute;
           width: 100%;
           z-index: 2; }
@@ -1366,8 +1379,7 @@ strong {
             width: 55vh;
             background-size: cover;
             background-repeat: no-repeat;
-            background-position: 50% 50%;
-            opacity: 0; }
+            background-position: 50% 50%; }
           .section.slideshow .block.show .circle-ext .circle-int .slider .pic-1 {
             background-image: url("http://cs10628.vk.me/u168648930/-7/x_2e2ed933.jpg"); }
           .section.slideshow .block.show .circle-ext .circle-int .slider .pic-2 {
@@ -1737,6 +1749,7 @@ strong {
     text-align: left;
     font-size: 0; }
     .section.main_car_animation .container .program-cont {
+      position: relative;
       display: inline-block;
       width: 50%;
       vertical-align: top;
@@ -1755,6 +1768,7 @@ strong {
         -webkit-transition-duration: 500ms;
                 transition-duration: 500ms; }
     .section.main_car_animation .container .info-cont {
+      position: relative;
       display: inline-block;
       width: 45%;
       opacity: 0.7; }
@@ -1765,7 +1779,6 @@ strong {
         font-size: 16px;
         line-height: 26px;
         color: black;
-        width: 45%;
         opacity: 0;
         -webkit-transition-delay: 0ms;
                 transition-delay: 0ms;
@@ -1812,7 +1825,6 @@ strong {
         height: 300px;
         background-image: url("../pics/section.main_car_animation.cleaner.png"); }
       .section.main_car_animation .container .content-container .round {
-        position: absolute;
         height: 10px;
         width: 10px;
         background-color: white;
@@ -1832,6 +1844,9 @@ strong {
       .section.main_car_animation .container .content-container .round-3 {
         right: 145px;
         bottom: 230px; }
+      .section.main_car_animation .container .content-container .round-4 {
+        right: 145px;
+        bottom: 220px; }
       .section.main_car_animation .container .content-container .car-shadow {
         bottom: 0;
         left: 45px;
@@ -1842,16 +1857,18 @@ strong {
         bottom: 17px;
         width: 630px;
         height: 193px;
-        opacity: 0; }
+        opacity: 0;
+        -webkit-transition-delay: 0ms;
+                transition-delay: 0ms;
+        -webkit-transition-duration: 500ms;
+                transition-duration: 500ms; }
       .section.main_car_animation .container .content-container .car-1 {
-        opacity: 1;
         background-image: url("../pics/section.main_car_animation.car1.png"); }
       .section.main_car_animation .container .content-container .car-2 {
         background-image: url("../pics/section.main_car_animation.car2.png"); }
       .section.main_car_animation .container .content-container .car-3 {
         background-image: url("../pics/section.main_car_animation.car3.png"); }
       .section.main_car_animation .container .content-container .car-4 {
-        opacity: 1;
         background-image: url("../pics/section.main_car_animation.car4.png"); }
     .section.main_car_animation .container .info-bottom-cont {
       position: absolute;
@@ -1859,7 +1876,7 @@ strong {
       left: 0;
       padding: 0 30px;
       height: 10vh;
-      bottom: 7vh;
+      bottom: 3vh;
       font-size: 0;
       text-align: left; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape) {
@@ -1880,21 +1897,24 @@ strong {
       @media screen and (min-width: 631px) and (max-width: 800px) {
         .section.main_car_animation .container .info-bottom-cont {
           padding: 0 20px; } }
-      .section.main_car_animation .container .info-bottom-cont .bottom-left {
+      .section.main_car_animation .container .info-bottom-cont .bottom-left-cont {
         display: inline-block;
+        position: relative;
         vertical-align: top;
-        width: 50%;
-        opacity: 0;
-        -webkit-transition-delay: 0ms;
-                transition-delay: 0ms;
-        -webkit-transition-duration: 500ms;
-                transition-duration: 500ms; }
-        .section.main_car_animation .container .info-bottom-cont .bottom-left .text {
-          font-family: "f_helvetica", "Helvetica", sans-serif;
-          font-weight: 300;
-          font-size: 16px;
-          line-height: 26px;
-          opacity: 0.7; }
+        width: 50%; }
+        .section.main_car_animation .container .info-bottom-cont .bottom-left-cont .bottom-left {
+          position: absolute;
+          opacity: 0;
+          -webkit-transition-delay: 0ms;
+                  transition-delay: 0ms;
+          -webkit-transition-duration: 500ms;
+                  transition-duration: 500ms; }
+          .section.main_car_animation .container .info-bottom-cont .bottom-left-cont .bottom-left .text {
+            font-family: "f_helvetica", "Helvetica", sans-serif;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 26px;
+            opacity: 0.7; }
       .section.main_car_animation .container .info-bottom-cont .bottom-right-cont {
         display: inline-block;
         vertical-align: top;
@@ -2067,7 +2087,8 @@ strong {
       margin-top: 5%;
       font-family: "f_helvetica", "Helvetica", sans-serif;
       font-size: 16px;
-      line-height: 30px; }
+      line-height: 30px;
+      cursor: pointer; }
       .section.pults .container .blocks .block.parts td {
         padding: 1% 2%; }
         .section.pults .container .blocks .block.parts td .caption {
@@ -2083,6 +2104,9 @@ strong {
     bottom: 50%;
     -webkit-transform: translateY(50%) translateX(50%);
             transform: translateY(50%) translateX(50%); }
+
+.pult-td-active {
+  color: white !important; }
 
 .section.request .container {
   padding-top: 100px;
@@ -2200,6 +2224,7 @@ strong {
         border: 3px #707b8b solid;
         z-index: 3; }
         .section.slideshow .block.show .circle-ext .circle-int img.lens {
+          background-color: white;
           position: absolute;
           width: 100%;
           z-index: 2; }
@@ -2211,8 +2236,7 @@ strong {
             width: 55vh;
             background-size: cover;
             background-repeat: no-repeat;
-            background-position: 50% 50%;
-            opacity: 0; }
+            background-position: 50% 50%; }
           .section.slideshow .block.show .circle-ext .circle-int .slider .pic-1 {
             background-image: url("http://cs10628.vk.me/u168648930/-7/x_2e2ed933.jpg"); }
           .section.slideshow .block.show .circle-ext .circle-int .slider .pic-2 {
