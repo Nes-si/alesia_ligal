@@ -419,6 +419,7 @@ $(function() {
     arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
+    useCSS: true,
     infinite: true
   });
   $('.prev.btn').click(function() {
