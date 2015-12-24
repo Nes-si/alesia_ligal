@@ -237,7 +237,7 @@ scrollMagicInit = function() {
     $('.section.main_car_animation .car-2').removeClass("car-active");
     $('.section.main_car_animation .round-1').addClass("car-active");
     return $('.section.main_car_animation .round-2').removeClass("car-active");
-  }).addTo(window.controller).addIndicators();
+  }).addTo(window.controller);
   window.scene_car_2_to_3 = new ScrollMagic.Scene({
     triggerElement: "#car-screen",
     duration: '100%',

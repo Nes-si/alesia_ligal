@@ -1390,7 +1390,7 @@ strong {
         position: absolute;
         top: 50%;
         width: 7%;
-        height: 13%;
+        height: 7%;
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
         background: url("../pics/section.slideshow.arrow.svg") center center no-repeat;
@@ -1399,11 +1399,11 @@ strong {
         opacity: 0.5;
         cursor: pointer; }
       .section.slideshow .block.show .circle-ext .prev {
-        left: -20%;
+        left: -10%;
         -webkit-transform: scale(-1, 1) translateY(-50%);
                 transform: scale(-1, 1) translateY(-50%); }
       .section.slideshow .block.show .circle-ext .next {
-        right: -20%;
+        right: -10%;
         top: 50%; }
 
 .section.video {
@@ -2247,7 +2247,7 @@ strong {
         position: absolute;
         top: 50%;
         width: 7%;
-        height: 13%;
+        height: 7%;
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
         background: url("../pics/section.slideshow.arrow.svg") center center no-repeat;
@@ -2256,11 +2256,11 @@ strong {
         opacity: 0.5;
         cursor: pointer; }
       .section.slideshow .block.show .circle-ext .prev {
-        left: -20%;
+        left: -10%;
         -webkit-transform: scale(-1, 1) translateY(-50%);
                 transform: scale(-1, 1) translateY(-50%); }
       .section.slideshow .block.show .circle-ext .next {
-        right: -20%;
+        right: -10%;
         top: 50%; }
 
 .section.start {
