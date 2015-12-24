@@ -135,7 +135,7 @@ videoResize = function() {
 };
 
 scrollMagicInit = function() {
-  var back_color, caption, process2Obj, process3Obj;
+  var back_color, caption, captionEase;
   window.controller = new ScrollMagic.Controller;
   window.scene_car_pin = new ScrollMagic.Scene({
     triggerElement: '#car-screen',
@@ -143,22 +143,19 @@ scrollMagicInit = function() {
     duration: '401%',
     tweenChanges: true
   }).setPin('#car-screen').addTo(window.controller);
+  captionEase = SlowMo.ease.config(0.2, 0.3, false);
   caption = new TimelineMax().to($('.section.main_car_animation .caption1'), 1, {
-    'left': '100%',
-    'transform': 'translateX(100%)',
-    ease: Power0.easeNone
+    'transform': 'translate3D(' + window.screen_w + 'px, 0, 0)',
+    ease: captionEase
   }).to($('.section.main_car_animation .caption2'), 1, {
-    'left': '100%',
-    'transform': 'translateX(100%)',
-    ease: Power0.easeNone
+    'transform': 'translate3D(' + window.screen_w + 'px, 0, 0)',
+    ease: captionEase
   }).to($('.section.main_car_animation .caption3'), 1, {
-    'left': '100%',
-    'transform': 'translateX(100%)',
-    ease: Power0.easeNone
+    'transform': 'translate3D(' + window.screen_w + 'px, 0, 0)',
+    ease: captionEase
   }).to($('.section.main_car_animation .caption4'), 1, {
-    'left': '100%',
-    'transform': 'translateX(100%)',
-    ease: Power0.easeNone
+    'transform': 'translate3D(' + window.screen_w + 'px, 0, 0)',
+    ease: captionEase
   });
   window.scene_car_caption_move = new ScrollMagic.Scene({
     triggerElement: "#car-screen",
@@ -183,56 +180,17 @@ scrollMagicInit = function() {
     duration: '400%',
     triggerHook: 0
   }).setTween(back_color).addTo(window.controller);
-  process2Obj = function(obj_1, obj_2) {
-    if ($(obj_1).hasClass("car-active")) {
-      new TweenMax.to($(obj_1), 1, {
-        'top': '-100px',
-        onComplete: function() {
-          return $(obj_1).css('top', '0');
-        }
-      });
-    }
-    $(obj_1).removeClass("car-active");
-    $(obj_2).addClass("car-active");
-    return console.log('2');
-  };
-  process3Obj = function(obj_1, obj_2, obj_3) {
-    if ($(obj_1).hasClass("car-active")) {
-      new TweenMax.to($(obj_1), 1, {
-        'top': '-100px',
-        onComplete: function() {
-          return $(obj_1).css('top', '0');
-        }
-      });
-    }
-    if ($(obj_3).hasClass("car-active")) {
-      new TweenMax.to($(obj_3), 1, {
-        'top': '-100px',
-        onComplete: function() {
-          return $(obj_3).css('top', '0');
-        }
-      });
-    }
-    $(obj_1).removeClass("car-active");
-    $(obj_2).addClass("car-active");
-    $(obj_3).removeClass("car-active");
-    return console.log('3');
-  };
   window.scene_car_1_to_2 = new ScrollMagic.Scene({
     triggerElement: "#car-screen",
     duration: '100%',
     triggerHook: 0
   }).on("start end", function() {
-    var ob_1, ob_2;
-    ob_1 = '.section.main_car_animation .program1';
-    ob_2 = '.section.main_car_animation .program2';
-    process2Obj(ob_2, ob_1);
-    ob_1 = '.section.main_car_animation .info-1';
-    ob_2 = '.section.main_car_animation .info-2';
-    process2Obj(ob_2, ob_1);
-    ob_1 = '.section.main_car_animation .bottom-right-1-' + window.car_btn_active;
-    ob_2 = '.section.main_car_animation .bottom-right-2';
-    process2Obj(ob_2, ob_1);
+    $('.section.main_car_animation .program1').addClass("car-element-active");
+    $('.section.main_car_animation .program2').removeClass("car-element-active");
+    $('.section.main_car_animation .info-1').addClass("car-element-active");
+    $('.section.main_car_animation .info-2').removeClass("car-element-active");
+    $('.section.main_car_animation .bottom-right-1-' + window.car_btn_active).addClass("car-element-active");
+    $('.section.main_car_animation .bottom-right-2').removeClass("car-element-active");
     $('.section.main_car_animation .car-1').addClass("car-active");
     $('.section.main_car_animation .car-2').removeClass("car-active");
     $('.section.main_car_animation .round-1').addClass("car-active");
@@ -244,19 +202,15 @@ scrollMagicInit = function() {
     offset: window.screen_h,
     triggerHook: 0
   }).on("start end", function() {
-    var ob_1, ob_2, ob_3;
-    ob_1 = '.section.main_car_animation .program1';
-    ob_2 = '.section.main_car_animation .program2';
-    ob_3 = '.section.main_car_animation .program3';
-    process3Obj(ob_1, ob_2, ob_3);
-    ob_1 = '.section.main_car_animation .info-1';
-    ob_2 = '.section.main_car_animation .info-2';
-    ob_3 = '.section.main_car_animation .info-3';
-    process3Obj(ob_1, ob_2, ob_3);
-    ob_1 = '.section.main_car_animation .bottom-right-1-' + window.car_btn_active;
-    ob_2 = '.section.main_car_animation .bottom-right-2';
-    ob_3 = '.section.main_car_animation .bottom-right-3';
-    process3Obj(ob_1, ob_2, ob_3);
+    $('.section.main_car_animation .program1').removeClass("car-element-active");
+    $('.section.main_car_animation .program2').addClass("car-element-active");
+    $('.section.main_car_animation .program3').removeClass("car-element-active");
+    $('.section.main_car_animation .info-1').removeClass("car-element-active");
+    $('.section.main_car_animation .info-2').addClass("car-element-active");
+    $('.section.main_car_animation .info-3').removeClass("car-element-active");
+    $('.section.main_car_animation .bottom-right-1-' + window.car_btn_active).removeClass("car-element-active");
+    $('.section.main_car_animation .bottom-right-2').addClass("car-element-active");
+    $('.section.main_car_animation .bottom-right-3').removeClass("car-element-active");
     $('.section.main_car_animation .car-1').removeClass("car-active");
     $('.section.main_car_animation .car-2').addClass("car-active");
     $('.section.main_car_animation .car-3').removeClass("car-active");
@@ -270,29 +224,16 @@ scrollMagicInit = function() {
     offset: window.screen_h * 2,
     triggerHook: 0
   }).on("start end", function() {
-    var ob_1, ob_2, ob_3, ob_4;
-    ob_2 = '.section.main_car_animation .program2';
-    ob_3 = '.section.main_car_animation .program3';
-    ob_4 = '.section.main_car_animation .program4';
-    process3Obj(ob_2, ob_3, ob_4);
-    ob_2 = '.section.main_car_animation .info-2';
-    ob_3 = '.section.main_car_animation .info-3';
-    ob_4 = '.section.main_car_animation .info-4';
-    process3Obj(ob_2, ob_3, ob_4);
-    ob_2 = '.section.main_car_animation .bottom-right-2';
-    ob_3 = '.section.main_car_animation .bottom-right-3';
-    ob_4 = '.section.main_car_animation .bottom-right-4';
-    process3Obj(ob_2, ob_3, ob_4);
-    ob_1 = '.section.main_car_animation .bottom-left';
-    if ($(ob_1).hasClass("car-active")) {
-      new TweenMax.to($(ob_1), 1, {
-        'top': '-100px',
-        onComplete: function() {
-          return $(ob_1).css('top', '0');
-        }
-      });
-    }
-    $(ob_1).removeClass("car-active");
+    $('.section.main_car_animation .program2').removeClass("car-element-active");
+    $('.section.main_car_animation .program3').addClass("car-element-active");
+    $('.section.main_car_animation .program4').removeClass("car-element-active");
+    $('.section.main_car_animation .info-2').removeClass("car-element-active");
+    $('.section.main_car_animation .info-3').addClass("car-element-active");
+    $('.section.main_car_animation .info-4').removeClass("car-element-active");
+    $('.section.main_car_animation .bottom-right-2').removeClass("car-element-active");
+    $('.section.main_car_animation .bottom-right-3').addClass("car-element-active");
+    $('.section.main_car_animation .bottom-right-4').removeClass("car-element-active");
+    $('.section.main_car_animation .bottom-left').removeClass("car-element-active");
     $('.section.main_car_animation .car-2').removeClass("car-active");
     $('.section.main_car_animation .car-3').addClass("car-active");
     $('.section.main_car_animation .round-2').removeClass("car-active");
@@ -305,17 +246,13 @@ scrollMagicInit = function() {
     offset: window.screen_h * 3,
     triggerHook: 0
   }).on("start end", function() {
-    var ob_3, ob_4;
-    ob_3 = '.section.main_car_animation .program3';
-    ob_4 = '.section.main_car_animation .program4';
-    process2Obj(ob_3, ob_4);
-    ob_3 = '.section.main_car_animation .info-3';
-    ob_4 = '.section.main_car_animation .info-4';
-    process3Obj(ob_3, ob_4);
-    ob_3 = '.section.main_car_animation .bottom-right-3';
-    ob_4 = '.section.main_car_animation .bottom-right-4';
-    process3Obj(ob_3, ob_4);
-    $('.section.main_car_animation .bottom-left').addClass("car-active");
+    $('.section.main_car_animation .program3').removeClass("car-element-active");
+    $('.section.main_car_animation .program4').addClass("car-element-active");
+    $('.section.main_car_animation .info-3').removeClass("car-element-active");
+    $('.section.main_car_animation .info-4').addClass("car-element-active");
+    $('.section.main_car_animation .bottom-right-3').removeClass("car-element-active");
+    $('.section.main_car_animation .bottom-right-4').addClass("car-element-active");
+    $('.section.main_car_animation .bottom-left').addClass("car-element-active");
     $('.section.main_car_animation .car-3').removeClass("car-active");
     $('.section.main_car_animation .round-3').removeClass("car-active");
     return $('.section.main_car_animation .round-4').addClass("car-active");
@@ -417,10 +354,10 @@ $(function() {
   $('.slider').slick({
     dots: false,
     arrows: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    useCSS: true,
-    infinite: true
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear'
   });
   $('.prev.btn').click(function() {
     return $('.slider').slick('slickPrev');

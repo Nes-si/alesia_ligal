@@ -960,7 +960,7 @@ strong {
   position: relative;
   height: 100vh;
   background-color: #97e5ec;
-  overflow-x: hidden; }
+  overflow: hidden; }
   .section.main_car_animation .caption {
     position: absolute;
     top: 45%;
@@ -999,12 +999,7 @@ strong {
         font-weight: 300;
         font-size: 35.1px;
         line-height: 50.71px;
-        text-transform: uppercase;
-        opacity: 0;
-        -webkit-transition-delay: 0ms;
-                transition-delay: 0ms;
-        -webkit-transition-duration: 500ms;
-                transition-duration: 500ms; }
+        text-transform: uppercase; }
     .section.main_car_animation .container .info-cont {
       position: relative;
       display: inline-block;
@@ -1016,12 +1011,7 @@ strong {
         font-weight: 300;
         font-size: 16px;
         line-height: 26px;
-        color: black;
-        opacity: 0;
-        -webkit-transition-delay: 0ms;
-                transition-delay: 0ms;
-        -webkit-transition-duration: 500ms;
-                transition-duration: 500ms; }
+        color: black; }
       .section.main_car_animation .container .info-cont .info-1 {
         width: 400px; }
         .section.main_car_animation .container .info-cont .info-1 .button {
@@ -1141,12 +1131,7 @@ strong {
         vertical-align: top;
         width: 50%; }
         .section.main_car_animation .container .info-bottom-cont .bottom-left-cont .bottom-left {
-          position: absolute;
-          opacity: 0;
-          -webkit-transition-delay: 0ms;
-                  transition-delay: 0ms;
-          -webkit-transition-duration: 500ms;
-                  transition-duration: 500ms; }
+          position: absolute; }
           .section.main_car_animation .container .info-bottom-cont .bottom-left-cont .bottom-left .text {
             font-family: "f_helvetica", "Helvetica", sans-serif;
             font-weight: 300;
@@ -1160,12 +1145,7 @@ strong {
         position: relative; }
         .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right {
           position: absolute;
-          font-family: "f_helvetica", "Helvetica", sans-serif;
-          opacity: 0;
-          -webkit-transition-delay: 0ms;
-                  transition-delay: 0ms;
-          -webkit-transition-duration: 500ms;
-                  transition-duration: 500ms; }
+          font-family: "f_helvetica", "Helvetica", sans-serif; }
           .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right img {
             position: absolute;
             left: 0;
@@ -1190,6 +1170,24 @@ strong {
   opacity: 1 !important;
   -webkit-transition-delay: 500ms !important;
           transition-delay: 500ms !important; }
+
+.car-element-passive {
+  opacity: 0;
+  -webkit-transition-delay: 0ms;
+          transition-delay: 0ms;
+  -webkit-transition-duration: 500ms, 500ms;
+          transition-duration: 500ms, 500ms;
+  -webkit-transform: translate3D(0, -50px, 0);
+          transform: translate3D(0, -50px, 0);
+  -webkit-transition-property: opacity, -webkit-transform;
+          transition-property: opacity, transform; }
+
+.car-element-active {
+  opacity: 1 !important;
+  -webkit-transition-delay: 500ms, 0ms !important;
+          transition-delay: 500ms, 0ms !important;
+  -webkit-transform: translate3D(0, 0, 0) !important;
+          transform: translate3D(0, 0, 0) !important; }
 
 .button-active {
   color: white !important;
@@ -1534,12 +1532,13 @@ strong {
     margin-right: 10%;
     margin-left: 3%;
     padding: 7px 20px;
-    border: 2px solid #f20504;
+    border: 1px solid #f20504;
     border-radius: 100px;
     cursor: pointer;
     color: #f20504;
     font-weight: 600;
-    font-size: 14px; }
+    font-size: 14px;
+    box-shadow: 0px 0px 0.5px 0.5px #f20504; }
   .section.footer .btn:hover {
     color: white;
     background-color: #f20504; }
@@ -1644,12 +1643,13 @@ strong {
     margin-right: 10%;
     margin-left: 3%;
     padding: 7px 20px;
-    border: 2px solid #f20504;
+    border: 1px solid #f20504;
     border-radius: 100px;
     cursor: pointer;
     color: #f20504;
     font-weight: 600;
-    font-size: 14px; }
+    font-size: 14px;
+    box-shadow: 0px 0px 0.5px 0.5px #f20504; }
   .section.footer .btn:hover {
     color: white;
     background-color: #f20504; }
@@ -1722,7 +1722,7 @@ strong {
   position: relative;
   height: 100vh;
   background-color: #97e5ec;
-  overflow-x: hidden; }
+  overflow: hidden; }
   .section.main_car_animation .caption {
     position: absolute;
     top: 45%;
@@ -1761,12 +1761,7 @@ strong {
         font-weight: 300;
         font-size: 35.1px;
         line-height: 50.71px;
-        text-transform: uppercase;
-        opacity: 0;
-        -webkit-transition-delay: 0ms;
-                transition-delay: 0ms;
-        -webkit-transition-duration: 500ms;
-                transition-duration: 500ms; }
+        text-transform: uppercase; }
     .section.main_car_animation .container .info-cont {
       position: relative;
       display: inline-block;
@@ -1778,12 +1773,7 @@ strong {
         font-weight: 300;
         font-size: 16px;
         line-height: 26px;
-        color: black;
-        opacity: 0;
-        -webkit-transition-delay: 0ms;
-                transition-delay: 0ms;
-        -webkit-transition-duration: 500ms;
-                transition-duration: 500ms; }
+        color: black; }
       .section.main_car_animation .container .info-cont .info-1 {
         width: 400px; }
         .section.main_car_animation .container .info-cont .info-1 .button {
@@ -1903,12 +1893,7 @@ strong {
         vertical-align: top;
         width: 50%; }
         .section.main_car_animation .container .info-bottom-cont .bottom-left-cont .bottom-left {
-          position: absolute;
-          opacity: 0;
-          -webkit-transition-delay: 0ms;
-                  transition-delay: 0ms;
-          -webkit-transition-duration: 500ms;
-                  transition-duration: 500ms; }
+          position: absolute; }
           .section.main_car_animation .container .info-bottom-cont .bottom-left-cont .bottom-left .text {
             font-family: "f_helvetica", "Helvetica", sans-serif;
             font-weight: 300;
@@ -1922,12 +1907,7 @@ strong {
         position: relative; }
         .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right {
           position: absolute;
-          font-family: "f_helvetica", "Helvetica", sans-serif;
-          opacity: 0;
-          -webkit-transition-delay: 0ms;
-                  transition-delay: 0ms;
-          -webkit-transition-duration: 500ms;
-                  transition-duration: 500ms; }
+          font-family: "f_helvetica", "Helvetica", sans-serif; }
           .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right img {
             position: absolute;
             left: 0;
@@ -1952,6 +1932,24 @@ strong {
   opacity: 1 !important;
   -webkit-transition-delay: 500ms !important;
           transition-delay: 500ms !important; }
+
+.car-element-passive {
+  opacity: 0;
+  -webkit-transition-delay: 0ms;
+          transition-delay: 0ms;
+  -webkit-transition-duration: 500ms, 500ms;
+          transition-duration: 500ms, 500ms;
+  -webkit-transform: translate3D(0, -50px, 0);
+          transform: translate3D(0, -50px, 0);
+  -webkit-transition-property: opacity, -webkit-transform;
+          transition-property: opacity, transform; }
+
+.car-element-active {
+  opacity: 1 !important;
+  -webkit-transition-delay: 500ms, 0ms !important;
+          transition-delay: 500ms, 0ms !important;
+  -webkit-transform: translate3D(0, 0, 0) !important;
+          transform: translate3D(0, 0, 0) !important; }
 
 .button-active {
   color: white !important;
