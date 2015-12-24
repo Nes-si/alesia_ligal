@@ -780,9 +780,6 @@ p {
 strong {
   font-weight: 600; }
 
-html * {
-  max-height: 99990px; }
-
 .section.start {
   min-height: 100vh;
   min-width: 100%;
