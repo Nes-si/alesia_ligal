@@ -473,7 +473,7 @@ carwashes__iPadScrollInit = function() {
 };
 
 carwashes__onResize = function() {
-  var btnScale, captSize, cleanerRight, cleanerScale, commonScale, containerPadding, screen_min, slide_size, textWidth;
+  var btnScale, captSize, carScale, cleanerRight, cleanerScale, commonScale, containerPadding, screen_min, slide_size, textWidth;
   window.carwashes__screen_w = document.documentElement.clientWidth;
   window.carwashes__screen_h = document.documentElement.clientHeight;
   carwashes__videoResize();
@@ -522,6 +522,24 @@ carwashes__onResize = function() {
     });
   }
   $('.carwashes__section.carwashes__main_car_animation .carwashes__info-bottom-cont').height($('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right').height());
+  if (window.carwashes__screen_h < 650) {
+    carScale = window.carwashes__screen_h / 650;
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__content-container').css('transform', 'scale(' + carScale + ') translateX(-50%) translateY(-50%)');
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__info').css('font-size', '15px');
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__info').css('line-height', '22px');
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right').css('font-size', '15px');
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right').css('line-height', '22px');
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-left').css('font-size', '15px');
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-left').css('line-height', '22px');
+  } else {
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__content-container').css('transform', 'scale(1) translateX(-50%) translateY(-50%)');
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__info').css('font-size', '16px');
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__info').css('line-height', '26px');
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right').css('font-size', '15px');
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right').css('line-height', '22px');
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-left').css('font-size', '15px');
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-left').css('line-height', '22px');
+  }
   if (window.carwashes__sm_inited) {
     carwashes__scrollMagicUpdate();
   }

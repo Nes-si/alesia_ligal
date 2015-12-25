@@ -972,7 +972,7 @@ html * {
   .carwashes__section.carwashes__main_car_animation .carwashes__container {
     height: 100vh;
     min-height: 400px;
-    padding-top: 5vh;
+    padding-top: 9vh;
     text-align: left;
     font-size: 0; }
     .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__program-cont {
@@ -1031,7 +1031,9 @@ html * {
       width: 630px;
       height: 300px;
       -webkit-transform: translateX(-50%) translateY(-50%);
-              transform: translateX(-50%) translateY(-50%); }
+              transform: translateX(-50%) translateY(-50%);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%; }
       .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__content-container .carwashes__content {
         position: absolute;
         background-repeat: no-repeat; }
@@ -1117,12 +1119,12 @@ html * {
         vertical-align: top;
         width: 50%; }
         .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-left-cont .carwashes__bottom-left {
-          position: absolute; }
+          position: absolute;
+          font-family: "f_helvetica", "Helvetica", sans-serif;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 26px; }
           .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-left-cont .carwashes__bottom-left .carwashes__text {
-            font-family: "f_helvetica", "Helvetica", sans-serif;
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 26px;
             opacity: 0.7; }
       .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-right-cont {
         display: inline-block;
@@ -1131,7 +1133,10 @@ html * {
         position: relative; }
         .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-right-cont .carwashes__bottom-right {
           position: absolute;
-          font-family: "f_helvetica", "Helvetica", sans-serif; }
+          font-family: "f_helvetica", "Helvetica", sans-serif;
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 26px; }
           .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-right-cont .carwashes__bottom-right img {
             position: absolute;
             left: 0;
@@ -1139,17 +1144,11 @@ html * {
             @media screen and (max-height: 750px) {
               .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-right-cont .carwashes__bottom-right img {
                 display: none; } }
-          .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-right-cont .carwashes__bottom-right .carwashes__title {
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 22px;
-            opacity: 0.7;
-            margin-bottom: 10px; }
           .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-right-cont .carwashes__bottom-right .carwashes__text {
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 26px;
             opacity: 0.7; }
+        .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-right-cont .carwashes__bottom-right-1-1 .carwashes__title, .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-right-cont .carwashes__bottom-right-1-2 .carwashes__title {
+          font-weight: 600;
+          opacity: 0.7; }
         .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-right-cont .carwashes__bottom-right-1-1 .carwashes__text, .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-right-cont .carwashes__bottom-right-1-2 .carwashes__text {
           opacity: 0.4;
           font-size: 14px;
