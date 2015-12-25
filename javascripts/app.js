@@ -535,10 +535,10 @@ carwashes__onResize = function() {
     $('.carwashes__section.carwashes__main_car_animation .carwashes__content-container').css('transform', 'scale(1) translateX(-50%) translateY(-50%)');
     $('.carwashes__section.carwashes__main_car_animation .carwashes__info').css('font-size', '16px');
     $('.carwashes__section.carwashes__main_car_animation .carwashes__info').css('line-height', '26px');
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right').css('font-size', '15px');
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right').css('line-height', '22px');
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-left').css('font-size', '15px');
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-left').css('line-height', '22px');
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right').css('font-size', '16px');
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right').css('line-height', '26px');
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-left').css('font-size', '16px');
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-left').css('line-height', '26px');
   }
   if (window.carwashes__sm_inited) {
     carwashes__scrollMagicUpdate();
