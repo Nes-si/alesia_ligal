@@ -370,6 +370,8 @@ carwashes__scrollMagicUpdate = function() {
 
 carwashes__iPadScrollInit = function() {
   var ipadPageChange;
+  $('.carwashes__section.carwashes__slideshow .carwashes__btn.carwashes__prev').addClass('carwashes__btn-active');
+  $('.carwashes__section.carwashes__slideshow .carwashes__btn.carwashes__next').addClass('carwashes__btn-active');
   $('.carwashes__section.carwashes__main_car_animation .carwashes__ipad-scroll').css('display', 'block');
   $('.carwashes__section.carwashes__main_car_animation .carwashes__caption').each(function(i, elem) {
     $(elem).addClass('carwashes__caption-iPad');
@@ -402,7 +404,7 @@ carwashes__iPadScrollInit = function() {
     $('.carwashes__section.carwashes__main_car_animation .carwashes__round-' + pageTo).addClass("carwashes__car-active");
     return $('.carwashes__section.carwashes__main_car_animation .carwashes__round-' + pageFrom).removeClass("carwashes__car-active");
   };
-  $('.carwashes__section.carwashes__main_car_animation .carwashes__next.carwashes__scroll-btn').click(function() {
+  $('.carwashes__section.carwashes__main_car_animation .carwashes__scroll-btn-next').click(function() {
     switch (window.carwashes__iPadPage) {
       case 1:
         ipadPageChange(1, 2);
@@ -410,7 +412,7 @@ carwashes__iPadScrollInit = function() {
           backgroundColor: "#97d9ec",
           ease: Power0.easeNone
         });
-        $('.carwashes__section.carwashes__main_car_animation .carwashes__prev.carwashes__scroll-btn').removeClass('carwashes__scroll-btn-inactive');
+        $('.carwashes__section.carwashes__main_car_animation .carwashes__scroll-btn-prev').removeClass('carwashes__scroll-btn-inactive');
         break;
       case 2:
         ipadPageChange(2, 3);
@@ -431,10 +433,10 @@ carwashes__iPadScrollInit = function() {
     }
     window.carwashes__iPadPage++;
     if (window.carwashes__iPadPage > 3) {
-      return $('.carwashes__section.carwashes__main_car_animation .carwashes__next.carwashes__scroll-btn').addClass('carwashes__scroll-btn-inactive');
+      return $('.carwashes__section.carwashes__main_car_animation .carwashes__scroll-btn-next').addClass('carwashes__scroll-btn-inactive');
     }
   });
-  $('.carwashes__section.carwashes__main_car_animation .carwashes__prev.carwashes__scroll-btn').click(function() {
+  $('.carwashes__section.carwashes__main_car_animation .carwashes__scroll-btn-prev').click(function() {
     switch (window.carwashes__iPadPage) {
       case 2:
         ipadPageChange(2, 1);
@@ -456,14 +458,14 @@ carwashes__iPadScrollInit = function() {
           backgroundColor: "#82bcf8",
           ease: Power0.easeNone
         });
-        $('.carwashes__section.carwashes__main_car_animation .carwashes__next.carwashes__scroll-btn').removeClass('carwashes__scroll-btn-inactive');
+        $('.carwashes__section.carwashes__main_car_animation .carwashes__scroll-btn-next').removeClass('carwashes__scroll-btn-inactive');
         break;
       default:
         window.carwashes__iPadPage++;
     }
     window.carwashes__iPadPage--;
     if (window.carwashes__iPadPage < 2) {
-      return $('.carwashes__section.carwashes__main_car_animation .carwashes__prev.carwashes__scroll-btn').addClass('carwashes__scroll-btn-inactive');
+      return $('.carwashes__section.carwashes__main_car_animation .carwashes__scroll-btn-prev').addClass('carwashes__scroll-btn-inactive');
     }
   });
   $('.carwashes__section.carwashes__slideshow').css('min-height', '100vh');
