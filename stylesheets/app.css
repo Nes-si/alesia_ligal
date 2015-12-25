@@ -687,7 +687,7 @@ table {
 * {
   box-sizing: border-box; }
 
-.container {
+.carwashes__container {
   width: 100%;
   max-width: 1140px;
   min-width: 768px;
@@ -697,42 +697,42 @@ table {
   padding-left: 30px;
   padding-right: 30px;
   text-align: center; }
-  .container:after {
+  .carwashes__container:after {
     content: "";
     display: table;
     clear: both; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape) {
-    .container {
+    .carwashes__container {
       padding: 0 20px; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: landscape) {
-    .container {
+    .carwashes__container {
       padding: 0 20px; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (orientation: landscape) {
-    .container {
+    .carwashes__container {
       padding: 0 20px; } }
   @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-device-pixel-ratio: 3) {
-    .container {
+    .carwashes__container {
       padding: 0 20px; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-    .container {
+    .carwashes__container {
       padding: 0 20px; } }
   @media screen and (min-width: 631px) and (max-width: 800px) {
-    .container {
+    .carwashes__container {
       padding: 0 20px; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (orientation: portrait) {
-    .container {
+    .carwashes__container {
       padding: 0 10px; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: portrait) {
-    .container {
+    .carwashes__container {
       padding: 0 10px; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (orientation: portrait) {
-    .container {
+    .carwashes__container {
       padding: 0 10px; } }
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
-    .container {
+    .carwashes__container {
       padding: 0 10px; } }
   @media screen and (max-width: 630px) {
-    .container {
+    .carwashes__container {
       padding: 0 10px; } }
 
 @font-face {
@@ -775,7 +775,8 @@ body {
   color: black; }
 
 p {
-  margin-top: 0; }
+  margin-top: 0;
+  margin-bottom: 16px; }
 
 strong {
   font-weight: 600; }
@@ -783,157 +784,124 @@ strong {
 html * {
   max-height: 99990px; }
 
-.section.start {
-  min-height: 100vh;
-  min-width: 100%;
-  background-image: url("../pics/section.start.back.jpg");
-  background-size: cover;
-  display: table; }
-  .section.start .container {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-    color: white;
-    font-family: "f_opens", "Open Sans", sans-serif;
-    font-weight: 300; }
-    .section.start .container .text {
-      display: inline-block; }
-      .section.start .container .text .first-line {
-        font-size: 26px; }
-      .section.start .container .text .second-line {
-        font-weight: 600;
-        font-size: 56px;
-        text-transform: uppercase; }
-      .section.start .container .text .third-line {
-        font-size: 18px;
-        margin-top: 10px; }
-    .section.start .container .arrow {
-      position: absolute;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%);
-      bottom: 3%; }
-    .section.start .container .arrow:hover {
-      opacity: 0.5; }
-
-.section.business .container {
+.carwashes__section.carwashes__business .carwashes__container {
   padding-top: 100px;
   padding-bottom: 100px; }
-  .section.business .container .block {
+  .carwashes__section.carwashes__business .carwashes__container .carwashes__block {
     text-align: left;
     padding: 0;
     margin: 0;
     font-size: 0; }
-    .section.business .container .block .text {
+    .carwashes__section.carwashes__business .carwashes__container .carwashes__block .carwashes__text {
       display: inline-block;
       vertical-align: top;
       margin: 0; }
-    .section.business .container .block .left {
+    .carwashes__section.carwashes__business .carwashes__container .carwashes__block .carwashes__left {
       width: 50%;
       font-family: "f_opens", "Open Sans", sans-serif;
       font-weight: 300; }
-      .section.business .container .block .left .text-left.left-1 {
+      .carwashes__section.carwashes__business .carwashes__container .carwashes__block .carwashes__left .carwashes__text-left.carwashes__left-1 {
         font-size: 16px;
         margin-left: 5px; }
-      .section.business .container .block .left .text-left.left-2 {
+      .carwashes__section.carwashes__business .carwashes__container .carwashes__block .carwashes__left .carwashes__text-left.carwashes__left-2 {
         margin-top: 10px;
         font-size: 63.46px;
         line-height: 69.01px;
         text-transform: uppercase; }
-      .section.business .container .block .left .dash {
+      .carwashes__section.carwashes__business .carwashes__container .carwashes__block .carwashes__left .carwashes__dash {
         margin-top: 25px;
         height: 3px;
         width: 130px;
         background-color: red; }
-    .section.business .container .block .right {
+    .carwashes__section.carwashes__business .carwashes__container .carwashes__block .carwashes__right {
       margin-top: 60px;
       padding-right: 5%;
       width: 50%; }
-      .section.business .container .block .right p {
+      .carwashes__section.carwashes__business .carwashes__container .carwashes__block .carwashes__right p {
         font-family: "f_opens", "Open Sans", sans-serif;
         font-weight: 300;
         font-size: 16px;
         margin-bottom: 10px;
         line-height: 26px; }
 
-.section.new_level {
+.carwashes__section.carwashes__new_level {
   position: relative;
   background-color: #EEF3ED; }
-  .section.new_level .container {
+  .carwashes__section.carwashes__new_level .carwashes__container {
     text-align: left;
     padding-top: 100px;
     padding-bottom: 100px; }
-    .section.new_level .container .block-text {
+    .carwashes__section.carwashes__new_level .carwashes__container .carwashes__block-text {
       width: 69%;
       opacity: 0.7; }
-      .section.new_level .container .block-text .text-item {
+      .carwashes__section.carwashes__new_level .carwashes__container .carwashes__block-text .carwashes__text-item {
         font-family: "f_helvetica", "Helvetica", sans-serif;
         font-weight: 300; }
-      .section.new_level .container .block-text .item-1 {
+      .carwashes__section.carwashes__new_level .carwashes__container .carwashes__block-text .carwashes__item-1 {
         font-size: 35.1px;
         line-height: 50.71px;
         margin-bottom: 20px; }
-      .section.new_level .container .block-text .item-2 {
+      .carwashes__section.carwashes__new_level .carwashes__container .carwashes__block-text .carwashes__item-2 {
         font-size: 16px;
         line-height: 26px;
         text-align: justify; }
-  .section.new_level .cleaner-pic {
+  .carwashes__section.carwashes__new_level .carwashes__cleaner-pic {
     position: absolute;
     bottom: 0;
     right: 3.5%;
     -webkit-transform-origin: 100% 100%;
             transform-origin: 100% 100%; }
 
-.section.four_programs .container {
+.carwashes__section.carwashes__four_programs .carwashes__container {
   padding-top: 100px;
   padding-bottom: 80px;
   text-align: left; }
-  .section.four_programs .container .blocks {
+  .carwashes__section.carwashes__four_programs .carwashes__container .carwashes__blocks {
     ptext-align: left;
     padding: 0;
     margin: 0;
     font-size: 0; }
-    .section.four_programs .container .blocks .block {
+    .carwashes__section.carwashes__four_programs .carwashes__container .carwashes__blocks .carwashes__block {
       display: inline-block;
       margin: 0;
       text-align: left; }
-    .section.four_programs .container .blocks .block.left {
+    .carwashes__section.carwashes__four_programs .carwashes__container .carwashes__blocks .carwashes__block.carwashes__left {
       width: 50%;
       vertical-align: top; }
-      .section.four_programs .container .blocks .block.left .left {
+      .carwashes__section.carwashes__four_programs .carwashes__container .carwashes__blocks .carwashes__block.carwashes__left .carwashes__left {
         display: inline-block;
         vertical-align: bottom; }
-      .section.four_programs .container .blocks .block.left .left-1 {
+      .carwashes__section.carwashes__four_programs .carwashes__container .carwashes__blocks .carwashes__block.carwashes__left .carwashes__left-1 {
         margin-right: 25px;
         color: #e40000;
         font-family: "f_opens", "Open Sans", sans-serif;
         font-weight: 600;
         font-size: 136.46px;
         line-height: 110px; }
-      .section.four_programs .container .blocks .block.left .left-2 {
+      .carwashes__section.carwashes__four_programs .carwashes__container .carwashes__blocks .carwashes__block.carwashes__left .carwashes__left-2 {
         margin-bottom: 10px;
         font-family: "f_helvetica", "Helvetica", sans-serif;
         font-weight: 300; }
-        .section.four_programs .container .blocks .block.left .left-2 .left-2-1 {
+        .carwashes__section.carwashes__four_programs .carwashes__container .carwashes__blocks .carwashes__block.carwashes__left .carwashes__left-2 .carwashes__left-2-1 {
           opacity: 0.9;
           text-transform: uppercase;
           font-size: 35.1px; }
-        .section.four_programs .container .blocks .block.left .left-2 .left-2-2 {
+        .carwashes__section.carwashes__four_programs .carwashes__container .carwashes__blocks .carwashes__block.carwashes__left .carwashes__left-2 .carwashes__left-2-2 {
           margin-top: 10px;
           opacity: 0.7;
           font-size: 16px; }
-    .section.four_programs .container .blocks .block.right {
+    .carwashes__section.carwashes__four_programs .carwashes__container .carwashes__blocks .carwashes__block.carwashes__right {
       margin-top: 30px;
       width: 50%;
       opacity: 0.7;
       font-family: "f_helvetica", "Helvetica", sans-serif;
       font-weight: 300; }
-      .section.four_programs .container .blocks .block.right .right-1 {
+      .carwashes__section.carwashes__four_programs .carwashes__container .carwashes__blocks .carwashes__block.carwashes__right .carwashes__right-1 {
         font-size: 16px;
         line-height: 26px; }
-        .section.four_programs .container .blocks .block.right .right-1 strong {
+        .carwashes__section.carwashes__four_programs .carwashes__container .carwashes__blocks .carwashes__block.carwashes__right .carwashes__right-1 strong {
           font-weight: 600; }
-      .section.four_programs .container .blocks .block.right .right-2 {
+      .carwashes__section.carwashes__four_programs .carwashes__container .carwashes__blocks .carwashes__block.carwashes__right .carwashes__right-2 {
         margin-top: 50px;
         padding-left: 60px;
         width: 360px;
@@ -943,12 +911,12 @@ html * {
         background-repeat: no-repeat;
         background-position: 0 5px; }
 
-.section.main_car_animation {
+.carwashes__section.carwashes__main_car_animation {
   position: relative;
   height: 100vh;
   background-color: #97e5ec;
   overflow: hidden; }
-  .section.main_car_animation .ipad-scroll {
+  .carwashes__section.carwashes__main_car_animation .carwashes__ipad-scroll {
     position: absolute;
     top: 45%;
     width: 100%;
@@ -956,33 +924,33 @@ html * {
     padding: 0 30px;
     display: none; }
     @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape) {
-      .section.main_car_animation .ipad-scroll {
+      .carwashes__section.carwashes__main_car_animation .carwashes__ipad-scroll {
         padding: 0 20px; } }
     @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: landscape) {
-      .section.main_car_animation .ipad-scroll {
+      .carwashes__section.carwashes__main_car_animation .carwashes__ipad-scroll {
         padding: 0 20px; } }
     @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (orientation: landscape) {
-      .section.main_car_animation .ipad-scroll {
+      .carwashes__section.carwashes__main_car_animation .carwashes__ipad-scroll {
         padding: 0 20px; } }
     @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-device-pixel-ratio: 3) {
-      .section.main_car_animation .ipad-scroll {
+      .carwashes__section.carwashes__main_car_animation .carwashes__ipad-scroll {
         padding: 0 20px; } }
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-      .section.main_car_animation .ipad-scroll {
+      .carwashes__section.carwashes__main_car_animation .carwashes__ipad-scroll {
         padding: 0 20px; } }
     @media screen and (min-width: 631px) and (max-width: 800px) {
-      .section.main_car_animation .ipad-scroll {
+      .carwashes__section.carwashes__main_car_animation .carwashes__ipad-scroll {
         padding: 0 20px; } }
-    .section.main_car_animation .ipad-scroll .prev.scroll-btn {
+    .carwashes__section.carwashes__main_car_animation .carwashes__ipad-scroll .carwashes__prev.carwashes__scroll-btn {
       float: left;
       -webkit-transform: scale(-1, 1);
               transform: scale(-1, 1); }
-    .section.main_car_animation .ipad-scroll .next.scroll-btn {
+    .carwashes__section.carwashes__main_car_animation .carwashes__ipad-scroll .carwashes__next.carwashes__scroll-btn {
       float: right; }
-    .section.main_car_animation .ipad-scroll .scroll-btn:hover {
+    .carwashes__section.carwashes__main_car_animation .carwashes__ipad-scroll .carwashes__scroll-btn:hover {
       opacity: 0.6;
       cursor: pointer; }
-  .section.main_car_animation .caption {
+  .carwashes__section.carwashes__main_car_animation .carwashes__caption {
     position: absolute;
     top: 45%;
     left: -2%;
@@ -993,7 +961,7 @@ html * {
     text-transform: uppercase;
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%); }
-    .section.main_car_animation .caption .comment {
+    .carwashes__section.carwashes__main_car_animation .carwashes__caption .carwashes__comment {
       font-size: 16px;
       width: 250px;
       padding-left: 30px;
@@ -1001,19 +969,19 @@ html * {
       margin-top: -15px;
       background-image: url("../pics/section.main_car_animation.mineral.png");
       background-repeat: no-repeat; }
-  .section.main_car_animation .container {
+  .carwashes__section.carwashes__main_car_animation .carwashes__container {
     height: 100vh;
     min-height: 400px;
     padding-top: 5vh;
     text-align: left;
     font-size: 0; }
-    .section.main_car_animation .container .program-cont {
+    .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__program-cont {
       position: relative;
       display: inline-block;
       width: 50%;
       vertical-align: top;
       opacity: 0.7; }
-      .section.main_car_animation .container .program-cont .program {
+      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__program-cont .carwashes__program {
         position: absolute;
         width: 300px;
         font-family: "f_helvetica", "Helvetica", sans-serif;
@@ -1021,42 +989,42 @@ html * {
         font-size: 35.1px;
         line-height: 50.71px;
         text-transform: uppercase; }
-    .section.main_car_animation .container .info-cont {
+    .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-cont {
       position: relative;
       display: inline-block;
       width: 45%;
       opacity: 0.7; }
-      .section.main_car_animation .container .info-cont .info {
+      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-cont .carwashes__info {
         position: absolute;
         font-family: "f_helvetica", "Helvetica", sans-serif;
         font-weight: 300;
         font-size: 16px;
         line-height: 26px;
         color: black; }
-      .section.main_car_animation .container .info-cont .info-1 {
+      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-cont .carwashes__info-1 {
         width: 400px; }
-        .section.main_car_animation .container .info-cont .info-1 .button {
+        .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-cont .carwashes__info-1 .carwashes__button {
           display: inline-block;
           margin-right: 10px;
           padding: 15px 30px;
           border: 2px solid #3aa8b3;
           border-radius: 100px;
           cursor: pointer; }
-        .section.main_car_animation .container .info-cont .info-1 .button:last-child {
+        .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-cont .carwashes__info-1 .carwashes__button:last-child {
           margin-right: 0; }
-        .section.main_car_animation .container .info-cont .info-1 .button:hover {
+        .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-cont .carwashes__info-1 .carwashes__button:hover {
           color: white;
           background-color: #3aa8b3; }
-      .section.main_car_animation .container .info-cont .info-2 img {
+      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-cont .carwashes__info-2 img {
         opacity: 1;
         margin-bottom: 10px; }
-      .section.main_car_animation .container .info-cont .info-2 p {
+      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-cont .carwashes__info-2 p {
         margin: 0; }
-      .section.main_car_animation .container .info-cont .info-2 p:last-of-type {
+      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-cont .carwashes__info-2 p:last-of-type {
         font-weight: 600; }
-      .section.main_car_animation .container .info-cont .info-4 p:first-child {
+      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-cont .carwashes__info-4 p:first-child {
         margin-bottom: 20px; }
-    .section.main_car_animation .container .content-container {
+    .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__content-container {
       position: absolute;
       top: 60%;
       left: 50%;
@@ -1064,18 +1032,19 @@ html * {
       height: 300px;
       -webkit-transform: translateX(-50%) translateY(-50%);
               transform: translateX(-50%) translateY(-50%); }
-      .section.main_car_animation .container .content-container .content {
+      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__content-container .carwashes__content {
         position: absolute;
         background-repeat: no-repeat; }
-      .section.main_car_animation .container .content-container .cleaner {
+      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__content-container .carwashes__cleaner {
         bottom: 35px;
         right: 75px;
         width: 140px;
         height: 300px;
         background-image: url("../pics/section.main_car_animation.cleaner.png"); }
-      .section.main_car_animation .container .content-container .round {
+      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__content-container .carwashes__round {
         height: 10px;
         width: 10px;
+        right: 145px;
         background-color: white;
         border: 3px solid #ff1300;
         border-radius: 100px;
@@ -1084,25 +1053,21 @@ html * {
                 transition-delay: 0ms;
         -webkit-transition-duration: 500ms;
                 transition-duration: 500ms; }
-      .section.main_car_animation .container .content-container .round-1 {
-        right: 145px;
+      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__content-container .carwashes__round-1 {
         bottom: 250px; }
-      .section.main_car_animation .container .content-container .round-2 {
-        right: 145px;
+      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__content-container .carwashes__round-2 {
         bottom: 240px; }
-      .section.main_car_animation .container .content-container .round-3 {
-        right: 145px;
+      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__content-container .carwashes__round-3 {
         bottom: 230px; }
-      .section.main_car_animation .container .content-container .round-4 {
-        right: 145px;
+      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__content-container .carwashes__round-4 {
         bottom: 220px; }
-      .section.main_car_animation .container .content-container .car-shadow {
+      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__content-container .carwashes__car-shadow {
         bottom: 0;
         left: 45px;
         width: 569px;
         height: 44px;
         background-image: url("../pics/section.main_car_animation.car_shadow.png"); }
-      .section.main_car_animation .container .content-container .car {
+      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__content-container .carwashes__car {
         bottom: 17px;
         width: 630px;
         height: 193px;
@@ -1111,15 +1076,15 @@ html * {
                 transition-delay: 0ms;
         -webkit-transition-duration: 500ms;
                 transition-duration: 500ms; }
-      .section.main_car_animation .container .content-container .car-1 {
+      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__content-container .carwashes__car-1 {
         background-image: url("../pics/section.main_car_animation.car1.png"); }
-      .section.main_car_animation .container .content-container .car-2 {
+      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__content-container .carwashes__car-2 {
         background-image: url("../pics/section.main_car_animation.car2.png"); }
-      .section.main_car_animation .container .content-container .car-3 {
+      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__content-container .carwashes__car-3 {
         background-image: url("../pics/section.main_car_animation.car3.png"); }
-      .section.main_car_animation .container .content-container .car-4 {
+      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__content-container .carwashes__car-4 {
         background-image: url("../pics/section.main_car_animation.car4.png"); }
-    .section.main_car_animation .container .info-bottom-cont {
+    .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont {
       position: absolute;
       width: 100%;
       left: 0;
@@ -1129,73 +1094,73 @@ html * {
       font-size: 0;
       text-align: left; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape) {
-        .section.main_car_animation .container .info-bottom-cont {
+        .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont {
           padding: 0 20px; } }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: landscape) {
-        .section.main_car_animation .container .info-bottom-cont {
+        .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont {
           padding: 0 20px; } }
       @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (orientation: landscape) {
-        .section.main_car_animation .container .info-bottom-cont {
+        .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont {
           padding: 0 20px; } }
       @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-device-pixel-ratio: 3) {
-        .section.main_car_animation .container .info-bottom-cont {
+        .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont {
           padding: 0 20px; } }
       @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-        .section.main_car_animation .container .info-bottom-cont {
+        .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont {
           padding: 0 20px; } }
       @media screen and (min-width: 631px) and (max-width: 800px) {
-        .section.main_car_animation .container .info-bottom-cont {
+        .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont {
           padding: 0 20px; } }
-      .section.main_car_animation .container .info-bottom-cont .bottom-left-cont {
+      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-left-cont {
         display: inline-block;
         position: relative;
         vertical-align: top;
         width: 50%; }
-        .section.main_car_animation .container .info-bottom-cont .bottom-left-cont .bottom-left {
+        .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-left-cont .carwashes__bottom-left {
           position: absolute; }
-          .section.main_car_animation .container .info-bottom-cont .bottom-left-cont .bottom-left .text {
+          .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-left-cont .carwashes__bottom-left .carwashes__text {
             font-family: "f_helvetica", "Helvetica", sans-serif;
             font-weight: 300;
             font-size: 16px;
             line-height: 26px;
             opacity: 0.7; }
-      .section.main_car_animation .container .info-bottom-cont .bottom-right-cont {
+      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-right-cont {
         display: inline-block;
         vertical-align: top;
         width: 50%;
         position: relative; }
-        .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right {
+        .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-right-cont .carwashes__bottom-right {
           position: absolute;
           font-family: "f_helvetica", "Helvetica", sans-serif; }
-          .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right img {
+          .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-right-cont .carwashes__bottom-right img {
             position: absolute;
             left: 0;
             top: -70px; }
             @media screen and (max-height: 750px) {
-              .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right img {
+              .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-right-cont .carwashes__bottom-right img {
                 display: none; } }
-          .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right .title {
+          .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-right-cont .carwashes__bottom-right .carwashes__title {
             font-weight: 600;
             font-size: 16px;
             line-height: 22px;
             opacity: 0.7;
             margin-bottom: 10px; }
-          .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right .text {
+          .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-right-cont .carwashes__bottom-right .carwashes__text {
             font-weight: 300;
             font-size: 16px;
             line-height: 26px;
             opacity: 0.7; }
-        .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right-1-1 .text, .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right-1-2 .text {
+        .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-right-cont .carwashes__bottom-right-1-1 .carwashes__text, .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-right-cont .carwashes__bottom-right-1-2 .carwashes__text {
           opacity: 0.4;
           font-size: 14px;
           line-height: 21px; }
 
-.car-active {
+.carwashes__car-active {
   opacity: 1 !important;
   -webkit-transition-delay: 500ms !important;
           transition-delay: 500ms !important; }
 
-.car-element-passive {
+.carwashes__car-element-passive {
   opacity: 0;
   -webkit-transition-delay: 0ms;
           transition-delay: 0ms;
@@ -1206,62 +1171,62 @@ html * {
   -webkit-transition-property: opacity, -webkit-transform;
           transition-property: opacity, transform; }
 
-.car-element-active {
+.carwashes__car-element-active {
   opacity: 1 !important;
   -webkit-transition-delay: 500ms, 0ms !important;
           transition-delay: 500ms, 0ms !important;
   -webkit-transform: translate3D(0, 0, 0) !important;
           transform: translate3D(0, 0, 0) !important; }
 
-.button-active {
+.carwashes__button-active {
   color: white !important;
   background-color: #3aa8b3 !important; }
 
-.scroll-btn-inactive {
+.carwashes__scroll-btn-inactive {
   opacity: 0.3; }
 
-.scroll-btn-inactive:hover {
+.carwashes__scroll-btn-inactive:hover {
   opacity: 0.3 !important;
   cursor: default; }
 
-.caption-iPad {
+.carwashes__caption-iPad {
   top: 22% !important;
   left: 30px !important;
   -webkit-transform: translateX(0%) !important;
           transform: translateX(0%) !important; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape) {
-    .caption-iPad {
+    .carwashes__caption-iPad {
       left: 20px !important; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: landscape) {
-    .caption-iPad {
+    .carwashes__caption-iPad {
       left: 20px !important; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (orientation: landscape) {
-    .caption-iPad {
+    .carwashes__caption-iPad {
       left: 20px !important; } }
   @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-device-pixel-ratio: 3) {
-    .caption-iPad {
+    .carwashes__caption-iPad {
       left: 20px !important; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-    .caption-iPad {
+    .carwashes__caption-iPad {
       left: 20px !important; } }
   @media screen and (min-width: 631px) and (max-width: 800px) {
-    .caption-iPad {
+    .carwashes__caption-iPad {
       left: 20px !important; } }
 
-.section.pause {
+.carwashes__section.carwashes__pause {
   background-color: #EEF3 #D; }
-  .section.pause .container {
+  .carwashes__section.carwashes__pause .carwashes__container {
     padding-top: 80px;
     padding-bottom: 80px; }
-    .section.pause .container .center-cont {
+    .carwashes__section.carwashes__pause .carwashes__container .carwashes__center-cont {
       text-align: left;
       padding: 0;
       margin: 0;
       font-size: 0; }
-      .section.pause .container .center-cont .block {
+      .carwashes__section.carwashes__pause .carwashes__container .carwashes__center-cont .carwashes__block {
         display: inline-block;
         vertical-align: top; }
-      .section.pause .container .center-cont .block.left {
+      .carwashes__section.carwashes__pause .carwashes__container .carwashes__center-cont .carwashes__block.carwashes__left {
         position: relative;
         text-align: center;
         width: 50%;
@@ -1269,31 +1234,31 @@ html * {
         font-weight: 300;
         padding-right: 15%;
         padding-left: 5%; }
-        .section.pause .container .center-cont .block.left .left-1 {
+        .carwashes__section.carwashes__pause .carwashes__container .carwashes__center-cont .carwashes__block.carwashes__left .carwashes__left-1 {
           opacity: 0.7;
           font-size: 16px;
           line-height: 26px; }
-        .section.pause .container .center-cont .block.left .left-2 {
+        .carwashes__section.carwashes__pause .carwashes__container .carwashes__center-cont .carwashes__block.carwashes__left .carwashes__left-2 {
           opacity: 0.7;
           font-size: 35.1px;
           text-transform: uppercase; }
-        .section.pause .container .center-cont .block.left .button {
+        .carwashes__section.carwashes__pause .carwashes__container .carwashes__center-cont .carwashes__block.carwashes__left .carwashes__button {
           position: absolute;
           bottom: -280px;
           left: 40%;
           -webkit-transform: translateX(-50%);
                   transform: translateX(-50%);
           z-index: 100; }
-      .section.pause .container .center-cont .block.right {
+      .carwashes__section.carwashes__pause .carwashes__container .carwashes__center-cont .carwashes__block.carwashes__right {
         text-align: left;
         width: 50%;
         font-family: "f_helvetica", "Helvetica", sans-serif;
         font-weight: 300; }
-        .section.pause .container .center-cont .block.right .right-1 {
+        .carwashes__section.carwashes__pause .carwashes__container .carwashes__center-cont .carwashes__block.carwashes__right .carwashes__right-1 {
           font-size: 16px;
           line-height: 26px;
           opacity: 0.7; }
-        .section.pause .container .center-cont .block.right .right-2 {
+        .carwashes__section.carwashes__pause .carwashes__container .carwashes__center-cont .carwashes__block.carwashes__right .carwashes__right-2 {
           margin-top: 40px;
           font-size: 14px;
           line-height: 21px;
@@ -1304,68 +1269,68 @@ html * {
           background-repeat: no-repeat;
           background-position: 0 6px; }
 
-.section.pults {
+.carwashes__section.carwashes__pults {
   position: relative;
   background-color: #242d3a;
   overflow-x: hidden; }
-  .section.pults .container {
+  .carwashes__section.carwashes__pults .carwashes__container {
     padding-top: 150px;
     padding-bottom: 150px; }
-    .section.pults .container .blocks .block {
+    .carwashes__section.carwashes__pults .carwashes__container .carwashes__blocks .carwashes__block {
       color: white;
       text-align: left; }
-    .section.pults .container .blocks .block.main {
+    .carwashes__section.carwashes__pults .carwashes__container .carwashes__blocks .carwashes__block.carwashes__main {
       width: 63%;
       font-family: "f_helvetica", "Helvetica", sans-serif;
       font-weight: 300; }
-      .section.pults .container .blocks .block.main .main-1 {
+      .carwashes__section.carwashes__pults .carwashes__container .carwashes__blocks .carwashes__block.carwashes__main .carwashes__main-1 {
         opacity: 0.9;
         text-transform: uppercase;
         font-size: 35.1px;
         line-height: 50.71px; }
-      .section.pults .container .blocks .block.main .main-2 {
+      .carwashes__section.carwashes__pults .carwashes__container .carwashes__blocks .carwashes__block.carwashes__main .carwashes__main-2 {
         color: #b9d3f5;
         opacity: 0.8;
         font-size: 16px;
         line-height: 26px;
         margin-top: 20px; }
-    .section.pults .container .blocks .block.parts {
+    .carwashes__section.carwashes__pults .carwashes__container .carwashes__blocks .carwashes__block.carwashes__parts {
       margin-left: 5%;
       margin-top: 5%;
       font-family: "f_helvetica", "Helvetica", sans-serif;
       font-size: 16px;
       line-height: 30px;
       cursor: pointer; }
-      .section.pults .container .blocks .block.parts td {
+      .carwashes__section.carwashes__pults .carwashes__container .carwashes__blocks .carwashes__block.carwashes__parts td {
         padding: 1% 2%; }
-        .section.pults .container .blocks .block.parts td .caption {
+        .carwashes__section.carwashes__pults .carwashes__container .carwashes__blocks .carwashes__block.carwashes__parts td .carwashes__caption {
           color: #52b7f7;
           font-weight: 600; }
-        .section.pults .container .blocks .block.parts td p {
+        .carwashes__section.carwashes__pults .carwashes__container .carwashes__blocks .carwashes__block.carwashes__parts td p {
           opacity: 0.6;
           color: #b9d3f5;
           font-weight: 300; }
-  .section.pults .block.cleaner {
+  .carwashes__section.carwashes__pults .carwashes__block.carwashes__cleaner {
     position: absolute;
     right: 18%;
     bottom: 50%;
     -webkit-transform: translateY(50%) translateX(50%);
             transform: translateY(50%) translateX(50%); }
 
-.pult-td-active {
+.carwashes__pult-td-active {
   color: white !important; }
 
-.section.slideshow {
+.carwashes__section.carwashes__slideshow {
   background-color: white;
   min-height: 150vh;
   width: 100%;
   position: relative; }
-  .section.slideshow .container {
+  .carwashes__section.carwashes__slideshow .carwashes__container {
     height: 100vh;
     padding-top: 5%;
     color: black;
     text-align: left; }
-    .section.slideshow .container .block.pinned .title {
+    .carwashes__section.carwashes__slideshow .carwashes__container .carwashes__block.carwashes__pinned .carwashes__title {
       width: 300px;
       opacity: 0.7;
       font-family: "f_helvetica", "Helvetica", sans-serif;
@@ -1373,45 +1338,45 @@ html * {
       text-transform: uppercase;
       font-size: 35.1px;
       line-height: 50.71px; }
-    .section.slideshow .container .block.pinned .info {
+    .carwashes__section.carwashes__slideshow .carwashes__container .carwashes__block.carwashes__pinned .carwashes__info {
       margin-top: 5%;
       width: 260px;
       font-family: "f_helvetica", "Helvetica", sans-serif;
       font-size: 16px;
       line-height: 26px; }
-      .section.slideshow .container .block.pinned .info .caption {
+      .carwashes__section.carwashes__slideshow .carwashes__container .carwashes__block.carwashes__pinned .carwashes__info .carwashes__caption {
         font-weight: 600; }
-      .section.slideshow .container .block.pinned .info .text {
+      .carwashes__section.carwashes__slideshow .carwashes__container .carwashes__block.carwashes__pinned .carwashes__info .carwashes__text {
         margin-top: 10px;
         opacity: 0.6;
         font-weight: 300; }
-      .section.slideshow .container .block.pinned .info a.link {
+      .carwashes__section.carwashes__slideshow .carwashes__container .carwashes__block.carwashes__pinned .carwashes__info a.carwashes__link {
         display: block;
         margin-top: 10px;
         color: #52b7f7;
         font-weight: 600; }
-    .section.slideshow .container img.pinned {
+    .carwashes__section.carwashes__slideshow .carwashes__container img.carwashes__pinned {
       position: absolute;
       left: 50%;
       top: 60vh;
       -webkit-transform: translateX(-50%) translateY(-50%);
               transform: translateX(-50%) translateY(-50%);
       z-index: 1; }
-  .section.slideshow .block.show {
+  .carwashes__section.carwashes__slideshow .carwashes__block.carwashes__show {
     position: absolute;
     left: 50%;
     bottom: 40vh;
     -webkit-transform: translateX(-50%) translateY(50%);
             transform: translateX(-50%) translateY(50%);
     z-index: 10; }
-    .section.slideshow .block.show .circle-ext {
+    .carwashes__section.carwashes__slideshow .carwashes__block.carwashes__show .carwashes__circle-ext {
       position: relative;
       display: inline-block;
       padding: 5vh;
       border-radius: 1000px;
       border: 3px #707b8b solid;
       background-color: white; }
-      .section.slideshow .block.show .circle-ext .circle-int {
+      .carwashes__section.carwashes__slideshow .carwashes__block.carwashes__show .carwashes__circle-ext .carwashes__circle-int {
         overflow: hidden;
         position: relative;
         width: 55vh;
@@ -1419,27 +1384,27 @@ html * {
         border-radius: 1000px;
         border: 3px #707b8b solid;
         z-index: 3; }
-        .section.slideshow .block.show .circle-ext .circle-int img.lens {
+        .carwashes__section.carwashes__slideshow .carwashes__block.carwashes__show .carwashes__circle-ext .carwashes__circle-int img.carwashes__lens {
           background-color: white;
           position: absolute;
           width: 100%;
           z-index: 2; }
-        .section.slideshow .block.show .circle-ext .circle-int .slider {
+        .carwashes__section.carwashes__slideshow .carwashes__block.carwashes__show .carwashes__circle-ext .carwashes__circle-int .carwashes__slider {
           z-index: 1; }
-          .section.slideshow .block.show .circle-ext .circle-int .slider .pic {
+          .carwashes__section.carwashes__slideshow .carwashes__block.carwashes__show .carwashes__circle-ext .carwashes__circle-int .carwashes__slider .carwashes__pic {
             display: block;
             height: 55vh;
             width: 55vh;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: 50% 50%; }
-          .section.slideshow .block.show .circle-ext .circle-int .slider .pic-1 {
+          .carwashes__section.carwashes__slideshow .carwashes__block.carwashes__show .carwashes__circle-ext .carwashes__circle-int .carwashes__slider .carwashes__pic-1 {
             background-image: url("http://cs10628.vk.me/u168648930/-7/x_2e2ed933.jpg"); }
-          .section.slideshow .block.show .circle-ext .circle-int .slider .pic-2 {
+          .carwashes__section.carwashes__slideshow .carwashes__block.carwashes__show .carwashes__circle-ext .carwashes__circle-int .carwashes__slider .carwashes__pic-2 {
             background-image: url("http://img0.liveinternet.ru/images/attach/c/2//64/340/64340657_Koshki001.jpg"); }
-          .section.slideshow .block.show .circle-ext .circle-int .slider .pic-3 {
+          .carwashes__section.carwashes__slideshow .carwashes__block.carwashes__show .carwashes__circle-ext .carwashes__circle-int .carwashes__slider .carwashes__pic-3 {
             background-image: url("http://cs9952.vk.me/u52960895/-14/x_a8ffe9cf.jpg"); }
-      .section.slideshow .block.show .circle-ext .btn {
+      .carwashes__section.carwashes__slideshow .carwashes__block.carwashes__show .carwashes__circle-ext .carwashes__btn {
         position: absolute;
         top: 50%;
         width: 7%;
@@ -1451,20 +1416,20 @@ html * {
         background: url("../pics/section.slideshow.arrow.svg") center center no-repeat;
         background-size: cover;
         opacity: 0; }
-      .section.slideshow .block.show .circle-ext .btn:hover {
+      .carwashes__section.carwashes__slideshow .carwashes__block.carwashes__show .carwashes__circle-ext .carwashes__btn:hover {
         opacity: 0.5;
         cursor: pointer; }
-      .section.slideshow .block.show .circle-ext .prev {
+      .carwashes__section.carwashes__slideshow .carwashes__block.carwashes__show .carwashes__circle-ext .carwashes__prev {
         left: -10%;
         -webkit-transform: scale(-1, 1) translateY(-50%);
                 transform: scale(-1, 1) translateY(-50%); }
-      .section.slideshow .block.show .circle-ext .next {
+      .carwashes__section.carwashes__slideshow .carwashes__block.carwashes__show .carwashes__circle-ext .carwashes__next {
         right: -10%;
         top: 50%; }
-      .section.slideshow .block.show .circle-ext .btn-active {
+      .carwashes__section.carwashes__slideshow .carwashes__block.carwashes__show .carwashes__circle-ext .carwashes__btn-active {
         opacity: 1 !important; }
 
-.section.video {
+.carwashes__section.carwashes__video {
   min-height: 100vh;
   min-width: 100%;
   padding: 0;
@@ -1472,42 +1437,42 @@ html * {
   font-size: 0;
   background-color: #242d3a;
   display: table; }
-  .section.video .container {
+  .carwashes__section.carwashes__video .carwashes__container {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
     padding: 0;
     margin: 0; }
-    .section.video .container .video {
+    .carwashes__section.carwashes__video .carwashes__container .carwashes__video {
       display: inline-block;
       padding: 0;
       margin: 0; }
-      .section.video .container .video iframe {
+      .carwashes__section.carwashes__video .carwashes__container .carwashes__video iframe {
         width: 917px;
         height: 516px; }
 
-.section.request .container {
+.carwashes__section.carwashes__request .carwashes__container {
   padding-top: 100px;
   padding-bottom: 100px; }
-  .section.request .container .block {
+  .carwashes__section.carwashes__request .carwashes__container .carwashes__block {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     font-family: "f_helvetica", "Helvetica", sans-serif;
     font-size: 0; }
-  .section.request .container .block.main {
+  .carwashes__section.carwashes__request .carwashes__container .carwashes__block.carwashes__main {
     width: 50%; }
-    .section.request .container .block.main h2 {
+    .carwashes__section.carwashes__request .carwashes__container .carwashes__block.carwashes__main h2 {
       opacity: 0.9;
       font-weight: 300;
       font-size: 35.1px; }
-    .section.request .container .block.main p {
+    .carwashes__section.carwashes__request .carwashes__container .carwashes__block.carwashes__main p {
       opacity: 0.7;
       font-weight: 300;
       font-size: 16px;
       line-height: 26px;
       margin-bottom: 30px; }
-    .section.request .container .block.main .button {
+    .carwashes__section.carwashes__request .carwashes__container .carwashes__block.carwashes__main .carwashes__button {
       display: inline-block;
       margin-right: 10px;
       margin-bottom: 10px;
@@ -1518,920 +1483,24 @@ html * {
       color: #f20504;
       font-weight: 600;
       font-size: 16px; }
-    .section.request .container .block.main .button:last-child {
+    .carwashes__section.carwashes__request .carwashes__container .carwashes__block.carwashes__main .carwashes__button:last-child {
       margin-right: 0; }
-    .section.request .container .block.main .button:hover {
+    .carwashes__section.carwashes__request .carwashes__container .carwashes__block.carwashes__main .carwashes__button:hover {
       color: white;
       background-color: #f20504; }
-  .section.request .container .block.menu {
+  .carwashes__section.carwashes__request .carwashes__container .carwashes__block.carwashes__menu {
     margin-top: 12%; }
-    .section.request .container .block.menu .menu.item {
+    .carwashes__section.carwashes__request .carwashes__container .carwashes__block.carwashes__menu .carwashes__menu.carwashes__item {
       display: inline-block;
       margin-right: 19%;
       font-size: 16px; }
-      .section.request .container .block.menu .menu.item img {
+      .carwashes__section.carwashes__request .carwashes__container .carwashes__block.carwashes__menu .carwashes__menu.carwashes__item img {
         margin-bottom: 15px; }
-      .section.request .container .block.menu .menu.item p {
+      .carwashes__section.carwashes__request .carwashes__container .carwashes__block.carwashes__menu .carwashes__menu.carwashes__item p {
         color: #52b7f7;
         text-weight: 600; }
-    .section.request .container .block.menu .menu.item:last-child {
+    .carwashes__section.carwashes__request .carwashes__container .carwashes__block.carwashes__menu .carwashes__menu.carwashes__item:last-child {
       margin-right: 0; }
-
-.section.bottom_menu .menu {
-  font-size: 0; }
-  .section.bottom_menu .menu .item {
-    position: relative;
-    display: inline-block;
-    height: 270px;
-    background-size: cover; }
-    .section.bottom_menu .menu .item p {
-      position: absolute;
-      bottom: -5%;
-      left: 15%;
-      color: white;
-      font-family: "f_opens", "Open Sans", sans-serif;
-      font-weight: 600;
-      font-size: 27px;
-      text-transform: uppercase; }
-  .section.bottom_menu .menu .item:nth-child(1) {
-    background-image: url("../pics/section.bottom-menu.item1.jpg");
-    width: 35%; }
-  .section.bottom_menu .menu .item:nth-child(2) {
-    background-image: url("../pics/section.bottom-menu.item2.jpg");
-    width: 30%; }
-  .section.bottom_menu .menu .item:nth-child(3) {
-    background-image: url("../pics/section.bottom-menu.item3.jpg");
-    width: 35%; }
-
-.section.footer {
-  font-size: 0;
-  text-align: center;
-  line-height: 10vh;
-  padding: 50px 0; }
-  .section.footer .element {
-    display: inline-block;
-    margin-right: 120px;
-    vertical-align: middle;
-    line-height: 26px;
-    font-family: "f_opens", "Open Sans", sans-serif; }
-  .section.footer .logo {
-    margin-right: 10%; }
-  .section.footer .contact {
-    text-align: left;
-    font-size: 16px;
-    margin-right: 3%; }
-    .section.footer .contact .city {
-      margin-left: 3px;
-      margin-bottom: 3px;
-      font-weight: 600;
-      color: #303c30; }
-    .section.footer .contact .phone {
-      font-weight: 400;
-      color: #4c4c4c; }
-  .section.footer .btn {
-    margin-right: 10%;
-    margin-left: 3%;
-    padding: 7px 20px;
-    border: 1px solid #f20504;
-    border-radius: 100px;
-    cursor: pointer;
-    color: #f20504;
-    font-weight: 600;
-    font-size: 14px;
-    box-shadow: 0px 0px 0.5px 0.5px #f20504; }
-  .section.footer .btn:hover {
-    color: white;
-    background-color: #f20504; }
-  .section.footer .social .item {
-    display: inline-block;
-    margin-right: 20px; }
-  .section.footer .social .item:hover {
-    opacity: 0.6; }
-
-.section.bottom_menu .menu {
-  font-size: 0; }
-  .section.bottom_menu .menu .item {
-    position: relative;
-    display: inline-block;
-    height: 270px;
-    background-size: cover; }
-    .section.bottom_menu .menu .item p {
-      position: absolute;
-      bottom: -5%;
-      left: 15%;
-      color: white;
-      font-family: "f_opens", "Open Sans", sans-serif;
-      font-weight: 600;
-      font-size: 27px;
-      text-transform: uppercase; }
-  .section.bottom_menu .menu .item:nth-child(1) {
-    background-image: url("../pics/section.bottom-menu.item1.jpg");
-    width: 35%; }
-  .section.bottom_menu .menu .item:nth-child(2) {
-    background-image: url("../pics/section.bottom-menu.item2.jpg");
-    width: 30%; }
-  .section.bottom_menu .menu .item:nth-child(3) {
-    background-image: url("../pics/section.bottom-menu.item3.jpg");
-    width: 35%; }
-
-.section.business .container {
-  padding-top: 100px;
-  padding-bottom: 100px; }
-  .section.business .container .block {
-    text-align: left;
-    padding: 0;
-    margin: 0;
-    font-size: 0; }
-    .section.business .container .block .text {
-      display: inline-block;
-      vertical-align: top;
-      margin: 0; }
-    .section.business .container .block .left {
-      width: 50%;
-      font-family: "f_opens", "Open Sans", sans-serif;
-      font-weight: 300; }
-      .section.business .container .block .left .text-left.left-1 {
-        font-size: 16px;
-        margin-left: 5px; }
-      .section.business .container .block .left .text-left.left-2 {
-        margin-top: 10px;
-        font-size: 63.46px;
-        line-height: 69.01px;
-        text-transform: uppercase; }
-      .section.business .container .block .left .dash {
-        margin-top: 25px;
-        height: 3px;
-        width: 130px;
-        background-color: red; }
-    .section.business .container .block .right {
-      margin-top: 60px;
-      padding-right: 5%;
-      width: 50%; }
-      .section.business .container .block .right p {
-        font-family: "f_opens", "Open Sans", sans-serif;
-        font-weight: 300;
-        font-size: 16px;
-        margin-bottom: 10px;
-        line-height: 26px; }
-
-.section.footer {
-  font-size: 0;
-  text-align: center;
-  line-height: 10vh;
-  padding: 50px 0; }
-  .section.footer .element {
-    display: inline-block;
-    margin-right: 120px;
-    vertical-align: middle;
-    line-height: 26px;
-    font-family: "f_opens", "Open Sans", sans-serif; }
-  .section.footer .logo {
-    margin-right: 10%; }
-  .section.footer .contact {
-    text-align: left;
-    font-size: 16px;
-    margin-right: 3%; }
-    .section.footer .contact .city {
-      margin-left: 3px;
-      margin-bottom: 3px;
-      font-weight: 600;
-      color: #303c30; }
-    .section.footer .contact .phone {
-      font-weight: 400;
-      color: #4c4c4c; }
-  .section.footer .btn {
-    margin-right: 10%;
-    margin-left: 3%;
-    padding: 7px 20px;
-    border: 1px solid #f20504;
-    border-radius: 100px;
-    cursor: pointer;
-    color: #f20504;
-    font-weight: 600;
-    font-size: 14px;
-    box-shadow: 0px 0px 0.5px 0.5px #f20504; }
-  .section.footer .btn:hover {
-    color: white;
-    background-color: #f20504; }
-  .section.footer .social .item {
-    display: inline-block;
-    margin-right: 20px; }
-  .section.footer .social .item:hover {
-    opacity: 0.6; }
-
-.section.four_programs .container {
-  padding-top: 100px;
-  padding-bottom: 80px;
-  text-align: left; }
-  .section.four_programs .container .blocks {
-    ptext-align: left;
-    padding: 0;
-    margin: 0;
-    font-size: 0; }
-    .section.four_programs .container .blocks .block {
-      display: inline-block;
-      margin: 0;
-      text-align: left; }
-    .section.four_programs .container .blocks .block.left {
-      width: 50%;
-      vertical-align: top; }
-      .section.four_programs .container .blocks .block.left .left {
-        display: inline-block;
-        vertical-align: bottom; }
-      .section.four_programs .container .blocks .block.left .left-1 {
-        margin-right: 25px;
-        color: #e40000;
-        font-family: "f_opens", "Open Sans", sans-serif;
-        font-weight: 600;
-        font-size: 136.46px;
-        line-height: 110px; }
-      .section.four_programs .container .blocks .block.left .left-2 {
-        margin-bottom: 10px;
-        font-family: "f_helvetica", "Helvetica", sans-serif;
-        font-weight: 300; }
-        .section.four_programs .container .blocks .block.left .left-2 .left-2-1 {
-          opacity: 0.9;
-          text-transform: uppercase;
-          font-size: 35.1px; }
-        .section.four_programs .container .blocks .block.left .left-2 .left-2-2 {
-          margin-top: 10px;
-          opacity: 0.7;
-          font-size: 16px; }
-    .section.four_programs .container .blocks .block.right {
-      margin-top: 30px;
-      width: 50%;
-      opacity: 0.7;
-      font-family: "f_helvetica", "Helvetica", sans-serif;
-      font-weight: 300; }
-      .section.four_programs .container .blocks .block.right .right-1 {
-        font-size: 16px;
-        line-height: 26px; }
-        .section.four_programs .container .blocks .block.right .right-1 strong {
-          font-weight: 600; }
-      .section.four_programs .container .blocks .block.right .right-2 {
-        margin-top: 50px;
-        padding-left: 60px;
-        width: 360px;
-        font-size: 14px;
-        line-height: 21px;
-        background-image: url("../pics/section.four_programs.drop.svg");
-        background-repeat: no-repeat;
-        background-position: 0 5px; }
-
-.section.main_car_animation {
-  position: relative;
-  height: 100vh;
-  background-color: #97e5ec;
-  overflow: hidden; }
-  .section.main_car_animation .ipad-scroll {
-    position: absolute;
-    top: 45%;
-    width: 100%;
-    left: 0;
-    padding: 0 30px;
-    display: none; }
-    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape) {
-      .section.main_car_animation .ipad-scroll {
-        padding: 0 20px; } }
-    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: landscape) {
-      .section.main_car_animation .ipad-scroll {
-        padding: 0 20px; } }
-    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (orientation: landscape) {
-      .section.main_car_animation .ipad-scroll {
-        padding: 0 20px; } }
-    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-device-pixel-ratio: 3) {
-      .section.main_car_animation .ipad-scroll {
-        padding: 0 20px; } }
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-      .section.main_car_animation .ipad-scroll {
-        padding: 0 20px; } }
-    @media screen and (min-width: 631px) and (max-width: 800px) {
-      .section.main_car_animation .ipad-scroll {
-        padding: 0 20px; } }
-    .section.main_car_animation .ipad-scroll .prev.scroll-btn {
-      float: left;
-      -webkit-transform: scale(-1, 1);
-              transform: scale(-1, 1); }
-    .section.main_car_animation .ipad-scroll .next.scroll-btn {
-      float: right; }
-    .section.main_car_animation .ipad-scroll .scroll-btn:hover {
-      opacity: 0.6;
-      cursor: pointer; }
-  .section.main_car_animation .caption {
-    position: absolute;
-    top: 45%;
-    left: -2%;
-    color: white;
-    font-family: "f_helvetica", "Helvetica", sans-serif;
-    font-weight: 600;
-    font-size: 150px;
-    text-transform: uppercase;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%); }
-    .section.main_car_animation .caption .comment {
-      font-size: 16px;
-      width: 250px;
-      padding-left: 30px;
-      margin-left: 15px;
-      margin-top: -15px;
-      background-image: url("../pics/section.main_car_animation.mineral.png");
-      background-repeat: no-repeat; }
-  .section.main_car_animation .container {
-    height: 100vh;
-    min-height: 400px;
-    padding-top: 5vh;
-    text-align: left;
-    font-size: 0; }
-    .section.main_car_animation .container .program-cont {
-      position: relative;
-      display: inline-block;
-      width: 50%;
-      vertical-align: top;
-      opacity: 0.7; }
-      .section.main_car_animation .container .program-cont .program {
-        position: absolute;
-        width: 300px;
-        font-family: "f_helvetica", "Helvetica", sans-serif;
-        font-weight: 300;
-        font-size: 35.1px;
-        line-height: 50.71px;
-        text-transform: uppercase; }
-    .section.main_car_animation .container .info-cont {
-      position: relative;
-      display: inline-block;
-      width: 45%;
-      opacity: 0.7; }
-      .section.main_car_animation .container .info-cont .info {
-        position: absolute;
-        font-family: "f_helvetica", "Helvetica", sans-serif;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 26px;
-        color: black; }
-      .section.main_car_animation .container .info-cont .info-1 {
-        width: 400px; }
-        .section.main_car_animation .container .info-cont .info-1 .button {
-          display: inline-block;
-          margin-right: 10px;
-          padding: 15px 30px;
-          border: 2px solid #3aa8b3;
-          border-radius: 100px;
-          cursor: pointer; }
-        .section.main_car_animation .container .info-cont .info-1 .button:last-child {
-          margin-right: 0; }
-        .section.main_car_animation .container .info-cont .info-1 .button:hover {
-          color: white;
-          background-color: #3aa8b3; }
-      .section.main_car_animation .container .info-cont .info-2 img {
-        opacity: 1;
-        margin-bottom: 10px; }
-      .section.main_car_animation .container .info-cont .info-2 p {
-        margin: 0; }
-      .section.main_car_animation .container .info-cont .info-2 p:last-of-type {
-        font-weight: 600; }
-      .section.main_car_animation .container .info-cont .info-4 p:first-child {
-        margin-bottom: 20px; }
-    .section.main_car_animation .container .content-container {
-      position: absolute;
-      top: 60%;
-      left: 50%;
-      width: 630px;
-      height: 300px;
-      -webkit-transform: translateX(-50%) translateY(-50%);
-              transform: translateX(-50%) translateY(-50%); }
-      .section.main_car_animation .container .content-container .content {
-        position: absolute;
-        background-repeat: no-repeat; }
-      .section.main_car_animation .container .content-container .cleaner {
-        bottom: 35px;
-        right: 75px;
-        width: 140px;
-        height: 300px;
-        background-image: url("../pics/section.main_car_animation.cleaner.png"); }
-      .section.main_car_animation .container .content-container .round {
-        height: 10px;
-        width: 10px;
-        background-color: white;
-        border: 3px solid #ff1300;
-        border-radius: 100px;
-        opacity: 0;
-        -webkit-transition-delay: 0ms;
-                transition-delay: 0ms;
-        -webkit-transition-duration: 500ms;
-                transition-duration: 500ms; }
-      .section.main_car_animation .container .content-container .round-1 {
-        right: 145px;
-        bottom: 250px; }
-      .section.main_car_animation .container .content-container .round-2 {
-        right: 145px;
-        bottom: 240px; }
-      .section.main_car_animation .container .content-container .round-3 {
-        right: 145px;
-        bottom: 230px; }
-      .section.main_car_animation .container .content-container .round-4 {
-        right: 145px;
-        bottom: 220px; }
-      .section.main_car_animation .container .content-container .car-shadow {
-        bottom: 0;
-        left: 45px;
-        width: 569px;
-        height: 44px;
-        background-image: url("../pics/section.main_car_animation.car_shadow.png"); }
-      .section.main_car_animation .container .content-container .car {
-        bottom: 17px;
-        width: 630px;
-        height: 193px;
-        opacity: 0;
-        -webkit-transition-delay: 0ms;
-                transition-delay: 0ms;
-        -webkit-transition-duration: 500ms;
-                transition-duration: 500ms; }
-      .section.main_car_animation .container .content-container .car-1 {
-        background-image: url("../pics/section.main_car_animation.car1.png"); }
-      .section.main_car_animation .container .content-container .car-2 {
-        background-image: url("../pics/section.main_car_animation.car2.png"); }
-      .section.main_car_animation .container .content-container .car-3 {
-        background-image: url("../pics/section.main_car_animation.car3.png"); }
-      .section.main_car_animation .container .content-container .car-4 {
-        background-image: url("../pics/section.main_car_animation.car4.png"); }
-    .section.main_car_animation .container .info-bottom-cont {
-      position: absolute;
-      width: 100%;
-      left: 0;
-      padding: 0 30px;
-      height: 100px;
-      bottom: 3vh;
-      font-size: 0;
-      text-align: left; }
-      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape) {
-        .section.main_car_animation .container .info-bottom-cont {
-          padding: 0 20px; } }
-      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: landscape) {
-        .section.main_car_animation .container .info-bottom-cont {
-          padding: 0 20px; } }
-      @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (orientation: landscape) {
-        .section.main_car_animation .container .info-bottom-cont {
-          padding: 0 20px; } }
-      @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-device-pixel-ratio: 3) {
-        .section.main_car_animation .container .info-bottom-cont {
-          padding: 0 20px; } }
-      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-        .section.main_car_animation .container .info-bottom-cont {
-          padding: 0 20px; } }
-      @media screen and (min-width: 631px) and (max-width: 800px) {
-        .section.main_car_animation .container .info-bottom-cont {
-          padding: 0 20px; } }
-      .section.main_car_animation .container .info-bottom-cont .bottom-left-cont {
-        display: inline-block;
-        position: relative;
-        vertical-align: top;
-        width: 50%; }
-        .section.main_car_animation .container .info-bottom-cont .bottom-left-cont .bottom-left {
-          position: absolute; }
-          .section.main_car_animation .container .info-bottom-cont .bottom-left-cont .bottom-left .text {
-            font-family: "f_helvetica", "Helvetica", sans-serif;
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 26px;
-            opacity: 0.7; }
-      .section.main_car_animation .container .info-bottom-cont .bottom-right-cont {
-        display: inline-block;
-        vertical-align: top;
-        width: 50%;
-        position: relative; }
-        .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right {
-          position: absolute;
-          font-family: "f_helvetica", "Helvetica", sans-serif; }
-          .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right img {
-            position: absolute;
-            left: 0;
-            top: -70px; }
-            @media screen and (max-height: 750px) {
-              .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right img {
-                display: none; } }
-          .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right .title {
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 22px;
-            opacity: 0.7;
-            margin-bottom: 10px; }
-          .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right .text {
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 26px;
-            opacity: 0.7; }
-        .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right-1-1 .text, .section.main_car_animation .container .info-bottom-cont .bottom-right-cont .bottom-right-1-2 .text {
-          opacity: 0.4;
-          font-size: 14px;
-          line-height: 21px; }
-
-.car-active {
-  opacity: 1 !important;
-  -webkit-transition-delay: 500ms !important;
-          transition-delay: 500ms !important; }
-
-.car-element-passive {
-  opacity: 0;
-  -webkit-transition-delay: 0ms;
-          transition-delay: 0ms;
-  -webkit-transition-duration: 500ms, 500ms;
-          transition-duration: 500ms, 500ms;
-  -webkit-transform: translate3D(0, -50px, 0);
-          transform: translate3D(0, -50px, 0);
-  -webkit-transition-property: opacity, -webkit-transform;
-          transition-property: opacity, transform; }
-
-.car-element-active {
-  opacity: 1 !important;
-  -webkit-transition-delay: 500ms, 0ms !important;
-          transition-delay: 500ms, 0ms !important;
-  -webkit-transform: translate3D(0, 0, 0) !important;
-          transform: translate3D(0, 0, 0) !important; }
-
-.button-active {
-  color: white !important;
-  background-color: #3aa8b3 !important; }
-
-.scroll-btn-inactive {
-  opacity: 0.3; }
-
-.scroll-btn-inactive:hover {
-  opacity: 0.3 !important;
-  cursor: default; }
-
-.caption-iPad {
-  top: 22% !important;
-  left: 30px !important;
-  -webkit-transform: translateX(0%) !important;
-          transform: translateX(0%) !important; }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape) {
-    .caption-iPad {
-      left: 20px !important; } }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: landscape) {
-    .caption-iPad {
-      left: 20px !important; } }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (orientation: landscape) {
-    .caption-iPad {
-      left: 20px !important; } }
-  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-device-pixel-ratio: 3) {
-    .caption-iPad {
-      left: 20px !important; } }
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-    .caption-iPad {
-      left: 20px !important; } }
-  @media screen and (min-width: 631px) and (max-width: 800px) {
-    .caption-iPad {
-      left: 20px !important; } }
-
-.section.new_level {
-  position: relative;
-  background-color: #EEF3ED; }
-  .section.new_level .container {
-    text-align: left;
-    padding-top: 100px;
-    padding-bottom: 100px; }
-    .section.new_level .container .block-text {
-      width: 69%;
-      opacity: 0.7; }
-      .section.new_level .container .block-text .text-item {
-        font-family: "f_helvetica", "Helvetica", sans-serif;
-        font-weight: 300; }
-      .section.new_level .container .block-text .item-1 {
-        font-size: 35.1px;
-        line-height: 50.71px;
-        margin-bottom: 20px; }
-      .section.new_level .container .block-text .item-2 {
-        font-size: 16px;
-        line-height: 26px;
-        text-align: justify; }
-  .section.new_level .cleaner-pic {
-    position: absolute;
-    bottom: 0;
-    right: 3.5%;
-    -webkit-transform-origin: 100% 100%;
-            transform-origin: 100% 100%; }
-
-.section.pause {
-  background-color: #EEF3 #D; }
-  .section.pause .container {
-    padding-top: 80px;
-    padding-bottom: 80px; }
-    .section.pause .container .center-cont {
-      text-align: left;
-      padding: 0;
-      margin: 0;
-      font-size: 0; }
-      .section.pause .container .center-cont .block {
-        display: inline-block;
-        vertical-align: top; }
-      .section.pause .container .center-cont .block.left {
-        position: relative;
-        text-align: center;
-        width: 50%;
-        font-family: "f_helvetica", "Helvetica", sans-serif;
-        font-weight: 300;
-        padding-right: 15%;
-        padding-left: 5%; }
-        .section.pause .container .center-cont .block.left .left-1 {
-          opacity: 0.7;
-          font-size: 16px;
-          line-height: 26px; }
-        .section.pause .container .center-cont .block.left .left-2 {
-          opacity: 0.7;
-          font-size: 35.1px;
-          text-transform: uppercase; }
-        .section.pause .container .center-cont .block.left .button {
-          position: absolute;
-          bottom: -280px;
-          left: 40%;
-          -webkit-transform: translateX(-50%);
-                  transform: translateX(-50%);
-          z-index: 100; }
-      .section.pause .container .center-cont .block.right {
-        text-align: left;
-        width: 50%;
-        font-family: "f_helvetica", "Helvetica", sans-serif;
-        font-weight: 300; }
-        .section.pause .container .center-cont .block.right .right-1 {
-          font-size: 16px;
-          line-height: 26px;
-          opacity: 0.7; }
-        .section.pause .container .center-cont .block.right .right-2 {
-          margin-top: 40px;
-          font-size: 14px;
-          line-height: 21px;
-          opacity: 0.6;
-          padding-left: 50px;
-          padding-right: 15%;
-          background-image: url("../pics/section.pause.!.svg");
-          background-repeat: no-repeat;
-          background-position: 0 6px; }
-
-.section.pults {
-  position: relative;
-  background-color: #242d3a;
-  overflow-x: hidden; }
-  .section.pults .container {
-    padding-top: 150px;
-    padding-bottom: 150px; }
-    .section.pults .container .blocks .block {
-      color: white;
-      text-align: left; }
-    .section.pults .container .blocks .block.main {
-      width: 63%;
-      font-family: "f_helvetica", "Helvetica", sans-serif;
-      font-weight: 300; }
-      .section.pults .container .blocks .block.main .main-1 {
-        opacity: 0.9;
-        text-transform: uppercase;
-        font-size: 35.1px;
-        line-height: 50.71px; }
-      .section.pults .container .blocks .block.main .main-2 {
-        color: #b9d3f5;
-        opacity: 0.8;
-        font-size: 16px;
-        line-height: 26px;
-        margin-top: 20px; }
-    .section.pults .container .blocks .block.parts {
-      margin-left: 5%;
-      margin-top: 5%;
-      font-family: "f_helvetica", "Helvetica", sans-serif;
-      font-size: 16px;
-      line-height: 30px;
-      cursor: pointer; }
-      .section.pults .container .blocks .block.parts td {
-        padding: 1% 2%; }
-        .section.pults .container .blocks .block.parts td .caption {
-          color: #52b7f7;
-          font-weight: 600; }
-        .section.pults .container .blocks .block.parts td p {
-          opacity: 0.6;
-          color: #b9d3f5;
-          font-weight: 300; }
-  .section.pults .block.cleaner {
-    position: absolute;
-    right: 18%;
-    bottom: 50%;
-    -webkit-transform: translateY(50%) translateX(50%);
-            transform: translateY(50%) translateX(50%); }
-
-.pult-td-active {
-  color: white !important; }
-
-.section.request .container {
-  padding-top: 100px;
-  padding-bottom: 100px; }
-  .section.request .container .block {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-family: "f_helvetica", "Helvetica", sans-serif;
-    font-size: 0; }
-  .section.request .container .block.main {
-    width: 50%; }
-    .section.request .container .block.main h2 {
-      opacity: 0.9;
-      font-weight: 300;
-      font-size: 35.1px; }
-    .section.request .container .block.main p {
-      opacity: 0.7;
-      font-weight: 300;
-      font-size: 16px;
-      line-height: 26px;
-      margin-bottom: 30px; }
-    .section.request .container .block.main .button {
-      display: inline-block;
-      margin-right: 10px;
-      margin-bottom: 10px;
-      padding: 20px 50px;
-      border: 2px solid #f20504;
-      border-radius: 100px;
-      cursor: pointer;
-      color: #f20504;
-      font-weight: 600;
-      font-size: 16px; }
-    .section.request .container .block.main .button:last-child {
-      margin-right: 0; }
-    .section.request .container .block.main .button:hover {
-      color: white;
-      background-color: #f20504; }
-  .section.request .container .block.menu {
-    margin-top: 12%; }
-    .section.request .container .block.menu .menu.item {
-      display: inline-block;
-      margin-right: 19%;
-      font-size: 16px; }
-      .section.request .container .block.menu .menu.item img {
-        margin-bottom: 15px; }
-      .section.request .container .block.menu .menu.item p {
-        color: #52b7f7;
-        text-weight: 600; }
-    .section.request .container .block.menu .menu.item:last-child {
-      margin-right: 0; }
-
-.section.slideshow {
-  background-color: white;
-  min-height: 150vh;
-  width: 100%;
-  position: relative; }
-  .section.slideshow .container {
-    height: 100vh;
-    padding-top: 5%;
-    color: black;
-    text-align: left; }
-    .section.slideshow .container .block.pinned .title {
-      width: 300px;
-      opacity: 0.7;
-      font-family: "f_helvetica", "Helvetica", sans-serif;
-      font-weight: 300;
-      text-transform: uppercase;
-      font-size: 35.1px;
-      line-height: 50.71px; }
-    .section.slideshow .container .block.pinned .info {
-      margin-top: 5%;
-      width: 260px;
-      font-family: "f_helvetica", "Helvetica", sans-serif;
-      font-size: 16px;
-      line-height: 26px; }
-      .section.slideshow .container .block.pinned .info .caption {
-        font-weight: 600; }
-      .section.slideshow .container .block.pinned .info .text {
-        margin-top: 10px;
-        opacity: 0.6;
-        font-weight: 300; }
-      .section.slideshow .container .block.pinned .info a.link {
-        display: block;
-        margin-top: 10px;
-        color: #52b7f7;
-        font-weight: 600; }
-    .section.slideshow .container img.pinned {
-      position: absolute;
-      left: 50%;
-      top: 60vh;
-      -webkit-transform: translateX(-50%) translateY(-50%);
-              transform: translateX(-50%) translateY(-50%);
-      z-index: 1; }
-  .section.slideshow .block.show {
-    position: absolute;
-    left: 50%;
-    bottom: 40vh;
-    -webkit-transform: translateX(-50%) translateY(50%);
-            transform: translateX(-50%) translateY(50%);
-    z-index: 10; }
-    .section.slideshow .block.show .circle-ext {
-      position: relative;
-      display: inline-block;
-      padding: 5vh;
-      border-radius: 1000px;
-      border: 3px #707b8b solid;
-      background-color: white; }
-      .section.slideshow .block.show .circle-ext .circle-int {
-        overflow: hidden;
-        position: relative;
-        width: 55vh;
-        height: 55vh;
-        border-radius: 1000px;
-        border: 3px #707b8b solid;
-        z-index: 3; }
-        .section.slideshow .block.show .circle-ext .circle-int img.lens {
-          background-color: white;
-          position: absolute;
-          width: 100%;
-          z-index: 2; }
-        .section.slideshow .block.show .circle-ext .circle-int .slider {
-          z-index: 1; }
-          .section.slideshow .block.show .circle-ext .circle-int .slider .pic {
-            display: block;
-            height: 55vh;
-            width: 55vh;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: 50% 50%; }
-          .section.slideshow .block.show .circle-ext .circle-int .slider .pic-1 {
-            background-image: url("http://cs10628.vk.me/u168648930/-7/x_2e2ed933.jpg"); }
-          .section.slideshow .block.show .circle-ext .circle-int .slider .pic-2 {
-            background-image: url("http://img0.liveinternet.ru/images/attach/c/2//64/340/64340657_Koshki001.jpg"); }
-          .section.slideshow .block.show .circle-ext .circle-int .slider .pic-3 {
-            background-image: url("http://cs9952.vk.me/u52960895/-14/x_a8ffe9cf.jpg"); }
-      .section.slideshow .block.show .circle-ext .btn {
-        position: absolute;
-        top: 50%;
-        width: 7%;
-        height: 8%;
-        -webkit-transform: translateY(-50%);
-                transform: translateY(-50%);
-        -webkit-transition-duration: 0.5s;
-                transition-duration: 0.5s;
-        background: url("../pics/section.slideshow.arrow.svg") center center no-repeat;
-        background-size: cover;
-        opacity: 0; }
-      .section.slideshow .block.show .circle-ext .btn:hover {
-        opacity: 0.5;
-        cursor: pointer; }
-      .section.slideshow .block.show .circle-ext .prev {
-        left: -10%;
-        -webkit-transform: scale(-1, 1) translateY(-50%);
-                transform: scale(-1, 1) translateY(-50%); }
-      .section.slideshow .block.show .circle-ext .next {
-        right: -10%;
-        top: 50%; }
-      .section.slideshow .block.show .circle-ext .btn-active {
-        opacity: 1 !important; }
-
-.section.start {
-  min-height: 100vh;
-  min-width: 100%;
-  background-image: url("../pics/section.start.back.jpg");
-  background-size: cover;
-  display: table; }
-  .section.start .container {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-    color: white;
-    font-family: "f_opens", "Open Sans", sans-serif;
-    font-weight: 300; }
-    .section.start .container .text {
-      display: inline-block; }
-      .section.start .container .text .first-line {
-        font-size: 26px; }
-      .section.start .container .text .second-line {
-        font-weight: 600;
-        font-size: 56px;
-        text-transform: uppercase; }
-      .section.start .container .text .third-line {
-        font-size: 18px;
-        margin-top: 10px; }
-    .section.start .container .arrow {
-      position: absolute;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%);
-      bottom: 3%; }
-    .section.start .container .arrow:hover {
-      opacity: 0.5; }
-
-.section.video {
-  min-height: 100vh;
-  min-width: 100%;
-  padding: 0;
-  margin: 0;
-  font-size: 0;
-  background-color: #242d3a;
-  display: table; }
-  .section.video .container {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-    padding: 0;
-    margin: 0; }
-    .section.video .container .video {
-      display: inline-block;
-      padding: 0;
-      margin: 0; }
-      .section.video .container .video iframe {
-        width: 917px;
-        height: 516px; }
 
 
 /*# sourceMappingURL=app.css.map*/
