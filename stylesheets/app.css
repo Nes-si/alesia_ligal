@@ -1001,28 +1001,34 @@ html * {
         font-size: 16px;
         line-height: 26px;
         color: black; }
-      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-cont .carwashes__info-1 {
+        @media screen and (max-height: 650px) {
+          .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-cont .carwashes__info {
+            font-size: 15px;
+            line-height: 22px; } }
+      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-cont .carwashes__info_1 {
         width: 400px; }
-        .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-cont .carwashes__info-1 .carwashes__button {
+        .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-cont .carwashes__info_1 .carwashes__button {
           display: inline-block;
           margin-right: 10px;
           padding: 15px 30px;
           border: 2px solid #3aa8b3;
           border-radius: 100px;
+          font-size: 15px;
+          line-height: 22px;
           cursor: pointer; }
-        .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-cont .carwashes__info-1 .carwashes__button:last-child {
+        .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-cont .carwashes__info_1 .carwashes__button:last-child {
           margin-right: 0; }
-        .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-cont .carwashes__info-1 .carwashes__button:hover {
+        .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-cont .carwashes__info_1 .carwashes__button:hover {
           color: white;
           background-color: #3aa8b3; }
-      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-cont .carwashes__info-2 img {
+      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-cont .carwashes__info_2 img {
         opacity: 1;
         margin-bottom: 10px; }
-      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-cont .carwashes__info-2 p {
+      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-cont .carwashes__info_2 p {
         margin: 0; }
-      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-cont .carwashes__info-2 p:last-of-type {
+      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-cont .carwashes__info_2 p:last-of-type {
         font-weight: 600; }
-      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-cont .carwashes__info-4 p:first-child {
+      .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-cont .carwashes__info_4 p:first-child {
         margin-bottom: 20px; }
     .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__content-container {
       position: absolute;
@@ -1088,11 +1094,11 @@ html * {
         background-image: url("../pics/section.main_car_animation.car4.png"); }
     .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont {
       position: absolute;
-      width: 100%;
       left: 0;
-      padding: 0 30px;
-      height: 100px;
       bottom: 3vh;
+      width: 100%;
+      height: 100px;
+      padding: 0 30px;
       font-size: 0;
       text-align: left; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape) {
@@ -1124,6 +1130,10 @@ html * {
           font-weight: 300;
           font-size: 16px;
           line-height: 26px; }
+          @media screen and (max-height: 650px) {
+            .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-left-cont .carwashes__bottom-left {
+              font-size: 15px;
+              line-height: 22px; } }
           .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-left-cont .carwashes__bottom-left .carwashes__text {
             opacity: 0.7; }
       .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-right-cont {
@@ -1137,6 +1147,10 @@ html * {
           font-size: 16px;
           font-weight: 300;
           line-height: 26px; }
+          @media screen and (max-height: 650px) {
+            .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-right-cont .carwashes__bottom-right {
+              font-size: 15px;
+              line-height: 22px; } }
           .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-right-cont .carwashes__bottom-right img {
             position: absolute;
             left: 0;
@@ -1146,18 +1160,21 @@ html * {
                 display: none; } }
           .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-right-cont .carwashes__bottom-right .carwashes__text {
             opacity: 0.7; }
-        .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-right-cont .carwashes__bottom-right-1-1 .carwashes__title, .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-right-cont .carwashes__bottom-right-1-2 .carwashes__title {
-          font-weight: 600;
-          opacity: 0.7; }
-        .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-right-cont .carwashes__bottom-right-1-1 .carwashes__text, .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-right-cont .carwashes__bottom-right-1-2 .carwashes__text {
-          opacity: 0.4;
-          font-size: 14px;
-          line-height: 21px; }
+        .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-right-cont .carwashes__bottom-right_1_item {
+          position: absolute; }
+          .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-right-cont .carwashes__bottom-right_1_item .carwashes__title {
+            font-weight: 600;
+            opacity: 0.7; }
+          .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__info-bottom-cont .carwashes__bottom-right-cont .carwashes__bottom-right_1_item .carwashes__text {
+            opacity: 0.4;
+            font-size: 14px;
+            line-height: 21px; }
+
+.carwashes__car-passive {
+  opacity: 0; }
 
 .carwashes__car-active {
-  opacity: 1 !important;
-  -webkit-transition-delay: 500ms !important;
-          transition-delay: 500ms !important; }
+  opacity: 1 !important; }
 
 .carwashes__car-element-passive {
   opacity: 0;
@@ -1165,15 +1182,19 @@ html * {
           transition-delay: 0ms;
   -webkit-transition-duration: 500ms, 500ms;
           transition-duration: 500ms, 500ms;
-  -webkit-transform: translate3D(0, -50px, 0);
-          transform: translate3D(0, -50px, 0);
+  -webkit-transform: translate3D(-50px, 0, 0) !important;
+          transform: translate3D(-50px, 0, 0) !important;
   -webkit-transition-property: opacity, -webkit-transform;
           transition-property: opacity, transform; }
 
+.carwashes__car-element-passive-r {
+  -webkit-transform: translate3D(50px, 0, 0) !important;
+          transform: translate3D(50px, 0, 0) !important; }
+
 .carwashes__car-element-active {
   opacity: 1 !important;
-  -webkit-transition-delay: 500ms, 0ms !important;
-          transition-delay: 500ms, 0ms !important;
+  -webkit-transition-delay: 400ms, 0ms !important;
+          transition-delay: 400ms, 0ms !important;
   -webkit-transform: translate3D(0, 0, 0) !important;
           transform: translate3D(0, 0, 0) !important; }
 
@@ -1190,9 +1211,7 @@ html * {
 
 .carwashes__caption-iPad {
   top: 22% !important;
-  left: 30px !important;
-  -webkit-transform: translateX(0%) !important;
-          transform: translateX(0%) !important; }
+  left: 30px !important; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape) {
     .carwashes__caption-iPad {
       left: 20px !important; } }
@@ -1470,20 +1489,22 @@ html * {
       margin-bottom: 30px; }
     .carwashes__section.carwashes__request .carwashes__container .carwashes__block.carwashes__main .carwashes__button {
       display: inline-block;
-      margin-right: 10px;
+      margin-right: 17px;
       margin-bottom: 10px;
       padding: 20px 50px;
-      border: 2px solid #f20504;
+      border: 2px solid #e6e6e6;
       border-radius: 100px;
       cursor: pointer;
       color: #f20504;
       font-weight: 600;
       font-size: 16px; }
     .carwashes__section.carwashes__request .carwashes__container .carwashes__block.carwashes__main .carwashes__button:last-child {
-      margin-right: 0; }
+      margin-right: 0;
+      padding: 20px 40px; }
     .carwashes__section.carwashes__request .carwashes__container .carwashes__block.carwashes__main .carwashes__button:hover {
       color: white;
-      background-color: #f20504; }
+      background-color: #f20504;
+      border-color: #f20504; }
   .carwashes__section.carwashes__request .carwashes__container .carwashes__block.carwashes__menu {
     margin-top: 12%; }
     .carwashes__section.carwashes__request .carwashes__container .carwashes__block.carwashes__menu .carwashes__menu.carwashes__item {

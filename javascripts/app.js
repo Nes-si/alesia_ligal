@@ -145,19 +145,19 @@ carwashes__scrollMagicInit = function() {
   }).setPin('#carwashes__car-screen').addTo(window.controller);
   captionEase = SlowMo.ease.config(0.2, 0.3, false);
   captionOffset = window.carwashes__screen_w * 1.1;
-  window.carwashes__captionTween1 = TweenMax.to($('.carwashes__section.carwashes__main_car_animation .carwashes__caption1'), 1, {
+  window.carwashes__captionTween1 = TweenMax.to($('.carwashes__section.carwashes__main_car_animation .carwashes__caption_1'), 1, {
     'transform': 'translate3D(' + captionOffset + 'px, 0, 0)',
     ease: captionEase
   });
-  window.carwashes__captionTween2 = TweenMax.to($('.carwashes__section.carwashes__main_car_animation .carwashes__caption2'), 1, {
+  window.carwashes__captionTween2 = TweenMax.to($('.carwashes__section.carwashes__main_car_animation .carwashes__caption_2'), 1, {
     'transform': 'translate3D(' + captionOffset + 'px, 0, 0)',
     ease: captionEase
   });
-  window.carwashes__captionTween3 = TweenMax.to($('.carwashes__section.carwashes__main_car_animation .carwashes__caption3'), 1, {
+  window.carwashes__captionTween3 = TweenMax.to($('.carwashes__section.carwashes__main_car_animation .carwashes__caption_3'), 1, {
     'transform': 'translate3D(' + captionOffset + 'px, 0, 0)',
     ease: captionEase
   });
-  window.carwashes__captionTween4 = TweenMax.to($('.carwashes__section.carwashes__main_car_animation .carwashes__caption4'), 1, {
+  window.carwashes__captionTween4 = TweenMax.to($('.carwashes__section.carwashes__main_car_animation .carwashes__caption_4'), 1, {
     'transform': 'translate3D(' + captionOffset + 'px, 0, 0)',
     ease: captionEase
   });
@@ -194,16 +194,21 @@ carwashes__scrollMagicInit = function() {
     duration: '100%',
     triggerHook: 0
   }).on("start end", function() {
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__program1').addClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__program2').removeClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__info-1').addClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__info-2').removeClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right-1-' + window.carwashes__car_btn_active).addClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right-2').removeClass("carwashes__car-element-active");
     $('.carwashes__section.carwashes__main_car_animation .carwashes__car-1').addClass("carwashes__car-active");
     $('.carwashes__section.carwashes__main_car_animation .carwashes__car-2').removeClass("carwashes__car-active");
     $('.carwashes__section.carwashes__main_car_animation .carwashes__round-1').addClass("carwashes__car-active");
-    return $('.carwashes__section.carwashes__main_car_animation .carwashes__round-2').removeClass("carwashes__car-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__round-2').removeClass("carwashes__car-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__program_1').addClass("carwashes__car-element-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__info_1').addClass("carwashes__car-element-active");
+    return $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right_1').addClass("carwashes__car-element-active");
+  }).on("start", function() {
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__program_2').removeClass("carwashes__car-element-passive-r");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__info_2').removeClass("carwashes__car-element-passive-r");
+    return $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right_2').removeClass("carwashes__car-element-passive-r");
+  }).on("end", function() {
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__program_2').removeClass("carwashes__car-element-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__info_2').removeClass("carwashes__car-element-active");
+    return $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right_2').removeClass("carwashes__car-element-active");
   }).addTo(window.controller);
   window.carwashes__scene_car_2_to_3 = new ScrollMagic.Scene({
     triggerElement: "#carwashes__car-screen",
@@ -211,21 +216,32 @@ carwashes__scrollMagicInit = function() {
     offset: window.carwashes__screen_h,
     triggerHook: 0
   }).on("start end", function() {
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__program1').removeClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__program2').addClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__program3').removeClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__info-1').removeClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__info-2').addClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__info-3').removeClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right-1-' + window.carwashes__car_btn_active).removeClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right-2').addClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right-3').removeClass("carwashes__car-element-active");
     $('.carwashes__section.carwashes__main_car_animation .carwashes__car-1').removeClass("carwashes__car-active");
     $('.carwashes__section.carwashes__main_car_animation .carwashes__car-2').addClass("carwashes__car-active");
     $('.carwashes__section.carwashes__main_car_animation .carwashes__car-3').removeClass("carwashes__car-active");
     $('.carwashes__section.carwashes__main_car_animation .carwashes__round-1').removeClass("carwashes__car-active");
     $('.carwashes__section.carwashes__main_car_animation .carwashes__round-2').addClass("carwashes__car-active");
-    return $('.carwashes__section.carwashes__main_car_animation .carwashes__round-3').removeClass("carwashes__car-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__round-3').removeClass("carwashes__car-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__program_2').addClass("carwashes__car-element-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__info_2').addClass("carwashes__car-element-active");
+    return $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right_2').addClass("carwashes__car-element-active");
+  }).on("start", function() {
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__program_1').removeClass("carwashes__car-element-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__program_2').addClass("carwashes__car-element-passive-r");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__program_3').removeClass("carwashes__car-element-passive-r");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__info_1').removeClass("carwashes__car-element-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__info_2').addClass("carwashes__car-element-passive-r");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__info_3').removeClass("carwashes__car-element-passive-r");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right_1').removeClass("carwashes__car-element-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right_2').addClass("carwashes__car-element-passive-r");
+    return $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right_3').removeClass("carwashes__car-element-passive-r");
+  }).on("end", function() {
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__program_2').removeClass("carwashes__car-element-passive-r");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__program_3').removeClass("carwashes__car-element-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__info_2').removeClass("carwashes__car-element-passive-r");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__info_3').removeClass("carwashes__car-element-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right_2').removeClass("carwashes__car-element-passive-r");
+    return $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right_3').removeClass("carwashes__car-element-active");
   }).addTo(window.controller);
   window.carwashes__scene_car_3_to_4 = new ScrollMagic.Scene({
     triggerElement: "#carwashes__car-screen",
@@ -233,21 +249,29 @@ carwashes__scrollMagicInit = function() {
     offset: window.carwashes__screen_h * 2,
     triggerHook: 0
   }).on("start end", function() {
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__program2').removeClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__program3').addClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__program4').removeClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__info-2').removeClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__info-3').addClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__info-4').removeClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right-2').removeClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right-3').addClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right-4').removeClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-left').removeClass("carwashes__car-element-active");
     $('.carwashes__section.carwashes__main_car_animation .carwashes__car-2').removeClass("carwashes__car-active");
     $('.carwashes__section.carwashes__main_car_animation .carwashes__car-3').addClass("carwashes__car-active");
     $('.carwashes__section.carwashes__main_car_animation .carwashes__round-2').removeClass("carwashes__car-active");
     $('.carwashes__section.carwashes__main_car_animation .carwashes__round-3').addClass("carwashes__car-active");
-    return $('.carwashes__section.carwashes__main_car_animation .carwashes__round-4').removeClass("carwashes__car-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__round-4').removeClass("carwashes__car-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__program_3').addClass("carwashes__car-element-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__info_3').addClass("carwashes__car-element-active");
+    return $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right_3').addClass("carwashes__car-element-active");
+  }).on("start", function() {
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__program_2').removeClass("carwashes__car-element-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__program_3').addClass("carwashes__car-element-passive-r");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__info_2').removeClass("carwashes__car-element-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__info_3').addClass("carwashes__car-element-passive-r");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right_2').removeClass("carwashes__car-element-active");
+    return $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right_3').addClass("carwashes__car-element-passive-r");
+  }).on("end", function() {
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__program_3').removeClass("carwashes__car-element-passive-r");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__program_4').removeClass("carwashes__car-element-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__info_3').removeClass("carwashes__car-element-passive-r");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__info_4').removeClass("carwashes__car-element-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right_3').removeClass("carwashes__car-element-passive-r");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right_4').removeClass("carwashes__car-element-active");
+    return $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-left').removeClass("carwashes__car-element-active");
   }).addTo(window.controller);
   window.carwashes__scene_car_4_to_null = new ScrollMagic.Scene({
     triggerElement: "#carwashes__car-screen",
@@ -255,16 +279,17 @@ carwashes__scrollMagicInit = function() {
     offset: window.carwashes__screen_h * 3,
     triggerHook: 0
   }).on("start end", function() {
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__program3').removeClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__program4').addClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__info-3').removeClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__info-4').addClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right-3').removeClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right-4').addClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-left').addClass("carwashes__car-element-active");
     $('.carwashes__section.carwashes__main_car_animation .carwashes__car-3').removeClass("carwashes__car-active");
     $('.carwashes__section.carwashes__main_car_animation .carwashes__round-3').removeClass("carwashes__car-active");
-    return $('.carwashes__section.carwashes__main_car_animation .carwashes__round-4').addClass("carwashes__car-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__round-4').addClass("carwashes__car-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__program_4').addClass("carwashes__car-element-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__info_4').addClass("carwashes__car-element-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right_4').addClass("carwashes__car-element-active");
+    return $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-left').addClass("carwashes__car-element-active");
+  }).on("start", function() {
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__program_3').removeClass("carwashes__car-element-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__info_3').removeClass("carwashes__car-element-active");
+    return $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right_3').removeClass("carwashes__car-element-active");
   }).addTo(window.controller);
   window.carwashes__scene_slides_pin = new ScrollMagic.Scene({
     triggerElement: '#carwashes__slideshow',
@@ -344,19 +369,19 @@ carwashes__scrollMagicUpdate = function() {
   window.carwashes__captionTween3.kill;
   window.carwashes__captionTween4.kill;
   window.carwashes__captionTimeline.kill;
-  window.carwashes__captionTween1 = TweenMax.to($('.carwashes__section.carwashes__main_car_animation .carwashes__caption1'), 1, {
+  window.carwashes__captionTween1 = TweenMax.to($('.carwashes__section.carwashes__main_car_animation .carwashes__caption_1'), 1, {
     'transform': 'translate3D(' + captionOffset + 'px, 0, 0)',
     ease: captionEase
   });
-  window.carwashes__captionTween2 = TweenMax.to($('.carwashes__section.carwashes__main_car_animation .carwashes__caption2'), 1, {
+  window.carwashes__captionTween2 = TweenMax.to($('.carwashes__section.carwashes__main_car_animation .carwashes__caption_2'), 1, {
     'transform': 'translate3D(' + captionOffset + 'px, 0, 0)',
     ease: captionEase
   });
-  window.carwashes__captionTween3 = TweenMax.to($('.carwashes__section.carwashes__main_car_animation .carwashes__caption3'), 1, {
+  window.carwashes__captionTween3 = TweenMax.to($('.carwashes__section.carwashes__main_car_animation .carwashes__caption_3'), 1, {
     'transform': 'translate3D(' + captionOffset + 'px, 0, 0)',
     ease: captionEase
   });
-  window.carwashes__captionTween4 = TweenMax.to($('.carwashes__section.carwashes__main_car_animation .carwashes__caption4'), 1, {
+  window.carwashes__captionTween4 = TweenMax.to($('.carwashes__section.carwashes__main_car_animation .carwashes__caption_4'), 1, {
     'transform': 'translate3D(' + captionOffset + 'px, 0, 0)',
     ease: captionEase
   });
@@ -369,7 +394,7 @@ carwashes__scrollMagicUpdate = function() {
 };
 
 carwashes__iPadScrollInit = function() {
-  var ipadPageChange;
+  var ipadPageChange, ipadPageChange1_2, ipadPageChange2_1, ipadPageChange2_3, ipadPageChange3_2, ipadPageChange3_4, ipadPageChange4_3;
   $('.carwashes__section.carwashes__slideshow .carwashes__btn.carwashes__prev').addClass('carwashes__btn-active');
   $('.carwashes__section.carwashes__slideshow .carwashes__btn.carwashes__next').addClass('carwashes__btn-active');
   $('.carwashes__section.carwashes__main_car_animation .carwashes__ipad-scroll').css('display', 'block');
@@ -377,26 +402,13 @@ carwashes__iPadScrollInit = function() {
     $(elem).addClass('carwashes__caption-iPad');
     $(elem).addClass('carwashes__car-element-passive');
     if (i === 0) {
-      return $(elem).addClass('carwashes__car-element-active');
+      $(elem).addClass('carwashes__car-element-active');
+    }
+    if (i === 3) {
+      return $(elem).addClass('carwashes__car-element-passive-r');
     }
   });
   ipadPageChange = function(pageFrom, pageTo) {
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__program' + pageTo).addClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__program' + pageFrom).removeClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__info-' + pageTo).addClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__info-' + pageFrom).removeClass("carwashes__car-element-active");
-    if (pageTo === 1) {
-      $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right-' + pageTo + '-' + window.carwashes__car_btn_active).addClass("carwashes__car-element-active");
-    } else {
-      $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right-' + pageTo).addClass("carwashes__car-element-active");
-    }
-    if (pageFrom === 1) {
-      $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right-' + pageFrom + '-' + window.carwashes__car_btn_active).removeClass("carwashes__car-element-active");
-    } else {
-      $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right-' + pageFrom).removeClass("carwashes__car-element-active");
-    }
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__caption' + pageTo).addClass("carwashes__car-element-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__caption' + pageFrom).removeClass("carwashes__car-element-active");
     $('.carwashes__section.carwashes__main_car_animation .carwashes__car-' + pageTo).addClass("carwashes__car-active");
     if (pageFrom !== 4) {
       $('.carwashes__section.carwashes__main_car_animation .carwashes__car-' + pageFrom).removeClass("carwashes__car-active");
@@ -404,10 +416,48 @@ carwashes__iPadScrollInit = function() {
     $('.carwashes__section.carwashes__main_car_animation .carwashes__round-' + pageTo).addClass("carwashes__car-active");
     return $('.carwashes__section.carwashes__main_car_animation .carwashes__round-' + pageFrom).removeClass("carwashes__car-active");
   };
+  ipadPageChange1_2 = function(page) {
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__' + page + '_1').removeClass("carwashes__car-element-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__' + page + '_2').addClass("carwashes__car-element-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__' + page + '_2').addClass("carwashes__car-element-passive-r");
+    return $('.carwashes__section.carwashes__main_car_animation .carwashes__' + page + '_3').removeClass("carwashes__car-element-passive-r");
+  };
+  ipadPageChange2_3 = function(page) {
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__' + page + '_2').removeClass("carwashes__car-element-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__' + page + '_2').removeClass("carwashes__car-element-passive-r");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__' + page + '_3').addClass("carwashes__car-element-active");
+    return $('.carwashes__section.carwashes__main_car_animation .carwashes__' + page + '_3').addClass("carwashes__car-element-passive-r");
+  };
+  ipadPageChange3_4 = function(page) {
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__' + page + '_3').removeClass("carwashes__car-element-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__' + page + '_3').removeClass("carwashes__car-element-passive-r");
+    return $('.carwashes__section.carwashes__main_car_animation .carwashes__' + page + '_4').addClass("carwashes__car-element-active");
+  };
+  ipadPageChange4_3 = function(page) {
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__' + page + '_3').addClass("carwashes__car-element-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__' + page + '_3').removeClass("carwashes__car-element-passive-r");
+    return $('.carwashes__section.carwashes__main_car_animation .carwashes__' + page + '_4').removeClass("carwashes__car-element-active");
+  };
+  ipadPageChange3_2 = function(page) {
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__' + page + '_2').addClass("carwashes__car-element-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__' + page + '_2').removeClass("carwashes__car-element-passive-r");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__' + page + '_3').removeClass("carwashes__car-element-active");
+    return $('.carwashes__section.carwashes__main_car_animation .carwashes__' + page + '_3').addClass("carwashes__car-element-passive-r");
+  };
+  ipadPageChange2_1 = function(page) {
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__' + page + '_1').addClass("carwashes__car-element-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__' + page + '_2').removeClass("carwashes__car-element-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__' + page + '_2').addClass("carwashes__car-element-passive-r");
+    return $('.carwashes__section.carwashes__main_car_animation .carwashes__' + page + '_3').removeClass("carwashes__car-element-passive-r");
+  };
   $('.carwashes__section.carwashes__main_car_animation .carwashes__scroll-btn-next').click(function() {
     switch (window.carwashes__iPadPage) {
       case 1:
         ipadPageChange(1, 2);
+        ipadPageChange1_2('program');
+        ipadPageChange1_2('info');
+        ipadPageChange1_2('bottom-right');
+        ipadPageChange1_2('caption');
         TweenMax.to($('.carwashes__section.carwashes__main_car_animation'), 0.5, {
           backgroundColor: "#97d9ec",
           ease: Power0.easeNone
@@ -416,6 +466,10 @@ carwashes__iPadScrollInit = function() {
         break;
       case 2:
         ipadPageChange(2, 3);
+        ipadPageChange2_3('program');
+        ipadPageChange2_3('info');
+        ipadPageChange2_3('bottom-right');
+        ipadPageChange2_3('caption');
         TweenMax.to($('.carwashes__section.carwashes__main_car_animation'), 0.5, {
           backgroundColor: "#97c1ec",
           ease: Power0.easeNone
@@ -423,6 +477,10 @@ carwashes__iPadScrollInit = function() {
         break;
       case 3:
         ipadPageChange(3, 4);
+        ipadPageChange3_4('program');
+        ipadPageChange3_4('info');
+        ipadPageChange3_4('bottom-right');
+        ipadPageChange3_4('caption');
         TweenMax.to($('.carwashes__section.carwashes__main_car_animation'), 0.5, {
           backgroundColor: "#82bcf8",
           ease: Power0.easeNone
@@ -440,6 +498,10 @@ carwashes__iPadScrollInit = function() {
     switch (window.carwashes__iPadPage) {
       case 2:
         ipadPageChange(2, 1);
+        ipadPageChange2_1('program');
+        ipadPageChange2_1('info');
+        ipadPageChange2_1('bottom-right');
+        ipadPageChange2_1('caption');
         TweenMax.to($('.carwashes__section.carwashes__main_car_animation'), 0.5, {
           backgroundColor: "#97e5ec",
           ease: Power0.easeNone
@@ -447,6 +509,10 @@ carwashes__iPadScrollInit = function() {
         break;
       case 3:
         ipadPageChange(3, 2);
+        ipadPageChange3_2('program');
+        ipadPageChange3_2('info');
+        ipadPageChange3_2('bottom-right');
+        ipadPageChange3_2('caption');
         TweenMax.to($('.carwashes__section.carwashes__main_car_animation'), 0.5, {
           backgroundColor: "#97d9ec",
           ease: Power0.easeNone
@@ -454,6 +520,10 @@ carwashes__iPadScrollInit = function() {
         break;
       case 4:
         ipadPageChange(4, 3);
+        ipadPageChange4_3('program');
+        ipadPageChange4_3('info');
+        ipadPageChange4_3('bottom-right');
+        ipadPageChange4_3('caption');
         TweenMax.to($('.carwashes__section.carwashes__main_car_animation'), 0.5, {
           backgroundColor: "#82bcf8",
           ease: Power0.easeNone
@@ -525,20 +595,8 @@ carwashes__onResize = function() {
   if (window.carwashes__screen_h < 650) {
     carScale = window.carwashes__screen_h / 650;
     $('.carwashes__section.carwashes__main_car_animation .carwashes__content-container').css('transform', 'scale(' + carScale + ') translateX(-50%) translateY(-50%)');
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__info').css('font-size', '15px');
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__info').css('line-height', '22px');
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right').css('font-size', '15px');
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right').css('line-height', '22px');
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-left').css('font-size', '15px');
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-left').css('line-height', '22px');
   } else {
     $('.carwashes__section.carwashes__main_car_animation .carwashes__content-container').css('transform', 'scale(1) translateX(-50%) translateY(-50%)');
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__info').css('font-size', '16px');
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__info').css('line-height', '26px');
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right').css('font-size', '16px');
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right').css('line-height', '26px');
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-left').css('font-size', '16px');
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-left').css('line-height', '26px');
   }
   if (window.carwashes__sm_inited) {
     carwashes__scrollMagicUpdate();
@@ -582,18 +640,25 @@ $(function() {
     });
   });
   window.carwashes__car_btn_active = 1;
+  $('.carwashes__section.carwashes__main_car_animation .carwashes__btn1').addClass('carwashes__button-active');
+  $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right_1_1').addClass('carwashes__bottom-right_1');
+  $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right_1_1').addClass('carwashes__car-element-active');
   $('.carwashes__section.carwashes__main_car_animation .carwashes__btn1').click(function() {
     $('.carwashes__section.carwashes__main_car_animation .carwashes__btn1').addClass('carwashes__button-active');
     $('.carwashes__section.carwashes__main_car_animation .carwashes__btn2').removeClass('carwashes__button-active');
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right-1-1').addClass('carwashes__car-element-active');
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right-1-2').removeClass('carwashes__car-element-active');
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right_1_1').addClass('carwashes__bottom-right_1');
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right_1_2').removeClass('carwashes__bottom-right_1');
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right_1_1').addClass('carwashes__car-element-active');
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right_1_2').removeClass('carwashes__car-element-active');
     return window.carwashes__car_btn_active = 1;
   });
   $('.carwashes__section.carwashes__main_car_animation .carwashes__btn2').click(function() {
     $('.carwashes__section.carwashes__main_car_animation .carwashes__btn1').removeClass('carwashes__button-active');
     $('.carwashes__section.carwashes__main_car_animation .carwashes__btn2').addClass('carwashes__button-active');
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right-1-1').removeClass('carwashes__car-element-active');
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right-1-2').addClass('carwashes__car-element-active');
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right_1_1').removeClass('carwashes__bottom-right_1');
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right_1_2').addClass('carwashes__bottom-right_1');
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right_1_1').removeClass('carwashes__car-element-active');
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__bottom-right_1_2').addClass('carwashes__car-element-active');
     return window.carwashes__car_btn_active = 2;
   });
   if (window.carwashes__isiPad) {
