@@ -1182,6 +1182,17 @@ html * {
           transition-delay: 0ms;
   -webkit-transition-duration: 500ms, 500ms;
           transition-duration: 500ms, 500ms;
+  -webkit-transform: translate3D(0, -50px, 0) !important;
+          transform: translate3D(0, -50px, 0) !important;
+  -webkit-transition-property: opacity, -webkit-transform;
+          transition-property: opacity, transform; }
+
+.carwashes__car-element-passive-ipad {
+  opacity: 0;
+  -webkit-transition-delay: 0ms;
+          transition-delay: 0ms;
+  -webkit-transition-duration: 500ms, 500ms;
+          transition-duration: 500ms, 500ms;
   -webkit-transform: translate3D(-50px, 0, 0) !important;
           transform: translate3D(-50px, 0, 0) !important;
   -webkit-transition-property: opacity, -webkit-transform;
