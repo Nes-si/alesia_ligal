@@ -967,7 +967,7 @@ html * {
       padding-left: 30px;
       margin-left: 15px;
       margin-top: -15px;
-      background-image: url("../pics/section.main_car_animation.mineral.png");
+      background-image: url("../pics/section.main_car_animation.mineral.svg");
       background-repeat: no-repeat; }
   .carwashes__section.carwashes__main_car_animation .carwashes__container {
     height: 100vh;
@@ -1071,14 +1071,14 @@ html * {
         bottom: 220px; }
       .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__content-container .carwashes__car-shadow {
         bottom: 0;
-        left: 45px;
-        width: 569px;
-        height: 44px;
+        left: -40px;
+        width: 753px;
+        height: 21px;
         background-image: url("../pics/section.main_car_animation.car_shadow.png"); }
       .carwashes__section.carwashes__main_car_animation .carwashes__container .carwashes__content-container .carwashes__car {
-        bottom: 17px;
-        width: 630px;
-        height: 193px;
+        bottom: 4px;
+        width: 621px;
+        height: 195px;
         opacity: 0;
         -webkit-transition-delay: 0ms;
                 transition-delay: 0ms;
@@ -1334,6 +1334,11 @@ html * {
     bottom: 50%;
     -webkit-transform: translateY(50%) translateX(50%);
             transform: translateY(50%) translateX(50%); }
+    .carwashes__section.carwashes__pults .carwashes__block.carwashes__cleaner .carwashes__img_part {
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0; }
 
 .carwashes__pult-td-active {
   color: white !important; }
@@ -1370,9 +1375,13 @@ html * {
         font-weight: 300; }
       .carwashes__section.carwashes__slideshow .carwashes__container .carwashes__block.carwashes__pinned .carwashes__info a.carwashes__link {
         display: block;
+        text-decoration: none;
         margin-top: 10px;
         color: #52b7f7;
         font-weight: 600; }
+      .carwashes__section.carwashes__slideshow .carwashes__container .carwashes__block.carwashes__pinned .carwashes__info a.carwashes__link:hover {
+        color: #4185B8;
+        cursor: pointer; }
     .carwashes__section.carwashes__slideshow .carwashes__container img.carwashes__pinned {
       position: absolute;
       left: 50%;
@@ -1397,10 +1406,10 @@ html * {
       .carwashes__section.carwashes__slideshow .carwashes__block.carwashes__show .carwashes__circle-ext .carwashes__circle-int {
         overflow: hidden;
         position: relative;
-        width: 55vh;
-        height: 55vh;
+        width: 461px;
+        height: 461px;
         border-radius: 1000px;
-        border: 3px #707b8b solid;
+        border: 0px #707b8b solid;
         z-index: 3; }
         .carwashes__section.carwashes__slideshow .carwashes__block.carwashes__show .carwashes__circle-ext .carwashes__circle-int img.carwashes__lens {
           background-color: white;
@@ -1411,17 +1420,23 @@ html * {
           z-index: 1; }
           .carwashes__section.carwashes__slideshow .carwashes__block.carwashes__show .carwashes__circle-ext .carwashes__circle-int .carwashes__slider .carwashes__pic {
             display: block;
-            height: 55vh;
-            width: 55vh;
+            height: 461px;
+            width: 461px;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: 50% 50%; }
           .carwashes__section.carwashes__slideshow .carwashes__block.carwashes__show .carwashes__circle-ext .carwashes__circle-int .carwashes__slider .carwashes__pic-1 {
-            background-image: url("http://cs10628.vk.me/u168648930/-7/x_2e2ed933.jpg"); }
+            background-image: url("../pics/section.slideshow.photo.1.png"); }
           .carwashes__section.carwashes__slideshow .carwashes__block.carwashes__show .carwashes__circle-ext .carwashes__circle-int .carwashes__slider .carwashes__pic-2 {
-            background-image: url("http://img0.liveinternet.ru/images/attach/c/2//64/340/64340657_Koshki001.jpg"); }
+            background-image: url("../pics/section.slideshow.photo.2.png"); }
           .carwashes__section.carwashes__slideshow .carwashes__block.carwashes__show .carwashes__circle-ext .carwashes__circle-int .carwashes__slider .carwashes__pic-3 {
-            background-image: url("http://cs9952.vk.me/u52960895/-14/x_a8ffe9cf.jpg"); }
+            background-image: url("../pics/section.slideshow.photo.3.png"); }
+          .carwashes__section.carwashes__slideshow .carwashes__block.carwashes__show .carwashes__circle-ext .carwashes__circle-int .carwashes__slider .carwashes__pic-4 {
+            background-image: url("../pics/section.slideshow.photo.4.png"); }
+          .carwashes__section.carwashes__slideshow .carwashes__block.carwashes__show .carwashes__circle-ext .carwashes__circle-int .carwashes__slider .carwashes__pic-5 {
+            background-image: url("../pics/section.slideshow.photo.5.png"); }
+          .carwashes__section.carwashes__slideshow .carwashes__block.carwashes__show .carwashes__circle-ext .carwashes__circle-int .carwashes__slider .carwashes__pic-6 {
+            background-image: url("../pics/section.slideshow.photo.6.png"); }
       .carwashes__section.carwashes__slideshow .carwashes__block.carwashes__show .carwashes__circle-ext .carwashes__btn {
         position: absolute;
         top: 50%;
@@ -1507,17 +1522,27 @@ html * {
       border-color: #f20504; }
   .carwashes__section.carwashes__request .carwashes__container .carwashes__block.carwashes__menu {
     margin-top: 12%; }
-    .carwashes__section.carwashes__request .carwashes__container .carwashes__block.carwashes__menu .carwashes__menu.carwashes__item {
+    .carwashes__section.carwashes__request .carwashes__container .carwashes__block.carwashes__menu a.carwashes__item {
       display: inline-block;
       margin-right: 19%;
-      font-size: 16px; }
-      .carwashes__section.carwashes__request .carwashes__container .carwashes__block.carwashes__menu .carwashes__menu.carwashes__item img {
-        margin-bottom: 15px; }
-      .carwashes__section.carwashes__request .carwashes__container .carwashes__block.carwashes__menu .carwashes__menu.carwashes__item p {
-        color: #52b7f7;
-        text-weight: 600; }
-    .carwashes__section.carwashes__request .carwashes__container .carwashes__block.carwashes__menu .carwashes__menu.carwashes__item:last-child {
+      text-decoration: none;
+      font-size: 16px;
+      color: #52b7f7;
+      text-weight: 400; }
+      .carwashes__section.carwashes__request .carwashes__container .carwashes__block.carwashes__menu a.carwashes__item img {
+        margin-bottom: 15px;
+        display: inline; }
+      .carwashes__section.carwashes__request .carwashes__container .carwashes__block.carwashes__menu a.carwashes__item img.red {
+        display: none; }
+    .carwashes__section.carwashes__request .carwashes__container .carwashes__block.carwashes__menu a.carwashes__item:last-child {
       margin-right: 0; }
+    .carwashes__section.carwashes__request .carwashes__container .carwashes__block.carwashes__menu a.carwashes__item:hover {
+      color: #4185B8;
+      cursor: pointer; }
+      .carwashes__section.carwashes__request .carwashes__container .carwashes__block.carwashes__menu a.carwashes__item:hover img {
+        display: none; }
+      .carwashes__section.carwashes__request .carwashes__container .carwashes__block.carwashes__menu a.carwashes__item:hover img.red {
+        display: inline-block; }
 
 
 /*# sourceMappingURL=app.css.map*/

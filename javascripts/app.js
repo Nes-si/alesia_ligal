@@ -218,7 +218,6 @@ carwashes__scrollMagicInit = function() {
   }).on("start end", function() {
     $('.carwashes__section.carwashes__main_car_animation .carwashes__car-1').removeClass("carwashes__car-active");
     $('.carwashes__section.carwashes__main_car_animation .carwashes__car-2').addClass("carwashes__car-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__car-3').removeClass("carwashes__car-active");
     $('.carwashes__section.carwashes__main_car_animation .carwashes__round-1').removeClass("carwashes__car-active");
     $('.carwashes__section.carwashes__main_car_animation .carwashes__round-2').addClass("carwashes__car-active");
     $('.carwashes__section.carwashes__main_car_animation .carwashes__round-3').removeClass("carwashes__car-active");
@@ -250,7 +249,7 @@ carwashes__scrollMagicInit = function() {
     triggerHook: 0
   }).on("start end", function() {
     $('.carwashes__section.carwashes__main_car_animation .carwashes__car-2').removeClass("carwashes__car-active");
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__car-3').addClass("carwashes__car-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__car-4').removeClass("carwashes__car-active");
     $('.carwashes__section.carwashes__main_car_animation .carwashes__round-2').removeClass("carwashes__car-active");
     $('.carwashes__section.carwashes__main_car_animation .carwashes__round-3').addClass("carwashes__car-active");
     $('.carwashes__section.carwashes__main_car_animation .carwashes__round-4').removeClass("carwashes__car-active");
@@ -279,7 +278,7 @@ carwashes__scrollMagicInit = function() {
     offset: window.carwashes__screen_h * 3,
     triggerHook: 0
   }).on("start end", function() {
-    $('.carwashes__section.carwashes__main_car_animation .carwashes__car-3').removeClass("carwashes__car-active");
+    $('.carwashes__section.carwashes__main_car_animation .carwashes__car-4').addClass("carwashes__car-active");
     $('.carwashes__section.carwashes__main_car_animation .carwashes__round-3').removeClass("carwashes__car-active");
     $('.carwashes__section.carwashes__main_car_animation .carwashes__round-4').addClass("carwashes__car-active");
     $('.carwashes__section.carwashes__main_car_animation .carwashes__program_4').addClass("carwashes__car-element-active");
@@ -410,7 +409,7 @@ carwashes__iPadScrollInit = function() {
   });
   ipadPageChange = function(pageFrom, pageTo) {
     $('.carwashes__section.carwashes__main_car_animation .carwashes__car-' + pageTo).addClass("carwashes__car-active");
-    if (pageFrom !== 4) {
+    if (pageFrom !== 3) {
       $('.carwashes__section.carwashes__main_car_animation .carwashes__car-' + pageFrom).removeClass("carwashes__car-active");
     }
     $('.carwashes__section.carwashes__main_car_animation .carwashes__round-' + pageTo).addClass("carwashes__car-active");
@@ -632,11 +631,13 @@ $(function() {
     return $(elem).hover(function(e) {
       $(elem).find('.carwashes__caption').addClass('carwashes__pult-td-active');
       $(elem).find('p').addClass('carwashes__pult-td-active');
+      $('.carwashes__section .carwashes__img_part_' + i).css('opacity', '1');
       return window.carwashes__pult_elem = i;
     }, function(e) {
       $(elem).find('.carwashes__caption').removeClass('carwashes__pult-td-active');
       $(elem).find('p').removeClass('carwashes__pult-td-active');
-      return window.carwashes__pult_elem = 0;
+      window.carwashes__pult_elem = 0;
+      return $('.carwashes__section .carwashes__img_part_' + i).css('opacity', '0');
     });
   });
   window.carwashes__car_btn_active = 1;
@@ -662,10 +663,13 @@ $(function() {
     return window.carwashes__car_btn_active = 2;
   });
   if (window.carwashes__isiPad) {
-    return carwashes__iPadScrollInit();
+    carwashes__iPadScrollInit();
   } else {
-    return carwashes__scrollMagicInit();
+    carwashes__scrollMagicInit();
   }
+  $("<img />").attr('src', '../pics/section.request.horse_red.svg');
+  $("<img />").attr('src', '../pics/section.request.tool_red.svg');
+  return $("<img />").attr('src', '../pics/section.request.set_red.svg');
 });
 
 $(window).on('resize', debounce(carwashes__onResize, 150, false));
